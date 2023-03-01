@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="iso-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Valentin Schwind">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Bootstrap CSS --> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-table.min.css" />  
+	<link rel="stylesheet" href="css/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/style.css" /> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta property="og:site_name" content="Methods and Measures">	
+	<title>Methods and Measures in HCI</title>	
+</head>
+ <body class="transparent">
+	<script src="js/countryList.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-cookie-plugin/jquery.cookie.js"></script>
+	<script src="js/jquery-validation/jquery.validate.js"></script>	 
+	<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/seedrandom.min.js"></script> 
+	<script src="js/html2pdf.bundle.min.js"></script> 
+    
+	<div id="mainFrame" class="vertical-center">
+		<div id="demographicsPage" class="whiteBox container rounded">
+			<form id="demographicsForm" class="form-horizontal" action="javascript:generate(this);">
+				<div id="input">
+                    <div class="row">
+                        <div class="col mt-4 mb-2 ">
+                            <a href="https://hci-studies.org"><img src="img/frankfurtlogo.png" class="float-end  mr-3" width="140px" alt="FRA-UAS Logo"></a>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <h3 id="demographicsTitle">Methods and Measures</h3>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row mt-3">
+                        <div class="col mb-1 mt-1">
+							<p id="description"> </p>
+                        </div>
+                    </div>
+                    <hr class="col mb-1 mt-1 mb-1"/>
+					<div id="optioncontainer">
+					</div> 
+					<hr class="col mb-1 mt-1"/>
+                    <div id="accordions" class="row mt-3 ml-3 mr-3"> 
+						<div class="col-12 mb-1"><h4 id="researchTitle"></h4></div> 
+                        <div class="col-12 mb-3"><div class="accordion" id="accordionContent"></div> </div> 
+                    </div>
+				<div class="row mt-2 itemRow">
+					<div class="col" > 
+						<a id="btnExample" class="btn btn-primary btn-md float-left mr-3 mb-1" >Example</a> 
+					</div>
+				</div>
+				<div class="row mt-2 mb-2" id="results">
+					
+				</div>
+				<div class="row mt-2 mb-2 itemRow" id="githublink">
+					<div class="col" > 
+						<a href="https://github.com/valentin-schwind/methods-and-measures">Source Code on github</a>
+					</div>
+				</div>
+			</form>
+		</div> 
+	</div>
+ 
+	<script>
+	
+		var startWithNode = "types";   
+		var selectedMethods = "";   
+		var animationTime = 0;
+		var allNodes = "";   
+	
+							
+		function unique(list) {
+			var result = [];
+			$.each(list, function(i, e) {
+				if ($.inArray(e, result) == -1) result.push(e);
+			});
+			return result;
+		}
+		
+		
+		$(document).ready(function() {
+			$.ajax({async: true, crossDomain: false, cache: false, type: "GET", url: "methods.xml", dataType: "xml",contentType:"application/x-javascript; charset:ISO-8859-1", 
+				success: function(xml) { 
+					$('#researchTitle').html($(xml).find('research').attr("title"));
+					$('#description').html($(xml).find('research').attr("description"));
+						 
+					var	methodArray = [];  
+					$(xml).find('method').each(function() { 
+						methodArray.push([$(this).attr("title"), $(this).attr("id"), $(this).html()]); 
+					});
+					methodArray = methodArray.sort(function(a,b){ return a[0] > b[0] ? 1 : -1; });
+					
+					function generateAccordionItem(id, title, content) { 
+						return '<div class="accordion-item" id="accordion' + id +'"><button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + id +'" aria-controls="accordion' +id +'"><h6 class="accordion-header">' + title + '</h6></button><div id="collapse' + id +'" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne"><div class="accordion-body bg-light"><p>' + content + '</p></div></div></div></div>';
+					}
+					
+					var methodString = ""; 
+					for(var item in methodArray) 
+						methodString += generateAccordionItem(methodArray[item][1], methodArray[item][0], methodArray[item][2]);
+					
+					$("#accordionContent").html(methodString);  
+					
+					function checkChain(showNode) {   
+						$('#' + showNode + 'Row').show(); 
+						
+						if($(xml).find('options[id=' + showNode + ']').length == 0) {
+							$('#' + showNode + 'Row').hide(); 
+							return "";
+						}
+						
+						var nodeType = $(xml).find('options[id=' + showNode + ']').attr("type");   
+						var nextItem = "";
+						var selectedItem = "";
+						
+						if(nodeType == "dropdown") {
+							selectedItem = $('#' + showNode + 'Select').val(); 
+							if(selectedItem == "") return "";
+							var hasChildren = $(xml).find('option[id=' + selectedItem + ']').length > 0;
+							if(!hasChildren) return "";
+							nextItem = $(xml).find('option[id=' + selectedItem + ']').attr("next"); 
+							selectedItem += "," + checkChain(nextItem);   
+						}
+						
+						if(nodeType == "checkbox") {
+							var hasChildren = $(xml).find('options[id=' + showNode + ']').length > 0;
+							if(!hasChildren) return "";
+							$(xml).find('options[id=' + showNode + ']').each(function() {  
+								$(this).children().each(function() {
+									var subItemSelected = $('#' + $(this).attr("id") + 'Checkbox').is(":checked")
+									if(subItemSelected) {
+										selectedItem += $(this).attr("id");
+										nextItem = $(xml).find('option[id=' + $(this).attr("id") + ']').attr("next");
+										selectedItem += "," + checkChain(nextItem);  
+									}
+								}); 
+							});   
+						} 
+						
+						return selectedItem; 
+					} 
+					 
+					function showMethodsAndConcepts(startWithNode) {
+						$(xml).find('options').each(function() {
+							$('#' + $(this).attr("id") + 'Row').hide(); 
+						}); 
+						showMeasures(unique(checkChain(startWithNode).slice(0, -1).split(',')));   
+					}
+					
+					function showMeasures(categoriesSelected) { 
+						$(xml).find('method').each(function() { 
+							var categoriesOfMethod = $(this).attr("category").split(','); 
+							const makeVisible = categoriesOfMethod.every(elem => categoriesSelected.includes(elem));
+							if(makeVisible) 
+								$("#accordion" + $(this).attr("id")).show(animationTime); 
+							else 
+								$("#accordion" + $(this).attr("id")).hide(animationTime);   
+						});
+						
+						 
+						$(xml).find('options').each(function() { 
+							if($(this).attr("type") == "dropdown"){
+								var name = $(this).attr("id");
+								$(this).children().each(function() { 
+									var attr = $(this).attr('notIf');
+									if (typeof attr !== typeof undefined && attr !== false) {  
+										$('#' + name + 'Select option[value="' + $(this).attr("id") + '"]').attr("disabled", categoriesSelected.includes(attr));  
+									}
+								}); 
+							}
+							
+							if($(this).attr("type") == "checkbox"){
+								$(this).children().each(function() { 
+									var name = $(this).attr("id"); 
+									var attr = $(this).attr('onlyIf');
+									var alwaysOn = $(this).attr('alwaysOn');
+									if (typeof attr !== typeof undefined && attr !== false) {  
+										var exclude = !categoriesSelected.includes(attr)
+										$('#' + name + 'Checkbox').attr("disabled", exclude); 
+										if(exclude) {
+											$('#' + name + 'Checkbox').prop("checked", !exclude); 
+										}  
+									}
+									
+									if (typeof alwaysOn !== typeof undefined && alwaysOn !== false && alwaysOn == "on") {   
+										$('#' + name + 'Checkbox').prop("checked", true);  
+										$('#' + name + 'Checkbox').attr("disabled", true);  
+									} 
+								});  
+							}
+						});  
+					}
+						
+					$(xml).find('options').each(function() { 
+						if($(this).attr("type") == "dropdown"){
+							var optionsItemsString = "<option value=''>Please select...</option>";
+							$(this).children().each(function() {
+								optionsItemsString += "<option value='" + $(this).attr("id") +"'>" + $(this).html() + "</option>"; 
+							}); 
+							
+							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="row mt-3 mb-3"><div class="col-4"><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span><br /></div><div class="col-8"><select class="form-control" id="' + $(this).attr("id") + 'Select" required>' + optionsItemsString + '</select></div> </div>';
+							
+							$("#optioncontainer").append(optionsString);
+							
+							$('#' + $(this).attr("id") + 'Select').change(function(e){ 
+								$(xml).find('options').each(function() {
+									$('#' + $(this).attr("id") + 'Row').hide();
+								}); 
+								showMethodsAndConcepts(startWithNode); 
+							}); 
+						}
+						
+						if($(this).attr("type") == "checkbox"){
+							var optionsItemsString = ""; 
+							var filteredItems = [];
+							var targetItems = []; 
+							var uniqueCategoriesOfMethod = [];
+							
+							$(xml).find('method').each(function() {
+								var allMethods = $(this).attr("category").split(',');
+								for(var item in allMethods){
+									uniqueCategoriesOfMethod.push(allMethods[item]);  
+								} 
+							});
+							
+							uniqueCategoriesOfMethod = unique(uniqueCategoriesOfMethod); 
+							 
+							$(this).children().each(function() { 
+								targetItems.push($(this).attr("id"));
+							});
+							filteredItems = uniqueCategoriesOfMethod.filter(elem => targetItems.includes(elem));							
+							
+							$(this).children().each(function() { 
+								if(filteredItems.includes($(this).attr("id"))){
+									optionsItemsString += '<div class="col-6 col-sm-6"  id="' + $(this).attr("id") + 'Cell"><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="' + $(this).attr("id") + 'Checkbox" ' + (($(this).attr("checked") == "on") ? "checked" : "") + ' ' + (($(this).attr("disabled") == "on") ? "disabled" : "") +  '><label class="form-check-label" for="' + $(this).attr("id") + '">' + $(this).text() + '</label></div></div>'; 
+								}
+							});
+							
+							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="row mt-3"><div class="col-4"><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span><br /></div><div class="col-8"><div class="row">' + optionsItemsString + '</div></div></div>'; 
+							$("#optioncontainer").append(optionsString);
+							
+							$(this).children().each(function() { 
+								$('#' + $(this).attr("id") + 'Checkbox').change(function(e){ 
+									showMethodsAndConcepts(startWithNode); 
+								}); 
+							}); 
+						}
+					});
+					
+					$("#btnExample").click(function(e) {
+						/*$("#typesSelect").val("literature").trigger("change");
+						$("#literaturereviewsSelect").val("narrative").trigger("change");*/
+						$("#typesSelect").val("summative").trigger("change");
+						$("#evidencesSelect").val("empirical").trigger("change");
+						$("#empiricaldecisionsSelect").val("qualitative").trigger("change");
+						$("#empiricaldecisionsSelect").val("quantitative").trigger("change");
+						$("#sampleSelect").val("randomsample").trigger("change");
+						$('#quantitativeCheckbox').prop('checked', true).trigger("change");
+						$('#qualitativeCheckbox').prop('checked', true).trigger("change");
+						$('#objectiveCheckbox').prop('checked', true).trigger("change");
+						// $('#subjectiveCheckbox').prop('checked', true).trigger("change");
+						$('#performanceCheckbox').prop('checked', true).trigger("change");
+						$('#workloadCheckbox').prop('checked', true).trigger("change"); 
+						//$("#locationSelect").val("lab").trigger("change");
+						e.preventDefault();
+					});
+					$("#typesSelect").trigger("change");
+					animationTime = 1000;
+					//$("#btnExample").click();
+				}
+			}); 
+		});
+			 
+	</script>
+ </body>
+</html>

@@ -1,5 +1,5 @@
 # HCI Methods and Measures Tool
-This tool is designed to find the correct method and standardized operationalization of concepts for your HCI research. This tool only offers tips and help for beginners for quick start and is not a substitute for extensive research or input of your supervisor.
+This tool is designed to find the correct method and standardized operationalization of concepts for your HCI research. This tool only offers tips and help for beginners for quick start and is not a substitute for extensive research or input of your supervisor. The tool is mainly based on jquery and Bootstrap (and the Bootstrap icon set). Only the browser, no additional software required. Click <a href="https://hci-studies.org/methods-and-measures/">here</a> to see our running example.
 
 If you want to adequately <a href="https://github.com/valentin-schwind/methods-and-measures/blob/master/HCIToolkit.bib"> cite</a> this work, and show us your amazing projects!
 
