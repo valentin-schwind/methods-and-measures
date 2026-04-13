@@ -29,45 +29,69 @@
 	<script src="js/html2pdf.bundle.min.js"></script> 
     
 	<div id="mainFrame" class="vertical-center">
-		<div id="demographicsPage" class="whiteBox container rounded">
+		<div id="demographicsPage" class="whiteBox planner-shell container rounded-4">
 			<form id="demographicsForm" class="form-horizontal" action="javascript:generate(this);">
 				<div id="input">
-                    <div class="row">
-                        <div class="col mt-4 mb-2 ">
-                            <a href="https://hci-studies.org"><img src="img/hdmlogo.png" class="float-end  mr-3" width="72" style="width: 72px; min-width: 72px; max-width: 72px; height: auto;" alt="HdM Logo"></a>
+                    <div class="planner-hero row align-items-start">
+                        <div class="col-12 col-lg-8">
+                            <div class="planner-eyebrow">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>Methods &amp; Measures</span>
+                            </div>
+                            <h1 id="demographicsTitle" class="planner-title">Methods and Measures</h1>
+                            <p id="description" class="planner-description"></p>
+                            <div class="planner-chip-row">
+                                <span class="planner-chip"><i class="bi bi-ui-checks-grid"></i> Guided selection</span>
+                                <span class="planner-chip"><i class="bi bi-phone"></i> Responsive layout</span>
+                                <span class="planner-chip"><i class="bi bi-journal-text"></i> Research references</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 d-flex justify-content-lg-end mt-4 mt-lg-0">
+                            <a href="https://hci-studies.org" class="planner-logo-link" aria-label="Visit hci-studies.org">
+                                <img src="img/hdmlogo.png" class="planner-logo" width="72" alt="HdM Logo">
+                            </a>
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col">
-                            <h3 id="demographicsTitle">Methods and Measures</h3>
+                    <div class="planner-grid row g-4 mt-1">
+                        <div class="col-12 col-xl-5">
+                            <section class="planner-card planner-card-accent h-100">
+                                <div class="planner-section-title">
+                                    <i class="bi bi-sliders2-vertical"></i>
+                                    <h2 class="planner-section-heading mb-0">Study Setup</h2>
+                                </div>
+                                <p class="planner-section-copy">Filter your study context step by step and narrow down suitable methods and measures.</p>
+                                <div id="optioncontainer" class="planner-options">
+					                </div>
+                            </section>
+                        </div>
+                        <div class="col-12 col-xl-7">
+                            <section class="planner-card h-100">
+                                <div id="accordions" class="planner-results"> 
+						            <div class="planner-section-title">
+                                        <i class="bi bi-collection"></i>
+                                        <h2 id="researchTitle" class="planner-section-heading mb-0"></h2>
+                                    </div>
+                                    <p class="planner-section-copy">Matching methods appear here together with compact explanations and references.</p>
+                                    <div class="accordion" id="accordionContent"></div>
+                                </div>
+                            </section>
                         </div>
                     </div>
-                    <hr />
-                    <div class="row mt-3">
-                        <div class="col mb-1 mt-1">
-							<p id="description"> </p>
+                    <div class="planner-actions row mt-4">
+                        <div class="col-12 col-md-auto">
+							<a id="btnExample" class="btn btn-primary btn-md planner-primary-action">
+                                <i class="bi bi-magic"></i>
+                                <span>Load Example</span>
+                            </a> 
                         </div>
                     </div>
-                    <hr class="col mb-1 mt-1 mb-1"/>
-					<div id="optioncontainer">
+					<div class="row mt-2 mb-2" id="results">
 					</div> 
-					<hr class="col mb-1 mt-1"/>
-                    <div id="accordions" class="row mt-3 ml-3 mr-3"> 
-						<div class="col-12 mb-1"><h4 id="researchTitle"></h4></div> 
-                        <div class="col-12 mb-3"><div class="accordion" id="accordionContent"></div> </div> 
-                    </div>
-				<div class="row mt-2 itemRow">
-					<div class="col" > 
-						<a id="btnExample" class="btn btn-primary btn-md float-left mr-3 mb-1" >Example</a> 
-					</div>
-				</div>
-				<div class="row mt-2 mb-2" id="results">
-					
-				</div>
 				<div class="row mt-2 mb-2 itemRow" id="githublink">
-					<div class="col" > 
-						<a href="https://github.com/valentin-schwind/methods-and-measures">Source Code on github</a>
+					<div class="col"> 
+						<a href="https://github.com/valentin-schwind/methods-and-measures" class="planner-source-link"><i class="bi bi-github"></i> Source Code on GitHub</a>
 					</div>
+				</div>
 				</div>
 			</form>
 		</div> 
@@ -103,7 +127,7 @@
 					methodArray = methodArray.sort(function(a,b){ return a[0] > b[0] ? 1 : -1; });
 					
 					function generateAccordionItem(id, title, content) { 
-						return '<div class="accordion-item" id="accordion' + id +'"><button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + id +'" aria-controls="accordion' +id +'"><h6 class="accordion-header">' + title + '</h6></button><div id="collapse' + id +'" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne"><div class="accordion-body bg-light"><p>' + content + '</p></div></div></div></div>';
+						return '<div class="accordion-item planner-accordion-item" id="accordion' + id +'"><h3 class="accordion-header" id="heading' + id + '"><button class="accordion-button collapsed planner-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + id +'" aria-expanded="false" aria-controls="collapse' + id + '"><span class="planner-accordion-icon"><i class="bi bi-journal-richtext"></i></span><span class="planner-accordion-title">' + title + '</span></button></h3><div id="collapse' + id +'" class="accordion-collapse collapse" aria-labelledby="heading' + id + '"><div class="accordion-body planner-accordion-body"><p>' + content + '</p></div></div></div>';
 					}
 					
 					var methodString = ""; 
@@ -209,7 +233,7 @@
 								optionsItemsString += "<option value='" + $(this).attr("id") +"'>" + $(this).html() + "</option>"; 
 							}); 
 							
-							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="row mt-3 mb-3"><div class="col-4"><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span><br /></div><div class="col-8"><select class="form-control" id="' + $(this).attr("id") + 'Select" required>' + optionsItemsString + '</select></div> </div>';
+							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="planner-field row g-3 mt-1 mb-1 align-items-start"><div class="col-12 col-md-5"><label class="planner-field-label" for="' + $(this).attr("id") + 'Select"><i class="bi bi-chevron-right"></i><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span></label></div><div class="col-12 col-md-7"><select class="form-control planner-select" id="' + $(this).attr("id") + 'Select" required>' + optionsItemsString + '</select></div></div>';
 							
 							$("#optioncontainer").append(optionsString);
 							
@@ -243,11 +267,11 @@
 							
 							$(this).children().each(function() { 
 								if(filteredItems.includes($(this).attr("id"))){
-									optionsItemsString += '<div class="col-6 col-sm-6"  id="' + $(this).attr("id") + 'Cell"><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="' + $(this).attr("id") + 'Checkbox" ' + (($(this).attr("checked") == "on") ? "checked" : "") + ' ' + (($(this).attr("disabled") == "on") ? "disabled" : "") +  '><label class="form-check-label" for="' + $(this).attr("id") + '">' + $(this).text() + '</label></div></div>'; 
+									optionsItemsString += '<div class="col-12 col-sm-6" id="' + $(this).attr("id") + 'Cell"><label class="planner-toggle" for="' + $(this).attr("id") + 'Checkbox"><span class="form-check form-switch mb-0"><input class="form-check-input" type="checkbox" id="' + $(this).attr("id") + 'Checkbox" ' + (($(this).attr("checked") == "on") ? "checked" : "") + ' ' + (($(this).attr("disabled") == "on") ? "disabled" : "") +  '></span><span class="planner-toggle-text">' + $(this).text() + '</span></label></div>'; 
 								}
 							});
 							
-							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="row mt-3"><div class="col-4"><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span><br /></div><div class="col-8"><div class="row">' + optionsItemsString + '</div></div></div>'; 
+							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="planner-field row g-3 mt-1 align-items-start"><div class="col-12 col-md-5"><div class="planner-field-label"><i class="bi bi-toggles2"></i><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span></div></div><div class="col-12 col-md-7"><div class="row g-2">' + optionsItemsString + '</div></div></div>'; 
 							$("#optioncontainer").append(optionsString);
 							
 							$(this).children().each(function() { 
