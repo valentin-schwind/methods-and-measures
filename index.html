@@ -1,110 +1,144 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="iso-8859-1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="author" content="Valentin Schwind">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- Bootstrap CSS --> 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-table.min.css" />  
-	<link rel="stylesheet" href="css/bootstrap-icons.css">
-	<link rel="stylesheet" href="css/style.css" /> 
+
+	<link rel="stylesheet" href="_css/bootstrap.min.css">
+	<link rel="stylesheet" href="_css/bootstrap-table.min.css">
+	<link rel="stylesheet" href="_css/bootstrap-icons.css">
+	<link rel="stylesheet" href="_css/toolkit-style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<meta property="og:site_name" content="Methods and Measures">	
-	<title>Methods and Measures in HCI</title>	
+
+	<meta property="og:site_name" content="Methods and Measures">
+	<title>Methods and Measures in HCI</title>
 </head>
- <body class="transparent">
-	<script src="js/countryList.js"></script>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/jquery-cookie-plugin/jquery.cookie.js"></script>
-	<script src="js/jquery-validation/jquery.validate.js"></script>	 
-	<script src="js/popper.min.js" ></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/seedrandom.min.js"></script> 
-	<script src="js/html2pdf.bundle.min.js"></script> 
-    
-	<div id="mainFrame" class="vertical-center">
-		<div id="demographicsPage" class="whiteBox planner-shell container rounded-4">
-			<form id="demographicsForm" class="form-horizontal" action="javascript:generate(this);">
-				<div id="input">
-                    <div class="planner-hero row align-items-start">
-                        <div class="col-12 col-lg-8">
-                            <div class="planner-eyebrow">
-                                <i class="bi bi-diagram-3"></i>
-                                <span>Methods &amp; Measures</span>
-                            </div>
-                            <h1 id="demographicsTitle" class="planner-title">Methods and Measures</h1>
-                            <p id="description" class="planner-description"></p>
-                            <div class="planner-chip-row">
-                                <span class="planner-chip"><i class="bi bi-ui-checks-grid"></i> Guided selection</span>
-                                <span class="planner-chip"><i class="bi bi-phone"></i> Responsive layout</span>
-                                <span class="planner-chip"><i class="bi bi-journal-text"></i> Research references</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 d-flex justify-content-lg-end mt-4 mt-lg-0">
-                            <a href="https://hci-studies.org" class="planner-logo-link" aria-label="Visit hci-studies.org">
-                                <img src="img/hdmlogo.png" class="planner-logo" width="72" alt="HdM Logo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="planner-grid row g-4 mt-1">
-                        <div class="col-12 col-xl-5">
-                            <section class="planner-card planner-card-accent h-100">
-                                <div class="planner-section-title">
-                                    <i class="bi bi-sliders2-vertical"></i>
-                                    <h2 class="planner-section-heading mb-0">Study Setup</h2>
-                                </div>
-                                <p class="planner-section-copy">Filter your study context step by step and narrow down suitable methods and measures.</p>
-                                <div id="optioncontainer" class="planner-options">
-					                </div>
-                            </section>
-                        </div>
-                        <div class="col-12 col-xl-7">
-                            <section class="planner-card h-100">
-                                <div id="accordions" class="planner-results"> 
-						            <div class="planner-section-title">
-                                        <i class="bi bi-collection"></i>
-                                        <h2 id="researchTitle" class="planner-section-heading mb-0"></h2>
-                                    </div>
-                                    <p class="planner-section-copy">Matching methods appear here together with compact explanations and references.</p>
-                                    <div class="accordion" id="accordionContent"></div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="planner-actions row mt-4">
-                        <div class="col-12 col-md-auto">
-							<a id="btnExample" class="btn btn-primary btn-md planner-primary-action">
-                                <i class="bi bi-magic"></i>
-                                <span>Load Example</span>
-                            </a> 
-                        </div>
-                    </div>
-					<div class="row mt-2 mb-2" id="results">
-					</div> 
-				<div class="row mt-2 mb-2 itemRow" id="githublink">
-					<div class="col"> 
-						<a href="https://github.com/valentin-schwind/methods-and-measures" class="planner-source-link"><i class="bi bi-github"></i> Source Code on GitHub</a>
-					</div>
-				</div>
-				</div>
-			</form>
-		</div> 
-	</div>
- 
-	<script>
-	
-		var startWithNode = "types";   
-		var selectedMethods = "";   
-		var animationTime = 0;
-		var allNodes = "";   
-	
+<body>
+	<script src="_js/countryList.js"></script>
+	<script src="_js/jquery-3.3.1.min.js"></script>
+	<script src="_js/jquery-ui.js"></script>
+	<script src="_js/jquery-cookie-plugin/jquery.cookie.js"></script>
+	<script src="_js/jquery-validation/jquery.validate.js"></script>
+	<script src="_js/popper.min.js"></script>
+	<script src="_js/bootstrap.min.js"></script>
+	<script src="_js/seedrandom.min.js"></script>
+	<script src="_js/html2pdf.bundle.min.js"></script>
+
+	<div class="page-shell">
+		<div id="mainFrame" class="container page-card rounded">
+			<div id="demographicsPage">
+				<form id="demographicsForm" class="form-horizontal" action="javascript:generate(this);">
+					<div id="input">
+						<header class="page-header">
+
+							<div class="logo-row">
+								<a href="https://hci-studies.org/" target="_blank" rel="noopener noreferrer">
+									<img src="_img/hdmlogo.png" class="header-logo" alt="HdM Logo">
+								</a>
+							</div>
+
+							<p class="kicker"><a href="https://hci-studies.org/" target="_blank" rel="noopener noreferrer">HOME</a> &gt;&gt; HCI User Studies Toolkit</p>
+
+							<h1 id="demographicsTitle">Methods and Measures</h1>
+
+							<p id="description" class="intro"></p>
+
+						</header>
+
+						<section class="content-section">
+							<div class="section-heading">
+								<h2><i class="bi bi-ui-checks-grid me-2"></i>Selection</h2>
+							</div>
+							<p class="section-intro">
+								Select the relevant properties of your study to identify appropriate methods and measures.
+							</p>
+
+							<div class="config-panel">
+								<div id="optioncontainer"></div>
+							</div>
+
+							<div id="results" class="row mt-3 mb-2"></div> 
+						</section>
+
+						<section id="accordions" class="content-section">
+							<div class="section-heading">
+								<h2 id="researchTitleHeading"><i class="bi bi-journal-text me-2"></i><span id="researchTitle"></span></h2>
+							</div>
+							<p class="section-intro">
+								Relevant methods and measures based on the selected criteria.
+							</p>
+
+							<div class="config-panel">
+								<div class="accordion" id="accordionContent"></div>
+							</div>
 							
+							<div class="resource-list mt-3">
+								<div class="resource-item">
+									<div class="resource-text">
+										<h3><i class="bi bi-magic me-2"></i>Example Configuration</h3>
+										<p>Populate the form with a sample configuration.</p>
+									</div>
+									<div class="resource-actions">
+										<a id="btnExample" class="btn btn-primary" role="button">Example</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="content-section">
+							<div class="section-heading">
+								<h2><i class="bi bi-github me-2"></i>Source Code</h2>
+							</div>
+							<p class="section-intro">
+								Project repository and contact information for suggestions.
+							</p>
+
+							<div class="resource-list">
+								<div class="resource-item" id="githublink">
+									<div class="resource-text">
+										<h3>Methods and Measures Repository</h3>
+										<p>
+											<a href="https://github.com/valentin-schwind/methods-and-measures" target="_blank" rel="noopener noreferrer">Source Code on GitHub</a>,
+											Any suggestions for more methods and measures?
+											<a href="mailto:schwind@hdm-stuttgart.de">Write us</a>.
+										</p>
+									</div>
+									<div class="resource-actions">
+										<a href="https://github.com/valentin-schwind/methods-and-measures" target="_blank" rel="noopener noreferrer" class="btn btn-primary" role="button">GitHub</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<footer class="site-footer">
+							<p>
+								<a href="https://valentin-schwind.de" target="_blank" rel="noopener noreferrer">Prof. Dr. Valentin Schwind</a>.
+								Stuttgart Media University. No liability for external links, correctness, completeness and up-to-dateness of any content. Site visits might result in storing of anonymized data (date, time, page viewed). Utilization at the user's own risk. Data can be stored on the computers to facilitate the user's website access. Contribute <a href="https://github.com/stars/valentin-schwind/lists/hci-user-studies-toolkit" target="_blank" rel="noopener noreferrer">here</a>.
+							</p>
+							<p>
+								<strong>Find/cite the publication of the toolkit here:</strong><br>
+								<code>Valentin Schwind, Stefan Resch, and Jessica Sehrt. 2023. The HCI User Studies Toolkit: Supporting Study Designing and Planning for Undergraduates and Novice Researchers in Human-Computer Interaction. In Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems (CHI EA '23), April 23-28, 2023, Hamburg, Germany. ACM, New York, NY, USA, 7 pages. <a href="https://doi.org/10.1145/3544549.3585890" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3544549.3585890</a></code>
+							</p>
+						</footer>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var startWithNode = "types";
+		var selectedMethods = "";
+		var animationTime = 0;
+		var allNodes = "";
+		var revealScrollMode = "none";
+		var pendingScrollTarget = null;
+		var isInitializing = true;
+		var visibleOptionRowsBeforeUpdate = {};
+		var visibleMethodsBeforeUpdate = {};
+
 		function unique(list) {
 			var result = [];
 			$.each(list, function(i, e) {
@@ -112,179 +146,355 @@
 			});
 			return result;
 		}
-		
-		
+
+		function captureVisibleOptionRows(xml) {
+			var visibleRows = {};
+			$(xml).find('options').each(function() {
+				var rowId = $(this).attr("id");
+				visibleRows[rowId] = $('#' + rowId + 'Row').is(':visible');
+			});
+			return visibleRows;
+		}
+
+		function captureVisibleMethods(xml) {
+			var visibleMethods = {};
+			$(xml).find('method').each(function() {
+				var methodId = $(this).attr("id");
+				visibleMethods[methodId] = $('#accordion' + methodId).is(':visible');
+			});
+			return visibleMethods;
+		}
+
+		function scrollToPendingRow() {
+			if (revealScrollMode !== "checkbox" || pendingScrollTarget === null) {
+				pendingScrollTarget = null;
+				return;
+			}
+
+			var $target = pendingScrollTarget;
+			pendingScrollTarget = null;
+
+			window.setTimeout(function() {
+				if (!$target.length) {
+					return;
+				}
+
+				var startTop = $(window).scrollTop();
+				var targetTop = Math.max($target.offset().top - 120, 0);
+
+				function enforceDownwardScroll() {
+					var currentTop = $(window).scrollTop();
+					if (currentTop < targetTop - 4) {
+						window.scrollTo(0, targetTop);
+					}
+				}
+
+				if (targetTop > startTop + 4) {
+					$('html, body').stop(true).animate({
+						scrollTop: targetTop
+					}, 320);
+				}
+
+				window.setTimeout(enforceDownwardScroll, 380);
+				window.setTimeout(enforceDownwardScroll, 760);
+			}, 260);
+		}
+
 		$(document).ready(function() {
-			$.ajax({async: true, crossDomain: false, cache: false, type: "GET", url: "methods.xml", dataType: "xml",contentType:"application/x-javascript; charset:ISO-8859-1", 
-				success: function(xml) { 
+			$('#researchTitleHeading').hide();
+			$.ajax({
+				async: true,
+				crossDomain: false,
+				cache: false,
+				type: "GET",
+				url: "methods.xml",
+				dataType: "xml",
+				contentType: "application/x-javascript; charset:ISO-8859-1",
+				success: function(xml) {
 					$('#researchTitle').html($(xml).find('research').attr("title"));
 					$('#description').html($(xml).find('research').attr("description"));
-						 
-					var	methodArray = [];  
-					$(xml).find('method').each(function() { 
-						methodArray.push([$(this).attr("title"), $(this).attr("id"), $(this).html()]); 
+
+					var methodArray = [];
+					var seenMethodIds = {};
+					$(xml).find('method').each(function() {
+						var methodId = $(this).attr("id");
+						if (seenMethodIds[methodId] === true) {
+							return;
+						}
+						seenMethodIds[methodId] = true;
+						methodArray.push([$(this).attr("title"), $(this).attr("id"), $(this).html()]);
 					});
-					methodArray = methodArray.sort(function(a,b){ return a[0] > b[0] ? 1 : -1; });
-					
-					function generateAccordionItem(id, title, content) { 
-						return '<div class="accordion-item planner-accordion-item" id="accordion' + id +'"><h3 class="accordion-header" id="heading' + id + '"><button class="accordion-button collapsed planner-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + id +'" aria-expanded="false" aria-controls="collapse' + id + '"><span class="planner-accordion-icon"><i class="bi bi-journal-richtext"></i></span><span class="planner-accordion-title">' + title + '</span></button></h3><div id="collapse' + id +'" class="accordion-collapse collapse" aria-labelledby="heading' + id + '"><div class="accordion-body planner-accordion-body"><p>' + content + '</p></div></div></div>';
+					methodArray = methodArray.sort(function(a, b) {
+						return a[0] > b[0] ? 1 : -1;
+					});
+
+					function generateAccordionItem(id, title, content) {
+						return '<div class="accordion-item planner-accordion-item" id="accordion' + id + '"><h2 class="accordion-header"><button class="accordion-button collapsed planner-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + id + '" aria-expanded="false" aria-controls="collapse' + id + '"><i class="bi bi-journal-richtext me-2"></i><span>' + title + '</span></button></h2><div id="collapse' + id + '" class="accordion-collapse collapse"><div class="accordion-body planner-accordion-body">' + content + '</div></div></div>';
 					}
-					
-					var methodString = ""; 
-					for(var item in methodArray) 
+
+					var methodString = "";
+					for (var item in methodArray) {
 						methodString += generateAccordionItem(methodArray[item][1], methodArray[item][0], methodArray[item][2]);
-					
-					$("#accordionContent").html(methodString);  
-					
-					function checkChain(showNode) {   
-						$('#' + showNode + 'Row').show(); 
-						
-						if($(xml).find('options[id=' + showNode + ']').length == 0) {
-							$('#' + showNode + 'Row').hide(); 
+					}
+
+					$("#accordionContent").html(methodString);
+					$("#accordionContent .accordion-item").hide();
+
+					function revealQuestionRow(showNode) {
+						var $row = $('#' + showNode + 'Row');
+						if (!$row.length) {
+							return;
+						}
+
+						var wasHidden = !$row.is(':visible');
+						var wasVisibleBeforeUpdate = visibleOptionRowsBeforeUpdate[showNode] === true;
+						if (!wasHidden) {
+							$row.show();
+							return;
+						}
+
+						$row.stop(true, true).hide().slideDown(220);
+						$row.addClass('planner-row-reveal');
+						window.setTimeout(function() {
+							$row.removeClass('planner-row-reveal');
+						}, 360);
+					}
+
+					function resolveVisibleQuestionRows(showNode) {
+						var visibleRows = [];
+
+						function walk(nodeId) {
+							if (!nodeId) {
+								return;
+							}
+
+							visibleRows.push(nodeId);
+
+							if ($(xml).find('options[id=' + nodeId + ']').length == 0) {
+								return;
+							}
+
+							var nodeType = $(xml).find('options[id=' + nodeId + ']').attr("type");
+
+							if (nodeType == "dropdown") {
+								var selectedItem = $('#' + nodeId + 'Select').val();
+								if (selectedItem == "") {
+									return;
+								}
+
+								var nextItem = $(xml).find('option[id=' + selectedItem + ']').attr("next");
+								if (typeof nextItem !== typeof undefined && nextItem !== false && nextItem !== "") {
+									walk(nextItem);
+								}
+							}
+
+							if (nodeType == "checkbox") {
+								$(xml).find('options[id=' + nodeId + ']').each(function() {
+									$(this).children().each(function() {
+										var checkboxId = $(this).attr("id");
+										var nextItem = $(xml).find('option[id=' + checkboxId + ']').attr("next");
+										var subItemSelected = $('#' + checkboxId + 'Checkbox').is(":checked");
+
+										if (subItemSelected && typeof nextItem !== typeof undefined && nextItem !== false && nextItem !== "") {
+											walk(nextItem);
+										}
+									});
+								});
+							}
+						}
+
+						walk(showNode);
+						return unique(visibleRows);
+					}
+
+					function checkChain(showNode) {
+						if (!showNode) {
 							return "";
 						}
-						
-						var nodeType = $(xml).find('options[id=' + showNode + ']').attr("type");   
+
+						if ($(xml).find('options[id=' + showNode + ']').length == 0) {
+							return "";
+						}
+
+						var nodeType = $(xml).find('options[id=' + showNode + ']').attr("type");
 						var nextItem = "";
 						var selectedItem = "";
-						
-						if(nodeType == "dropdown") {
-							selectedItem = $('#' + showNode + 'Select').val(); 
-							if(selectedItem == "") return "";
+
+						if (nodeType == "dropdown") {
+							selectedItem = $('#' + showNode + 'Select').val();
+							if (selectedItem == "") return "";
 							var hasChildren = $(xml).find('option[id=' + selectedItem + ']').length > 0;
-							if(!hasChildren) return "";
-							nextItem = $(xml).find('option[id=' + selectedItem + ']').attr("next"); 
-							selectedItem += "," + checkChain(nextItem);   
+							if (!hasChildren) return "";
+							nextItem = $(xml).find('option[id=' + selectedItem + ']').attr("next");
+							selectedItem += "," + checkChain(nextItem);
 						}
-						
-						if(nodeType == "checkbox") {
+
+						if (nodeType == "checkbox") {
 							var hasChildren = $(xml).find('options[id=' + showNode + ']').length > 0;
-							if(!hasChildren) return "";
-							$(xml).find('options[id=' + showNode + ']').each(function() {  
+							if (!hasChildren) return "";
+							$(xml).find('options[id=' + showNode + ']').each(function() {
 								$(this).children().each(function() {
-									var subItemSelected = $('#' + $(this).attr("id") + 'Checkbox').is(":checked")
-									if(subItemSelected) {
+									var subItemSelected = $('#' + $(this).attr("id") + 'Checkbox').is(":checked");
+									if (subItemSelected) {
 										selectedItem += $(this).attr("id");
 										nextItem = $(xml).find('option[id=' + $(this).attr("id") + ']').attr("next");
-										selectedItem += "," + checkChain(nextItem);  
+										selectedItem += "," + checkChain(nextItem);
 									}
-								}); 
-							});   
-						} 
-						
-						return selectedItem; 
-					} 
-					 
-					function showMethodsAndConcepts(startWithNode) {
-						$(xml).find('options').each(function() {
-							$('#' + $(this).attr("id") + 'Row').hide(); 
-						}); 
-						showMeasures(unique(checkChain(startWithNode).slice(0, -1).split(',')));   
+								});
+							});
+						}
+
+						return selectedItem;
 					}
-					
-					function showMeasures(categoriesSelected) { 
-						$(xml).find('method').each(function() { 
-							var categoriesOfMethod = $(this).attr("category").split(','); 
-							const makeVisible = categoriesOfMethod.every(elem => categoriesSelected.includes(elem));
-							if(makeVisible) 
-								$("#accordion" + $(this).attr("id")).show(animationTime); 
-							else 
-								$("#accordion" + $(this).attr("id")).hide(animationTime);   
-						});
-						
-						 
-						$(xml).find('options').each(function() { 
-							if($(this).attr("type") == "dropdown"){
-								var name = $(this).attr("id");
-								$(this).children().each(function() { 
-									var attr = $(this).attr('notIf');
-									if (typeof attr !== typeof undefined && attr !== false) {  
-										$('#' + name + 'Select option[value="' + $(this).attr("id") + '"]').attr("disabled", categoriesSelected.includes(attr));  
-									}
-								}); 
+
+					function showMethodsAndConcepts(startWithNode) {
+						if (revealScrollMode === "checkbox") {
+							visibleOptionRowsBeforeUpdate = captureVisibleOptionRows(xml);
+							visibleMethodsBeforeUpdate = captureVisibleMethods(xml);
+						} else {
+							visibleOptionRowsBeforeUpdate = {};
+							visibleMethodsBeforeUpdate = {};
+						}
+
+						var visibleRows = resolveVisibleQuestionRows(startWithNode);
+						$(xml).find('options').each(function() {
+							var rowId = $(this).attr("id");
+							if (visibleRows.includes(rowId)) {
+								revealQuestionRow(rowId);
+							} else {
+								$('#' + rowId + 'Row').hide();
 							}
-							
-							if($(this).attr("type") == "checkbox"){
-								$(this).children().each(function() { 
-									var name = $(this).attr("id"); 
+						});
+
+						showMeasures(unique(checkChain(startWithNode).slice(0, -1).split(',')));
+						scrollToPendingRow();
+					}
+
+					function showMeasures(categoriesSelected) {
+						$('#researchTitleHeading').hide();
+						$(xml).find('method').each(function() {
+							var methodId = $(this).attr("id");
+							var categoriesOfMethod = $(this).attr("category").split(',');
+							const makeVisible = categoriesOfMethod.every(elem => categoriesSelected.includes(elem));
+							if (makeVisible) {
+								$('#researchTitleHeading').show();
+								if (visibleMethodsBeforeUpdate[methodId] !== true) {
+									$('#accordion' + methodId).addClass('planner-accordion-reveal planner-accordion-highlight');
+									window.setTimeout(function(targetId) {
+										return function() {
+											$('#accordion' + targetId).removeClass('planner-accordion-reveal');
+										};
+									}(methodId), 420);
+									window.setTimeout(function(targetId) {
+										return function() {
+											$('#accordion' + targetId).removeClass('planner-accordion-highlight');
+										};
+									}(methodId), 2600);
+								}
+								if (revealScrollMode === "checkbox" && pendingScrollTarget === null && visibleMethodsBeforeUpdate[methodId] !== true) {
+									pendingScrollTarget = $('#accordion' + methodId);
+								}
+								$("#accordion" + methodId).show(animationTime);
+							} else {
+								$("#accordion" + methodId).hide(animationTime);
+							}
+						});
+
+						$(xml).find('options').each(function() {
+							if ($(this).attr("type") == "dropdown") {
+								var name = $(this).attr("id");
+								$(this).children().each(function() {
+									var attr = $(this).attr('notIf');
+									if (typeof attr !== typeof undefined && attr !== false) {
+										$('#' + name + 'Select option[value="' + $(this).attr("id") + '"]').attr("disabled", categoriesSelected.includes(attr));
+									}
+								});
+							}
+
+							if ($(this).attr("type") == "checkbox") {
+								$(this).children().each(function() {
+									var name = $(this).attr("id");
 									var attr = $(this).attr('onlyIf');
 									var alwaysOn = $(this).attr('alwaysOn');
-									if (typeof attr !== typeof undefined && attr !== false) {  
-										var exclude = !categoriesSelected.includes(attr)
-										$('#' + name + 'Checkbox').attr("disabled", exclude); 
-										if(exclude) {
-											$('#' + name + 'Checkbox').prop("checked", !exclude); 
-										}  
+									if (typeof attr !== typeof undefined && attr !== false) {
+										var exclude = !categoriesSelected.includes(attr);
+										$('#' + name + 'Checkbox').attr("disabled", exclude);
+										if (exclude) {
+											$('#' + name + 'Checkbox').prop("checked", !exclude);
+										}
 									}
-									
-									if (typeof alwaysOn !== typeof undefined && alwaysOn !== false && alwaysOn == "on") {   
-										$('#' + name + 'Checkbox').prop("checked", true);  
-										$('#' + name + 'Checkbox').attr("disabled", true);  
-									} 
-								});  
+
+									if (typeof alwaysOn !== typeof undefined && alwaysOn !== false && alwaysOn == "on") {
+										$('#' + name + 'Checkbox').prop("checked", true);
+										$('#' + name + 'Checkbox').attr("disabled", true);
+									}
+								});
 							}
-						});  
+						});
 					}
-						
-					$(xml).find('options').each(function() { 
-						if($(this).attr("type") == "dropdown"){
+
+					$(xml).find('options').each(function() {
+						if ($(this).attr("type") == "dropdown") {
 							var optionsItemsString = "<option value=''>Please select...</option>";
 							$(this).children().each(function() {
-								optionsItemsString += "<option value='" + $(this).attr("id") +"'>" + $(this).html() + "</option>"; 
-							}); 
-							
-							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="planner-field row g-3 mt-1 mb-1 align-items-start"><div class="col-12 col-md-5"><label class="planner-field-label" for="' + $(this).attr("id") + 'Select"><i class="bi bi-chevron-right"></i><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span></label></div><div class="col-12 col-md-7"><select class="form-control planner-select" id="' + $(this).attr("id") + 'Select" required>' + optionsItemsString + '</select></div></div>';
-							
+								optionsItemsString += "<option value='" + $(this).attr("id") + "'>" + $(this).html() + "</option>";
+							});
+
+							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="row mt-3 mb-3 planner-field-row"><div class="col-md-4"><label class="planner-field-label" for="' + $(this).attr("id") + 'Select"><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span></label></div><div class="col-md-8"><div class="planner-select-wrap"><i class="bi bi-chevron-down planner-input-icon"></i><select class="form-control planner-select" id="' + $(this).attr("id") + 'Select" required>' + optionsItemsString + '</select></div></div></div>';
+
 							$("#optioncontainer").append(optionsString);
-							
-							$('#' + $(this).attr("id") + 'Select').change(function(e){ 
+
+							$('#' + $(this).attr("id") + 'Select').change(function(e) {
+								revealScrollMode = isInitializing ? "none" : "dropdown";
+								pendingScrollTarget = null;
 								$(xml).find('options').each(function() {
 									$('#' + $(this).attr("id") + 'Row').hide();
-								}); 
-								showMethodsAndConcepts(startWithNode); 
-							}); 
+								});
+								showMethodsAndConcepts(startWithNode);
+							});
 						}
-						
-						if($(this).attr("type") == "checkbox"){
-							var optionsItemsString = ""; 
+
+						if ($(this).attr("type") == "checkbox") {
+							var optionsItemsString = "";
 							var filteredItems = [];
-							var targetItems = []; 
+							var targetItems = [];
 							var uniqueCategoriesOfMethod = [];
-							
+
 							$(xml).find('method').each(function() {
 								var allMethods = $(this).attr("category").split(',');
-								for(var item in allMethods){
-									uniqueCategoriesOfMethod.push(allMethods[item]);  
-								} 
-							});
-							
-							uniqueCategoriesOfMethod = unique(uniqueCategoriesOfMethod); 
-							 
-							$(this).children().each(function() { 
-								targetItems.push($(this).attr("id"));
-							});
-							filteredItems = uniqueCategoriesOfMethod.filter(elem => targetItems.includes(elem));							
-							
-							$(this).children().each(function() { 
-								if(filteredItems.includes($(this).attr("id"))){
-									optionsItemsString += '<div class="col-12 col-sm-6" id="' + $(this).attr("id") + 'Cell"><label class="planner-toggle" for="' + $(this).attr("id") + 'Checkbox"><span class="form-check form-switch mb-0"><input class="form-check-input" type="checkbox" id="' + $(this).attr("id") + 'Checkbox" ' + (($(this).attr("checked") == "on") ? "checked" : "") + ' ' + (($(this).attr("disabled") == "on") ? "disabled" : "") +  '></span><span class="planner-toggle-text">' + $(this).text() + '</span></label></div>'; 
+								for (var item in allMethods) {
+									uniqueCategoriesOfMethod.push(allMethods[item]);
 								}
 							});
-							
-							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="planner-field row g-3 mt-1 align-items-start"><div class="col-12 col-md-5"><div class="planner-field-label"><i class="bi bi-toggles2"></i><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span></div></div><div class="col-12 col-md-7"><div class="row g-2">' + optionsItemsString + '</div></div></div>'; 
+
+							uniqueCategoriesOfMethod = unique(uniqueCategoriesOfMethod);
+
+							$(this).children().each(function() {
+								targetItems.push($(this).attr("id"));
+							});
+							filteredItems = uniqueCategoriesOfMethod.filter(elem => targetItems.includes(elem));
+
+							$(this).children().each(function() {
+								if (filteredItems.includes($(this).attr("id"))) {
+									optionsItemsString += '<div class="col-12 col-sm-6 planner-toggle-option" id="' + $(this).attr("id") + 'Cell"><div class="form-check form-switch planner-switch"><input class="form-check-input" type="checkbox" id="' + $(this).attr("id") + 'Checkbox" ' + (($(this).attr("checked") == "on") ? "checked" : "") + ' ' + (($(this).attr("disabled") == "on") ? "disabled" : "") + '><label class="form-check-label planner-toggle-label" for="' + $(this).attr("id") + 'Checkbox">' + $(this).text() + '</label></div></div>';
+								}
+							});
+
+							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="row mt-3 planner-field-row planner-toggle-row"><div class="col-md-4"><div class="planner-field-label"><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span></div></div><div class="col-md-8"><div class="planner-toggle-group"><div class="row g-2 planner-toggle-grid">' + optionsItemsString + '</div></div></div></div>';
 							$("#optioncontainer").append(optionsString);
-							
-							$(this).children().each(function() { 
-								$('#' + $(this).attr("id") + 'Checkbox').change(function(e){ 
-									showMethodsAndConcepts(startWithNode); 
-								}); 
-							}); 
+
+							$(this).children().each(function() {
+								$('#' + $(this).attr("id") + 'Checkbox').change(function(e) {
+									revealScrollMode = isInitializing ? "none" : "checkbox";
+									pendingScrollTarget = null;
+									this.blur();
+									showMethodsAndConcepts(startWithNode);
+								});
+							});
 						}
 					});
-					
+
 					$("#btnExample").click(function(e) {
-						/*$("#typesSelect").val("literature").trigger("change");
-						$("#literaturereviewsSelect").val("narrative").trigger("change");*/
 						$("#typesSelect").val("summative").trigger("change");
 						$("#evidencesSelect").val("empirical").trigger("change");
 						$("#empiricaldecisionsSelect").val("qualitative").trigger("change");
@@ -293,19 +503,20 @@
 						$('#quantitativeCheckbox').prop('checked', true).trigger("change");
 						$('#qualitativeCheckbox').prop('checked', true).trigger("change");
 						$('#objectiveCheckbox').prop('checked', true).trigger("change");
-						// $('#subjectiveCheckbox').prop('checked', true).trigger("change");
+						$('#subjectiveCheckbox').prop('checked', true).trigger("change");
 						$('#performanceCheckbox').prop('checked', true).trigger("change");
-						$('#workloadCheckbox').prop('checked', true).trigger("change"); 
-						//$("#locationSelect").val("lab").trigger("change");
+						$('#workloadCheckbox').prop('checked', true).trigger("change");
+						$('#usabilityCheckbox').prop('checked', true).trigger("change");
 						e.preventDefault();
 					});
+
+					revealScrollMode = "none";
 					$("#typesSelect").trigger("change");
+					isInitializing = false;
 					animationTime = 1000;
-					//$("#btnExample").click();
 				}
-			}); 
+			});
 		});
-			 
 	</script>
- </body>
+</body>
 </html>
