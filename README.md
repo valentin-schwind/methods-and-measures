@@ -18,10 +18,16 @@ Methods and Measures is a browser-based decision aid within the HCI User Studies
 - `_img/` contains background and logo assets
 - `_icons/` contains the icon source package used in the project
 - `_fonts/` contains local font files for the shared toolkit styling
+- `downloads/` contains referenced questionnaires and supporting PDF resources
+- `.nojekyll` ensures GitHub Pages serves the `_css/`, `_js/`, `_img/`, `_icons/`, and `_fonts/` directories correctly
 
 ## Local usage
 
 Open `index.html` in a browser or serve the folder through a simple static web server. The page is fully client-side and reads its data from `methods.xml`.
+
+## Deployment note
+
+The published site depends on underscore-prefixed asset folders such as `_css/` and `_js/`. When deploying via GitHub Pages, keep `.nojekyll` in the repository root so these folders are not ignored by Jekyll during site generation.
 
 ## Maintaining the catalog
 
