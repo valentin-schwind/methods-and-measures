@@ -39,3 +39,23 @@ The published site depends on underscore-prefixed asset folders such as `_css/` 
 ## Scope
 
 The tool is intended as a quick orientation aid for HCI research planning. It helps users find an informed starting point, but it does not replace a full literature review or methodological supervision.
+
+## Citation
+
+If you want to adequately cite this work, please refer to [`HCIToolkit.bib`](HCIToolkit.bib) or use the following entry:
+
+```bibtex
+@inproceedings{schwind2023a,
+    author = {Schwind, Valentin and Resch, Stefan and Sehrt, Jessica},
+    title = {The HCI User Studies Toolkit: Supporting Study Designing and Planning for Undergraduates and Novice Researchers in Human-Computer Interaction},
+    year = {2023},
+    isbn = {978-1-4503-9422-2/23/04},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3544549.3585890},
+    doi = {10.1145/3544549.3585890},
+    booktitle = {Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems},
+    location = {Hamburg, Germany},
+    series = {CHI EA '23}
+}
+```
