@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hci-studies.org/methods-and-measures/sitemap.xml
