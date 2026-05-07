@@ -48,6 +48,7 @@
 		<option id="biases" onlyIf="objective">Bias</option>
 		<option id="bodyownership" onlyIf="subjective">Body Ownership</option>
 		<option id="collaboration">Collaboration</option>
+		<option id="creativity" onlyIf="subjective">Creativity</option>
 		<option id="emotions" onlyIf="subjective">Emotions</option>
 		<option id="empathy" onlyIf="subjective">Empathy</option>
 		<option id="explainability" onlyIf="subjective">Explainability</option>
@@ -409,10 +410,15 @@
 			<p><strong>Download (TAM3): </strong><a target="_blank" href="https://core.ac.uk/download/pdf/144826641.pdf">Technology Acceptance Model</a> (p. 313 - 314)</p>
 		</method>
 
-		<method id="utaut" category="empirical,quantitative,subjective,socialacceptance" title="Quantitative Subjective Social Acceptance: User Acceptance of Information Technology Model (UTAUT)">
+		<method id="utaut" category="empirical,quantitative,subjective,socialacceptance" title="Quantitative Subjective Social Acceptance: Unified Theory of Acceptance and Use of Technology (UTAUT)">
 			<p><strong>Description: </strong>Unified Theory of Acceptance and Use of Technology (UTAUT) is a model developed through a review of eight prominent models of user acceptance of information technology (IT). UTAUT was empirically validated using data from four organizations and found to outperform the eight individual models in explaining the variance in user intentions to use IT. UTAUT consists of four core determinants of intention and usage, and up to four moderators of key relationships, making it a useful tool for managers to assess the likelihood of success for new technology introductions and design interventions targeted at users who may be less inclined to adopt and use new systems. The paper also makes recommendations for future research.</p>
 			<p><strong>Source: </strong>Venkatesh V, Morris MG, Davis GB, Davis FD. User Acceptance of Information Technology: Toward a Unified View. MIS Quarterly. 2003;27(3):425-478. DOI: <a target="_blank" href="https://doi.org/10.2307/30036540">10.2307/30036540</a></p>  
 			<p><strong>Link: </strong><a target="_blank" href="https://en.wikipedia.org/wiki/Unified_theory_of_acceptance_and_use_of_technology">Wikipedia</a></p> 
+		</method>
+
+		<method id="utaut2" category="empirical,quantitative,subjective,socialacceptance" title="Quantitative Subjective Social Acceptance: Unified Theory of Acceptance and Use of Technology 2 (UTAUT2)">
+			<p><strong>Description: </strong>UTAUT2 extends the original UTAUT for consumer technology contexts. In addition to core acceptance factors such as performance expectancy, effort expectancy, social influence, and facilitating conditions, it adds constructs such as hedonic motivation, price value, and habit. In HCI, it is useful when researchers want to understand whether people are willing to adopt or continue using an interactive system, app, service, or digital product in everyday settings.</p>
+			<p><strong>Source: </strong>Venkatesh, V., Thong, J. Y. L., and Xu, X. (2012). Consumer Acceptance and Use of Information Technology: Extending the Unified Theory of Acceptance and Use of Technology. MIS Quarterly, 36(1), 157-178. DOI: <a target="_blank" href="https://doi.org/10.2307/41410412">10.2307/41410412</a></p>
 		</method>
 
 		<method id="imi" category="empirical,quantitative,subjective,motivation" title="Quantitative Subjective Motivation: Intrinsic Motivation Inventory (IMI)">
@@ -717,6 +723,31 @@
 		<method id="ues" category="empirical,quantitative,subjective,userexperience" title="Quantitative Subjective User Experience: User Engagement Scale (UES)">
 			<p><strong>Description: </strong>The User Engagement Scale measures the degree to which users are focused, involved, and absorbed during interaction. It is useful when engagement should be distinguished from general usability or overall satisfaction.</p>
 			<p><strong>Source (Original Concept): </strong>O'Brien, H. L., and Toms, E. G. (2010). The development and evaluation of a survey to measure user engagement. Journal of the American Society for Information Science and Technology, 61(1), 50-69. DOI: <a target="_blank" href="https://doi.org/10.1002/asi.21229">10.1002/asi.21229</a></p>
+		</method>
+
+		<method id="csi" category="empirical,quantitative,subjective,creativity" title="Quantitative Subjective Creativity: Creativity Support Index (CSI)">
+			<p><strong>Description: </strong>The Creativity Support Index (CSI) is a standardized self-report measure for evaluating how well an interactive system supports creative work. It captures dimensions such as exploration, expressiveness, immersion, enjoyment, collaboration, and whether the achieved results feel worth the effort. In HCI, it is especially useful for assessing creative tools, AI-assisted ideation systems, design applications, authoring environments, music tools, and other interfaces intended to support open-ended creation.</p>
+			<p><strong>Source: </strong>Cherry, E., and Latulipe, C. (2014). Quantifying the Creativity Support of Digital Tools through the Creativity Support Index. ACM Transactions on Computer-Human Interaction, 21(4), Article 21. DOI: <a target="_blank" href="https://doi.org/10.1145/2617588">10.1145/2617588</a></p>
+		</method>
+
+		<method id="cpss" category="empirical,quantitative,subjective,creativity" title="Quantitative Subjective Creativity: Creative Product Semantic Scale (CPSS)">
+			<p><strong>Description: </strong>The Creative Product Semantic Scale (CPSS) is a rating instrument for assessing the perceived creativity of products, ideas, concepts, or design outcomes. It is based on dimensions such as novelty, resolution, and elaboration and synthesis. In HCI, it is useful when researchers want to compare how creative alternative designs, generated concepts, artifacts, or AI-supported outputs appear to judges or participants.</p>
+			<p><strong>Source: </strong>O'Quin, K., and Besemer, S. P. (1989). The development, reliability, and validity of the revised Creative Product Semantic Scale. Creativity Research Journal, 2(4), 267-278. DOI: <a target="_blank" href="https://doi.org/10.1080/10400418909534323">10.1080/10400418909534323</a></p>
+		</method>
+
+		<method id="catcreativity" category="empirical,quantitative,subjective,creativity" title="Quantitative Subjective Creativity: Consensual Assessment Technique (CAT)">
+			<p><strong>Description: </strong>The Consensual Assessment Technique (CAT) evaluates creativity by asking appropriate judges or experts to rate the creativity of products, ideas, texts, sketches, designs, or other outputs. A product is considered creative to the extent that relevant observers agree that it is creative. In HCI, the CAT is useful when comparing the creativity of generated artifacts, design outcomes, concept sketches, writing, music, or other open-ended outputs produced with or without technological support.</p>
+			<p><strong>Source: </strong>Amabile, T. M. (1982). Social psychology of creativity: A consensual assessment technique. Journal of Personality and Social Psychology, 43(5), 997-1013. DOI: <a target="_blank" href="https://doi.org/10.1037/0022-3514.43.5.997">10.1037/0022-3514.43.5.997</a></p>
+		</method>
+
+		<method id="caq" category="empirical,quantitative,subjective,creativity" title="Quantitative Subjective Creativity: Creative Achievement Questionnaire (CAQ)">
+			<p><strong>Description: </strong>The Creative Achievement Questionnaire (CAQ) is a self-report measure of creative accomplishment across multiple domains such as visual arts, music, writing, humor, science, and invention. It is useful when researchers want to capture participants' prior creative achievements as a background characteristic, covariate, or outcome-related indicator in studies of creative technologies, ideation systems, or design tools.</p>
+			<p><strong>Source: </strong>Carson, S. H., Peterson, J. B., and Higgins, D. M. (2005). Reliability, validity, and factor structure of the Creative Achievement Questionnaire. Creativity Research Journal, 17(1), 37-50. DOI: <a target="_blank" href="https://doi.org/10.1207/s15326934crj1701_4">10.1207/s15326934crj1701_4</a></p>
+		</method>
+
+		<method id="creativeselfefficacy" category="empirical,quantitative,subjective,selfefficacy" title="Quantitative Subjective Self-Efficacy: Creative Self-Efficacy Scale">
+			<p><strong>Description: </strong>The Creative Self-Efficacy Scale measures the extent to which people believe they can produce creative outcomes. It is useful in HCI when studying creative confidence in relation to generative AI tools, design systems, educational technologies, authoring environments, or interfaces intended to support ideation and creative performance.</p>
+			<p><strong>Source: </strong>Tierney, P., and Farmer, S. M. (2002). Creative Self-Efficacy: Its Potential Antecedents and Relationship to Creative Performance. Academy of Management Journal, 45(6), 1137-1148. DOI: <a target="_blank" href="https://doi.org/10.5465/3069429">10.5465/3069429</a></p>
 		</method>
 
 		<method id="sam" category="empirical,quantitative,subjective,emotions" title="Quantitative Subjective Emotions: Self-Assessment Manikin (SAM)">
