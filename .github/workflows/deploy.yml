@@ -45,6 +45,14 @@ jobs:
             fi
           done
 
+          remote_path="${HCISTUDIES_REMOTE_PATH%/}"
+          expected_path="/hci-studies/methods-and-measures"
+
+          if [ "$remote_path" != "$expected_path" ]; then
+            echo "::error::HCISTUDIES_REMOTE_PATH must be '$expected_path' but is '$remote_path'"
+            exit 1
+          fi
+
       - name: Ensure remote directory exists
         run: |
           set -euo pipefail
