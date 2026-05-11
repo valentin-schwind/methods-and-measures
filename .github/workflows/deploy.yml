@@ -1,0 +1,72 @@
+name: Deploy to Webserver
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-webserver
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      HCISTUDIES_HOST: ${{ secrets.HCISTUDIES_HOST || vars.HCISTUDIES_HOST }}
+      HCISTUDIES_PASSWORD: ${{ secrets.HCISTUDIES_PASSWORD || vars.HCISTUDIES_PASSWORD }}
+      HCISTUDIES_PORT: ${{ secrets.HCISTUDIES_PORT || vars.HCISTUDIES_PORT }}
+      HCISTUDIES_REMOTE_PATH: ${{ secrets.HCISTUDIES_REMOTE_PATH || vars.HCISTUDIES_REMOTE_PATH }}
+      HCISTUDIES_USER: ${{ secrets.HCISTUDIES_USER || vars.HCISTUDIES_USER }}
+      SSHPASS: ${{ secrets.HCISTUDIES_PASSWORD || vars.HCISTUDIES_PASSWORD }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install deployment tools
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y rsync sshpass
+
+      - name: Validate deployment configuration
+        run: |
+          set -euo pipefail
+
+          for variable_name in HCISTUDIES_HOST HCISTUDIES_PASSWORD HCISTUDIES_PORT HCISTUDIES_REMOTE_PATH HCISTUDIES_USER; do
+            if [ -z "${!variable_name:-}" ]; then
+              echo "::error::${variable_name} is not configured"
+              exit 1
+            fi
+          done
+
+      - name: Ensure remote directory exists
+        run: |
+          set -euo pipefail
+
+          remote_path="${HCISTUDIES_REMOTE_PATH%/}"
+
+          sshpass -e ssh \
+            -p "$HCISTUDIES_PORT" \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            "$HCISTUDIES_USER@$HCISTUDIES_HOST" \
+            "mkdir -p \"$remote_path\""
+
+      - name: Sync files to webserver
+        run: |
+          set -euo pipefail
+
+          remote_path="${HCISTUDIES_REMOTE_PATH%/}"
+
+          rsync -az --delete \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            -e "sshpass -e ssh -p $HCISTUDIES_PORT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            ./ \
+            "$HCISTUDIES_USER@$HCISTUDIES_HOST:$remote_path/"
