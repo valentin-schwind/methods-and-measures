@@ -16,10 +16,9 @@ Methods and Measures is a browser-based decision aid within the HCI User Studies
 - `_css/` contains toolkit and vendor stylesheets
 - `_js/` contains vendor JavaScript dependencies used by the page
 - `_img/` contains background and logo assets
-- `_icons/` contains the icon source package used in the project
 - `_fonts/` contains local font files for the shared toolkit styling
 - `downloads/` contains referenced questionnaires and supporting PDF resources
-- `.nojekyll` ensures GitHub Pages serves the `_css/`, `_js/`, `_img/`, `_icons/`, and `_fonts/` directories correctly
+- `.nojekyll` ensures GitHub Pages serves the `_css/`, `_js/`, `_img/`, and `_fonts/` directories correctly
 
 ## Local usage
 
