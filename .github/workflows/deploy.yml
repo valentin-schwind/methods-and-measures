@@ -48,33 +48,37 @@ jobs:
           remote_path="${HCISTUDIES_REMOTE_PATH%/}"
           expected_path="/hci-studies/methods-and-measures"
 
+          if [ "${remote_path#*=}" != "$remote_path" ]; then
+            remote_path="${remote_path##*=}"
+            remote_path="$(printf '%s' "$remote_path" | xargs)"
+            echo "::warning::HCISTUDIES_REMOTE_PATH included an assignment-like prefix; normalized to '$remote_path'"
+          fi
+
           if [ "$remote_path" != "$expected_path" ]; then
             echo "::error::HCISTUDIES_REMOTE_PATH must be '$expected_path' but is '$remote_path'"
             exit 1
           fi
 
+          echo "DEPLOY_REMOTE_PATH=$remote_path" >> "$GITHUB_ENV"
+
       - name: Ensure remote directory exists
         run: |
           set -euo pipefail
-
-          remote_path="${HCISTUDIES_REMOTE_PATH%/}"
 
           sshpass -e ssh \
             -p "$HCISTUDIES_PORT" \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
             "$HCISTUDIES_USER@$HCISTUDIES_HOST" \
-            "mkdir -p \"$remote_path\""
+            "mkdir -p \"$DEPLOY_REMOTE_PATH\""
 
       - name: Sync files to webserver
         run: |
           set -euo pipefail
-
-          remote_path="${HCISTUDIES_REMOTE_PATH%/}"
 
           rsync -az --delete \
             --exclude='.git/' \
             --exclude='.github/' \
             -e "sshpass -e ssh -p $HCISTUDIES_PORT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
             ./ \
-            "$HCISTUDIES_USER@$HCISTUDIES_HOST:$remote_path/"
+            "$HCISTUDIES_USER@$HCISTUDIES_HOST:$DEPLOY_REMOTE_PATH/"
