@@ -65,20 +65,32 @@ jobs:
         run: |
           set -euo pipefail
 
-          sshpass -e ssh \
+          ssh_error_file="$(mktemp)"
+
+          if ! sshpass -e ssh \
             -p "$HCISTUDIES_PORT" \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
             "$HCISTUDIES_USER@$HCISTUDIES_HOST" \
-            "mkdir -p \"$DEPLOY_REMOTE_PATH\""
+            "mkdir -p \"$DEPLOY_REMOTE_PATH\"" 2>"$ssh_error_file"; then
+            ssh_error="$(tr '\n' ' ' < "$ssh_error_file" | xargs)"
+            echo "::error::SSH directory creation failed: $ssh_error"
+            exit 1
+          fi
 
       - name: Sync files to webserver
         run: |
           set -euo pipefail
 
-          rsync -az --delete \
+          rsync_error_file="$(mktemp)"
+
+          if ! rsync -az --delete \
             --exclude='.git/' \
             --exclude='.github/' \
             -e "sshpass -e ssh -p $HCISTUDIES_PORT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
             ./ \
-            "$HCISTUDIES_USER@$HCISTUDIES_HOST:$DEPLOY_REMOTE_PATH/"
+            "$HCISTUDIES_USER@$HCISTUDIES_HOST:$DEPLOY_REMOTE_PATH/" 2>"$rsync_error_file"; then
+            rsync_error="$(tr '\n' ' ' < "$rsync_error_file" | xargs)"
+            echo "::error::Rsync deployment failed: $rsync_error"
+            exit 1
+          fi
