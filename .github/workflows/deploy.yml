@@ -26,7 +26,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install deployment tools
         run: |
@@ -61,23 +61,6 @@ jobs:
 
           echo "DEPLOY_REMOTE_PATH=$remote_path" >> "$GITHUB_ENV"
 
-      - name: Ensure remote directory exists
-        run: |
-          set -euo pipefail
-
-          ssh_error_file="$(mktemp)"
-
-          if ! sshpass -e ssh \
-            -p "$HCISTUDIES_PORT" \
-            -o StrictHostKeyChecking=no \
-            -o UserKnownHostsFile=/dev/null \
-            "$HCISTUDIES_USER@$HCISTUDIES_HOST" \
-            "mkdir -p \"$DEPLOY_REMOTE_PATH\"" 2>"$ssh_error_file"; then
-            ssh_error="$(tr '\n' ' ' < "$ssh_error_file" | xargs)"
-            echo "::error::SSH directory creation failed: $ssh_error"
-            exit 1
-          fi
-
       - name: Sync files to webserver
         run: |
           set -euo pipefail
@@ -85,11 +68,12 @@ jobs:
           rsync_error_file="$(mktemp)"
 
           if ! rsync -az --delete \
+            --mkpath \
             --exclude='.git/' \
             --exclude='.github/' \
-            -e "sshpass -e ssh -p $HCISTUDIES_PORT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            -e "sshpass -e ssh -p $HCISTUDIES_PORT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=ERROR -o PreferredAuthentications=password -o PubkeyAuthentication=no -o NumberOfPasswordPrompts=1" \
             ./ \
-            "$HCISTUDIES_USER@$HCISTUDIES_HOST:$DEPLOY_REMOTE_PATH/" 2>"$rsync_error_file"; then
+            "$HCISTUDIES_USER@$HCISTUDIES_HOST:$DEPLOY_REMOTE_PATH/" >"$rsync_error_file" 2>&1; then
             rsync_error="$(tr '\n' ' ' < "$rsync_error_file" | xargs)"
             echo "::error::Rsync deployment failed: $rsync_error"
             exit 1
