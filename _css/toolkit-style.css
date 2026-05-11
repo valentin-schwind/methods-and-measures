@@ -128,10 +128,19 @@ h3 {
 	border-bottom: 1px solid #dee2e6;
 }
 
-.section-heading h2 i,
-.resource-text h3 i,
-.form-label-column i {
+.section-heading h2 .ui-icon,
+.resource-text h3 .ui-icon,
+.form-label-column .ui-icon {
 	color: #0d6efd;
+}
+
+.ui-icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	flex: 0 0 auto;
+	vertical-align: -0.125em;
+	color: currentColor;
 }
 
 .section-intro {
@@ -270,6 +279,7 @@ h3 {
 	transform: translateY(-50%);
 	color: #6b7280;
 	pointer-events: none;
+	font-size: 1rem;
 }
 
 .planner-select {

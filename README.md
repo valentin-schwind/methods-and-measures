@@ -15,7 +15,7 @@ Methods and Measures is a browser-based decision aid within the HCI User Studies
 - `methods.xml` contains the decision structure as well as the method and measure entries
 - `_css/` contains toolkit and vendor stylesheets
 - `_js/` contains vendor JavaScript dependencies used by the page
-- `_img/` contains background and logo assets
+- `_img/` contains background, logo assets, and the custom SVG icon sprite
 - `_fonts/` contains local font files for the shared toolkit styling
 - `downloads/` contains referenced questionnaires and supporting PDF resources
 - `.nojekyll` ensures GitHub Pages serves the `_css/`, `_js/`, `_img/`, and `_fonts/` directories correctly

@@ -12,7 +12,6 @@
 
 	<link rel="stylesheet" href="_css/bootstrap.min.css">
 	<link rel="stylesheet" href="_css/bootstrap-table.min.css">
-	<link rel="stylesheet" href="_css/bootstrap-icons.css">
 	<link rel="stylesheet" href="_css/toolkit-style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -139,7 +138,7 @@
 
 						<section class="content-section">
 							<div class="section-heading">
-								<h2><i class="bi bi-ui-checks-grid me-2"></i>Selection</h2>
+								<h2><svg class="ui-icon me-2" aria-hidden="true"><use href="_img/ui-icons.svg#checks-grid"></use></svg>Selection</h2>
 							</div>
 							<p class="section-intro">
 								Select the relevant properties of your study to identify appropriate methods and measures.
@@ -154,7 +153,7 @@
 
 						<section class="content-section">
 							<div class="section-heading">
-								<h2><i class="bi bi-search me-2"></i>About This HCI Method Finder</h2>
+								<h2><svg class="ui-icon me-2" aria-hidden="true"><use href="_img/ui-icons.svg#search"></use></svg>About This HCI Method Finder</h2>
 							</div>
 							<p class="section-intro">
 								Methods and Measures helps you discover suitable HCI research methods, UX questionnaires, and standardized measures for user studies, usability evaluations, and interaction research.
@@ -179,7 +178,7 @@
 
 						<section id="accordions" class="content-section">
 							<div class="section-heading">
-								<h2 id="researchTitleHeading"><i class="bi bi-journal-text me-2"></i><span id="researchTitle"></span></h2>
+								<h2 id="researchTitleHeading"><svg class="ui-icon me-2" aria-hidden="true"><use href="_img/ui-icons.svg#journal-text"></use></svg><span id="researchTitle"></span></h2>
 							</div>
 							<p class="section-intro">
 								Relevant methods and measures based on the selected criteria.
@@ -192,7 +191,7 @@
 							<div class="resource-list mt-3">
 								<div class="resource-item">
 									<div class="resource-text">
-										<h3><i class="bi bi-magic me-2"></i>Example Configuration</h3>
+										<h3><svg class="ui-icon me-2" aria-hidden="true"><use href="_img/ui-icons.svg#magic"></use></svg>Example Configuration</h3>
 										<p>Populate the form with a sample configuration.</p>
 									</div>
 									<div class="resource-actions">
@@ -204,7 +203,7 @@
 
 						<section class="content-section">
 							<div class="section-heading">
-								<h2><i class="bi bi-github me-2"></i>Source Code</h2>
+								<h2><svg class="ui-icon me-2" aria-hidden="true"><use href="_img/ui-icons.svg#github"></use></svg>Source Code</h2>
 							</div>
 							<p class="section-intro">
 								Project repository and contact information for suggestions.
@@ -229,7 +228,7 @@
 
 						<section class="content-section">
 							<div class="section-heading">
-								<h2><i class="bi bi-patch-question me-2"></i>FAQ</h2>
+								<h2><svg class="ui-icon me-2" aria-hidden="true"><use href="_img/ui-icons.svg#patch-question"></use></svg>FAQ</h2>
 							</div>
 							<div class="resource-list">
 								<div class="resource-item">
@@ -368,7 +367,7 @@
 					});
 
 					function generateAccordionItem(id, title, content) {
-						return '<div class="accordion-item planner-accordion-item" id="accordion' + id + '"><h2 class="accordion-header"><button class="accordion-button collapsed planner-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + id + '" aria-expanded="false" aria-controls="collapse' + id + '"><i class="bi bi-journal-richtext me-2"></i><span>' + title + '</span></button></h2><div id="collapse' + id + '" class="accordion-collapse collapse"><div class="accordion-body planner-accordion-body">' + content + '</div></div></div>';
+						return '<div class="accordion-item planner-accordion-item" id="accordion' + id + '"><h2 class="accordion-header"><button class="accordion-button collapsed planner-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + id + '" aria-expanded="false" aria-controls="collapse' + id + '"><svg class="ui-icon me-2" aria-hidden="true"><use href="_img/ui-icons.svg#journal-richtext"></use></svg><span>' + title + '</span></button></h2><div id="collapse' + id + '" class="accordion-collapse collapse"><div class="accordion-body planner-accordion-body">' + content + '</div></div></div>';
 					}
 
 					var methodString = "";
@@ -579,7 +578,7 @@
 								optionsItemsString += "<option value='" + $(this).attr("id") + "'>" + $(this).html() + "</option>";
 							});
 
-							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="row mt-3 mb-3 planner-field-row"><div class="col-md-4"><label class="planner-field-label" for="' + $(this).attr("id") + 'Select"><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span></label></div><div class="col-md-8"><div class="planner-select-wrap"><i class="bi bi-chevron-down planner-input-icon"></i><select class="form-control planner-select" id="' + $(this).attr("id") + 'Select" required>' + optionsItemsString + '</select></div></div></div>';
+							var optionsString = '<div id="' + $(this).attr("id") + 'Row" class="row mt-3 mb-3 planner-field-row"><div class="col-md-4"><label class="planner-field-label" for="' + $(this).attr("id") + 'Select"><span id="' + $(this).attr("id") + 'Text">' + $(this).attr("question") + '</span><span class="text-danger">*</span></label></div><div class="col-md-8"><div class="planner-select-wrap"><svg class="ui-icon planner-input-icon" aria-hidden="true"><use href="_img/ui-icons.svg#chevron-down"></use></svg><select class="form-control planner-select" id="' + $(this).attr("id") + 'Select" required>' + optionsItemsString + '</select></div></div></div>';
 
 							$("#optioncontainer").append(optionsString);
 
