@@ -46,7 +46,7 @@ jobs:
           done
 
           configured_path="${HCISTUDIES_REMOTE_PATH%/}"
-          expected_path="methods-and-measures"
+          expected_path="/hci-studies/methods-and-measures"
 
           if [ "${configured_path#*=}" != "$configured_path" ]; then
             configured_path="${configured_path##*=}"
@@ -54,11 +54,10 @@ jobs:
             echo "::warning::HCISTUDIES_REMOTE_PATH included an assignment-like prefix; normalized to '$configured_path'"
           fi
 
-          remote_path="${configured_path#/}"
-          remote_path="${remote_path##*/}"
+          remote_path="$configured_path"
 
           if [ "$remote_path" != "$expected_path" ]; then
-            echo "::error::HCISTUDIES_REMOTE_PATH must resolve to '$expected_path' but is '$remote_path'"
+            echo "::error::HCISTUDIES_REMOTE_PATH must be '$expected_path' but is '$remote_path'"
             exit 1
           fi
 
