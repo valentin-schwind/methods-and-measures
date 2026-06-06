@@ -235,6 +235,59 @@ h3 {
 	white-space: normal;
 }
 
+/* Citation box (design ported from the Statistical Decision Tree) */
+.source-box,
+.citation-box {
+	padding: 0.25rem 0;
+}
+
+.citation-resource {
+	align-items: flex-start;
+}
+
+.source-box p,
+.citation-box p {
+	margin-bottom: 0.85rem;
+}
+
+.citation-heading-icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.125em;
+	margin-right: 0.45rem;
+}
+
+.citation-copy {
+	display: block;
+	padding: 0.95rem 1rem;
+	border-radius: 14px;
+	background: #f5ecd3;
+	border: 1px solid #e4d5b0;
+	border-left: 4px solid #b8860b;
+	white-space: normal;
+	color: #374151;
+}
+
+.citation-actions {
+	margin-top: 12px;
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.citation-copy-btn.btn {
+	font-size: 0.85rem;
+	color: #8a6508;
+	background: transparent;
+	border: 1px solid #b8860b;
+}
+
+.citation-copy-btn.btn:hover,
+.citation-copy-btn.btn:focus {
+	background: #b8860b;
+	color: #fff;
+}
+
 .planner-field-row {
 	align-items: center;
 }
