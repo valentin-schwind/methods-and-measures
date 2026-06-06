@@ -41,7 +41,7 @@ The tool is intended as a quick orientation aid for HCI research planning. It he
 
 ## Citation
 
-If you want to adequately cite this work, please refer to [`HCIToolkit.bib`](HCIToolkit.bib) or use the following entry:
+If you want to adequately cite this work, please refer to [`HCIToolkit.bib`](HCIToolkit.bib), [`CITATION.cff`](CITATION.cff), or use the following entry:
 
 ```bibtex
 @inproceedings{schwind2023a,
