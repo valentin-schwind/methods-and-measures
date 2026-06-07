@@ -1480,7 +1480,20 @@
   year = {1988},
   note = {Hart, Sandra G.; Staveland, Lowell E. (1988). Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research. In Hancock, Peter A.; Meshkati, Najmedin (eds.). Human Mental Workload. Advances in Psychology. Vol. 52. Amsterdam: North Holland. pp. 139-183. DOI:10.1016/S0166-4115(08)62386-9.}
 }</div></div>
-			<p><strong>Follow-Up Source: </strong>Hart, Sandra G. (October 2006). NASA-task load index (NASA-TLX); 20 years later. In Proceedings of the human factors and ergonomics society annual meeting (Vol. 50, No. 9, pp. 904-908). Sage CA: Los Angeles, CA: Sage publications. DOI:<a href='https://humansystems.arc.nasa.gov/groups/TLX/downloads/HFES_2006_Paper.pdf' target='_blank'>10.1016/S0166-4115(08)62386-9</a>.</p>
+			<div class="method-citation"><div class="citation-copy"><strong>Follow-Up Source: </strong>Hart, Sandra G. (October 2006). NASA-task load index (NASA-TLX); 20 years later. In Proceedings of the human factors and ergonomics society annual meeting (Vol. 50, No. 9, pp. 904-908). Sage CA: Los Angeles, CA: Sage publications. DOI:<a href='https://humansystems.arc.nasa.gov/groups/TLX/downloads/HFES_2006_Paper.pdf' target='_blank'>10.1177/154193120605000909</a>.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Hart, Sandra G. (October 2006). NASA-task load index (NASA-TLX); 20 years later. In Proceedings of the human factors and ergonomics society annual meeting (Vol. 50, No. 9, pp. 904-908). Sage CA: Los Angeles, CA: Sage publications. DOI:10.1177/154193120605000909.</div><div class="cite-data-bibtex" style="display:none">@article{Hart_2006,
+  title={Nasa-Task Load Index (NASA-TLX); 20 Years Later},
+  volume={50},
+  ISSN={2169-5067},
+  url={http://dx.doi.org/10.1177/154193120605000909},
+  DOI={10.1177/154193120605000909},
+  number={9},
+  journal={Proceedings of the Human Factors and Ergonomics Society Annual Meeting},
+  publisher={SAGE Publications},
+  author={Hart, Sandra G.},
+  year={2006},
+  month=Oct,
+  pages={904–908}
+}</div></div>
 			<p><strong>Downloads: </strong><a target='_blank' href="https://humansystems.arc.nasa.gov/groups/tlx/downloads/TLXScale.pdf">PDF</a>, <a target='_blank' href="https://www.keithv.com/software/nasatlx/">Online Version</a>, <a target='_blank' href="https://humansystems.arc.nasa.gov/groups/tlx/tlxapp.php">Apps for iOS and Android</a>
 			</p> 
 			<p><strong>Link: </strong><a href='https://en.wikipedia.org/wiki/NASA-TLX' target='_blank'>Wikipedia</a></p>
@@ -1785,9 +1798,46 @@
 		
 		<method id="fittslaw" category="empirical,quantitative,objective,performance,randomsample" title="Quantitative Objective Performance: Fitts' Law (Throughput)">
 			<p><strong>Description: </strong>Fitts' law states that the amount of time required for a person to move a pointer (e.g., mouse cursor) to a target area is a function of the distance to the target divided by the size of the target. Thus, the longer the distance and the smaller the target's size, the longer it takes. According to Fitts' law, human movement can be modeled by analogy to the transmission of information denoted as throughput in bits/s. Fitts' popular model has been widely adopted in numerous research areas, including kinematics, human factors, and human-computer interaction (HCI).</p>
-			<p><strong>1D Fitts' law task:</strong> MacKenzie, I. S. (1992). Fitts' law as a research and design tool in human-computer interaction. Human-computer interaction, 7(1), 91-139. DOI: <a href="https://www.tandfonline.com/doi/abs/10.1207/s15327051hci0701_3" target='_blank'>https://doi.org/10.1207/s15327051hci0701_3</a></p>
-			<p><strong>2D Fitts' law task:</strong> MacKenzie, I. S., and Buxton, W. (1992, June). Extending Fitts' law to two-dimensional tasks. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 219-226). <a href='https://doi.org/10.1145/142750.142794' target='_blank'>https://doi.org/10.1145/142750.142794</a></p>
-			<p><strong>3D Fitts' law task:</strong> Cha, Y., and Myung, R. (2013). Extended Fitts' law for 3D pointing tasks using 3D target arrangements. International Journal of Industrial Ergonomics, 43(4), 350-355. <a href='https://doi.org/10.1016/j.ergon.2013.05.005' target='_blank'>https://doi.org/10.1016/j.ergon.2013.05.005</a></p>
+			<div class="method-citation"><div class="citation-copy"><strong>1D Fitts' law task: </strong>MacKenzie, I. S. (1992). Fitts' law as a research and design tool in human-computer interaction. Human-computer interaction, 7(1), 91-139. DOI: <a href="https://www.tandfonline.com/doi/abs/10.1207/s15327051hci0701_3" target='_blank'>https://doi.org/10.1207/s15327051hci0701_3</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">MacKenzie, I. S. (1992). Fitts' law as a research and design tool in human-computer interaction. Human-computer interaction, 7(1), 91-139. DOI: https://doi.org/10.1207/s15327051hci0701_3</div><div class="cite-data-bibtex" style="display:none">@article{MacKenzie_1992,
+  title={Fitts’ Law as a Research and Design Tool in Human-Computer Interaction},
+  volume={7},
+  ISSN={1532-7051},
+  url={http://dx.doi.org/10.1207/s15327051hci0701_3},
+  DOI={10.1207/s15327051hci0701_3},
+  number={1},
+  journal={Human–Computer Interaction},
+  publisher={Informa UK Limited},
+  author={MacKenzie, I. Scott},
+  year={1992},
+  month=Mar,
+  pages={91–139}
+}</div></div>
+			<div class="method-citation"><div class="citation-copy"><strong>2D Fitts' law task: </strong>MacKenzie, I. S., and Buxton, W. (1992, June). Extending Fitts' law to two-dimensional tasks. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 219-226). <a href='https://doi.org/10.1145/142750.142794' target='_blank'>https://doi.org/10.1145/142750.142794</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">MacKenzie, I. S., and Buxton, W. (1992, June). Extending Fitts' law to two-dimensional tasks. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 219-226). https://doi.org/10.1145/142750.142794</div><div class="cite-data-bibtex" style="display:none">@inproceedings{MacKenzie_1992,
+  series={CHI ’92},
+  title={Extending Fitts’ law to two-dimensional tasks},
+  url={http://dx.doi.org/10.1145/142750.142794},
+  DOI={10.1145/142750.142794},
+  booktitle={Proceedings of the SIGCHI conference on Human factors in computing systems  - CHI ’92},
+  publisher={ACM Press},
+  author={MacKenzie, I. Scott and Buxton, William},
+  year={1992},
+  pages={219–226},
+  collection={CHI ’92}
+}</div></div>
+			<div class="method-citation"><div class="citation-copy"><strong>3D Fitts' law task: </strong>Cha, Y., and Myung, R. (2013). Extended Fitts' law for 3D pointing tasks using 3D target arrangements. International Journal of Industrial Ergonomics, 43(4), 350-355. <a href='https://doi.org/10.1016/j.ergon.2013.05.005' target='_blank'>https://doi.org/10.1016/j.ergon.2013.05.005</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Cha, Y., and Myung, R. (2013). Extended Fitts' law for 3D pointing tasks using 3D target arrangements. International Journal of Industrial Ergonomics, 43(4), 350-355. https://doi.org/10.1016/j.ergon.2013.05.005</div><div class="cite-data-bibtex" style="display:none">@article{Cha_2013,
+  title={Extended Fitts’ law for 3D pointing tasks using 3D target arrangements},
+  volume={43},
+  ISSN={0169-8141},
+  url={http://dx.doi.org/10.1016/j.ergon.2013.05.005},
+  DOI={10.1016/j.ergon.2013.05.005},
+  number={4},
+  journal={International Journal of Industrial Ergonomics},
+  publisher={Elsevier BV},
+  author={Cha, Yeonjoo and Myung, Rohae},
+  year={2013},
+  month=July,
+  pages={350–355}
+}</div></div>
 <div class="method-citation"><div class="citation-copy">Soukoreff, R. W., &amp; MacKenzie, I. S. (2004). Towards a standard for pointing device evaluation, perspectives on 27 years of Fitts' law research in HCI. International Journal of Human-Computer Studies, 61(6), 751-789. DOI: <a href='https://doi.org/10.1016/j.ijhcs.2004.09.001' target='_blank'>10.1016/j.ijhcs.2004.09.001</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Soukoreff, R. W., &amp; MacKenzie, I. S. (2004). Towards a standard for pointing device evaluation, perspectives on 27 years of Fitts' law research in HCI. International Journal of Human-Computer Studies, 61(6), 751-789. DOI: 10.1016/j.ijhcs.2004.09.001</div><div class="cite-data-bibtex" style="display:none">@article{Soukoreff_2004,
   title={Towards a standard for pointing device evaluation, perspectives on 27 years of Fitts’ law research in HCI},
   volume={61},
