@@ -324,7 +324,10 @@ series = {CHI EA '23}
 				type: "GET",
 				url: "methods.xml",
 				dataType: "xml",
-				contentType: "application/x-javascript; charset:ISO-8859-1",
+				error: function(jqXHR, textStatus, errorThrown) {
+					$('#researchTitleHeading').hide();
+					$('#accordionContent').html('<div class="alert alert-danger" role="alert">Sorry, the methods catalogue could not be loaded (' + (textStatus || 'error') + '). Please reload the page, and if the problem persists try again later.</div>');
+				},
 				success: function(xml) {
 					$('#researchTitle').html($(xml).find('research').attr("title"));
 					$('#description').html($(xml).find('research').attr("description"));
