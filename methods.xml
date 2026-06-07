@@ -271,7 +271,7 @@
   year={2014},
   pages={21–34}
 }</div></div>
-			<p><strong>Link:</strong> <a href="https://www.nngroup.com/articles/diary-studies/" target="_blank">Nielsen Norman Group</a></p> 
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Experience_sampling_method" target='_blank'>Wikipedia</a></p> 
 		</method>
 
 		<method id="scnearioofuse" category="empirical,single" title="Qualitative Investigation: Scenario of Use / Case Study / Use Case Study">
@@ -286,7 +286,7 @@
   year={2000},
   month=Aug
 }</div></div>
-			<p><strong>Link:</strong> <a href="https://www.nngroup.com/articles/quantifying-case-study/" target="_blank">Nielsen Norman Group</a></p>			
+			<p><strong>Link: </strong><a href="https://direct.mit.edu/books/monograph/1900/Making-UseScenario-Based-Design-of-Human-Computer" target='_blank'>Primary source (MIT Press)</a></p>			
 		</method>
 
 		<method id="postinterview" category="empirical,qualitative,subjective,randomsample" title="Qualitative Feedback: Semi-Structured Interview">
@@ -593,7 +593,7 @@
   year = {2008},
   note = {Rubin, J., &amp; Chisnell, D. (2008). Handbook of Usability Testing: How to Plan, Design, and Conduct Effective Tests (2nd ed.). Indianapolis, IN: Wiley. ISBN 978-0-470-18548-3.}
 }</div></div>
-			<p><strong>Link:</strong> <a href="https://www.nngroup.com/articles/benchmarking-ux/" target="_blank">Nielsen Norman Group</a></p>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Usability_testing" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="remoteevaluation" category="formative,empirical,problems,experts" title="Usability Inspection by Users: Remote Evaluation">
@@ -1910,7 +1910,7 @@
   year = {2018},
   note = {International Organization for Standardization (2018). ISO 9241-11:2018 - Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts. Geneva: ISO. [online]}
 }</div></div>
-			<p><strong>Link:</strong> <a href='https://www.nngroup.com/articles/usability-metrics/' target='_blank'>Nielsen Norman Group</a></p> 
+			<p><strong>Link: </strong><a href="https://www.iso.org/standard/63500.html" target='_blank'>ISO 9241-11</a></p> 
 		</method>
 		
 		<method id="iat" category="summative,empirical,quantitative,objective,biases" title="Quantitative Objective Bias: Implicit Association Test (IAT)">
@@ -2275,7 +2275,7 @@
   pages={424–433},
   collection={DIS00}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://servicedesigntools.org/tools/experience-prototypes" target='_blank'>Service Design Tools</a></p>
+			<p><strong>Link: </strong><a href="https://dl.acm.org/doi/10.1145/347642.347802" target='_blank'>Primary source (ACM)</a></p>
 		</method>
 
 		<method id="wizardofoz" category="formative,solutions,prototype" title="Prototyping Method: Wizard of Oz (WoZ)">
@@ -2311,7 +2311,7 @@
   month=Dec,
   pages={1153–1170}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://www.usabilityfirst.com/glossary/co-discovery-method/index.html" target='_blank'>Glossary</a></p>
+			<p><strong>Link: </strong><a href="https://onlinelibrary.wiley.com/doi/10.1207/s15516709cog1002_2" target='_blank'>Primary source (Miyake 1986)</a></p>
 		</method>
 
 		<method id="suspresence" category="empirical,quantitative,subjective,presence" title="Quantitative Subjective Presence: Slater-Usoh-Steed Presence Questionnaire (SUS Presence)">
@@ -3164,7 +3164,7 @@
   year = {2018},
   note = {International Organization for Standardization (2018). ISO 9241-11:2018 - Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts. Geneva: ISO.}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/" target='_blank'>Nielsen Norman Group</a></p>
+			<p><strong>Link: </strong><a href="https://www.iso.org/standard/63500.html" target='_blank'>ISO 9241-11</a></p>
 		</method>
 		<method id="lostness" category="empirical,quantitative,objective,performance" title="Quantitative Objective Performance: Lostness / Navigation Efficiency">
 			<p><strong>Description: </strong>Deviation of a user's node/page path from the optimal path, quantifying disorientation during navigation.</p>
@@ -3182,7 +3182,7 @@
   month=Dec,
   pages={365–381}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://measuringu.com/lostness/" target='_blank'>MeasuringU</a></p>
+			<p><strong>Link: </strong><a href="https://academic.oup.com/iwc/article/8/4/365/686010" target='_blank'>Primary source</a></p>
 		</method>
 		<method id="learnability" category="empirical,quantitative,objective,performance" title="Quantitative Objective Performance: Software Learnability / Learning Curve">
 			<p><strong>Description: </strong>Change in performance (time, errors, success) across repeated trials, capturing initial and extended learnability of an interface.</p>
@@ -3199,7 +3199,6 @@
   pages={649–658},
   collection={CHI ’09}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://www.nngroup.com/articles/measure-learnability/" target='_blank'>Nielsen Norman Group</a></p>
 		</method>
 		<method id="mousedynamics" category="empirical,quantitative,objective,performance" title="Quantitative Objective Performance: Mouse / Cursor Movement Tracking">
 			<p><strong>Description: </strong>Logged cursor trajectories, speed, hovers and pauses used to infer attention, hesitation and usability problems.</p>
@@ -3277,7 +3276,6 @@
   pages={1599–1608},
   collection={CHI ’09}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://measuringu.com/seq10/" target='_blank'>MeasuringU</a></p>
 		</method>
 		<method id="umuxlite" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: UMUX-LITE">
 			<p><strong>Description: </strong>Two-item perceived-usability scale (usefulness + ease of use) that corresponds closely to the SUS.</p>
@@ -3294,7 +3292,6 @@
   pages={2099–2102},
   collection={CHI ’13}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://measuringu.com/umux-lite/" target='_blank'>MeasuringU</a></p>
 		</method>
 		<method id="pssuq" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: PSSUQ / CSUQ">
 			<p><strong>Description: </strong>16-item post-study usability questionnaire (CSUQ is the survey-reworded variant) covering system usefulness, information and interface quality.</p>
@@ -3312,7 +3309,6 @@
   month=Jan,
   pages={57–78}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://measuringu.com/pssuq/" target='_blank'>MeasuringU</a></p>
 		</method>
 		<method id="suprq" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: SUPR-Q">
 			<p><strong>Description: </strong>8-item website-quality measure spanning usability, trust/credibility, appearance and loyalty, scored as a percentile.</p>
@@ -3322,7 +3318,7 @@
   year = {2015},
   note = {Sauro, J. (2015). SUPR-Q: A comprehensive measure of the quality of the website user experience. Journal of Usability Studies, 10(2), 68-86.}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://measuringu.com/product/suprq/" target='_blank'>MeasuringU</a></p>
+			<p><strong>Link: </strong><a href="https://uxpajournal.org/supr-q-a-comprehensive-measure-of-the-quality-of-the-website-user-experience/" target='_blank'>Primary source (open access)</a></p>
 		</method>
 		<method id="ueqs" category="empirical,quantitative,subjective,userexperience" title="Quantitative Subjective User Experience: User Experience Questionnaire - Short (UEQ-S)">
 			<p><strong>Description: </strong>8-item semantic-differential short form of the UEQ measuring pragmatic and hedonic quality.</p>
@@ -3888,7 +3884,6 @@
   month=June,
   pages={257–263}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://www.worldtransitresearch.info/research/6064/" target='_blank'>Record</a></p>
 		</method>
 		<method id="sna" category="empirical,quantitative,objective,collaboration" title="Quantitative Objective Collaboration: Social Network Analysis (SNA)">
 			<p><strong>Description: </strong>Graph-theoretic analysis of interaction/communication ties to quantify group structure, centrality and cohesion.</p>
