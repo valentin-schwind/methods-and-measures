@@ -593,7 +593,7 @@
   year = {2008},
   note = {Rubin, J., &amp; Chisnell, D. (2008). Handbook of Usability Testing: How to Plan, Design, and Conduct Effective Tests (2nd ed.). Indianapolis, IN: Wiley. ISBN 978-0-470-18548-3.}
 }</div></div>
-			<p><strong>Link:</strong> <a href="https://about.gitlab.com/handbook/engineering/ux/ux-research-training/usability-benchmarking" target="_blank">gitlab.com</a></p>
+			<p><strong>Link:</strong> <a href="https://www.nngroup.com/articles/benchmarking-ux/" target="_blank">Nielsen Norman Group</a></p>
 		</method>
 
 		<method id="remoteevaluation" category="formative,empirical,problems,experts" title="Usability Inspection by Users: Remote Evaluation">
@@ -1910,7 +1910,7 @@
   year = {2018},
   note = {International Organization for Standardization (2018). ISO 9241-11:2018 - Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts. Geneva: ISO. [online]}
 }</div></div>
-			<p><strong>Link:</strong> <a href='https://en.wikipedia.org/wiki/Time_to_completion' target='_blank'>Wikipedia</a></p> 
+			<p><strong>Link:</strong> <a href='https://www.nngroup.com/articles/usability-metrics/' target='_blank'>Nielsen Norman Group</a></p> 
 		</method>
 		
 		<method id="iat" category="summative,empirical,quantitative,objective,biases" title="Quantitative Objective Bias: Implicit Association Test (IAT)">
@@ -3394,7 +3394,6 @@
   month=Jan,
   pages={1–15}
 }</div></div>
-			<p><strong>Link: </strong><a href="https://www.zora.uzh.ch/id/eprint/133475/" target='_blank'>Repository (UZH)</a></p>
 		</method>
 		<method id="jennettieq" category="empirical,quantitative,subjective,immersion" title="Quantitative Subjective Immersion: Immersion in Games (Jennett IEQ)">
 			<p><strong>Description: </strong>31-item single-session game immersion measure spanning cognitive/emotional involvement, real-world dissociation, challenge and control.</p>
