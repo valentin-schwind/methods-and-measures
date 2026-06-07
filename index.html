@@ -370,7 +370,7 @@ series = {CHI EA '23}
 							return;
 						}
 						seenMethodIds[methodId] = true;
-						methodArray.push([$(this).attr("title"), $(this).attr("id"), $(this).html()]);
+						methodArray.push([$(this).attr("title"), $(this).attr("id"), $(this).html(), $(this).attr("category") || ""]);
 					});
 					methodArray = methodArray.sort(function(a, b) {
 						return a[0] > b[0] ? 1 : -1;
@@ -380,13 +380,36 @@ series = {CHI EA '23}
 						return '<div class="accordion-item planner-accordion-item" id="accordion' + id + '"><h2 class="accordion-header"><button class="accordion-button collapsed planner-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + id + '" aria-expanded="false" aria-controls="collapse' + id + '"><svg class="ui-icon me-2" aria-hidden="true"><use href="_img/ui-icons.svg#journal-richtext"></use></svg><span>' + title + '</span></button></h2><div id="collapse' + id + '" class="accordion-collapse collapse"><div class="accordion-body planner-accordion-body">' + content + '</div></div></div>';
 					}
 
-					var methodString = "";
-					for (var item in methodArray) {
-						methodString += generateAccordionItem(methodArray[item][1], methodArray[item][0], methodArray[item][2]);
-					}
-
-					$("#accordionContent").html(methodString);
-					$("#accordionContent .accordion-item").hide();
+					var conceptOrder = [];
+						var conceptLabel = {};
+						$(xml).find('options[id=concept] option').each(function() {
+							var cid = $(this).attr("id");
+							conceptOrder.push(cid);
+							conceptLabel[cid] = $(this).text().replace(/\s*\(required\)\s*/i, "").trim();
+						});
+						function methodConcept(category) {
+							var toks = (category || "").split(",");
+							for (var i = 0; i < conceptOrder.length; i++) {
+								if (toks.indexOf(conceptOrder[i]) > -1) return conceptOrder[i];
+							}
+							return "__other__";
+						}
+						var buckets = {};
+						for (var item in methodArray) {
+							var g = methodConcept(methodArray[item][3]);
+							(buckets[g] = buckets[g] || []).push(methodArray[item]);
+						}
+						var methodString = "";
+						conceptOrder.concat(["__other__"]).forEach(function(g) {
+							if (!buckets[g] || !buckets[g].length) return;
+							var label = (g === "__other__") ? "Methods &amp; Approaches" : conceptLabel[g];
+							var inner = "";
+							buckets[g].forEach(function(m) { inner += generateAccordionItem(m[1], m[0], m[2]); });
+							methodString += '<div class="measure-group" data-group="' + g + '"><h3 class="measure-group-title">' + label + '</h3><div class="accordion measure-group-body">' + inner + '</div></div>';
+						});
+						$("#accordionContent").html(methodString);
+						$("#accordionContent .accordion-item").hide();
+						$("#accordionContent .measure-group").hide();
 
 					function revealQuestionRow(showNode) {
 						var $row = $('#' + showNode + 'Row');
@@ -520,12 +543,14 @@ series = {CHI EA '23}
 
 					function showMeasures(categoriesSelected) {
 						$('#researchTitleHeading').hide();
+						var visibleGroups = {};
 						$(xml).find('method').each(function() {
 							var methodId = $(this).attr("id");
 							var categoriesOfMethod = $(this).attr("category").split(',');
 							const makeVisible = categoriesOfMethod.every(elem => categoriesSelected.includes(elem));
 							if (makeVisible) {
 								$('#researchTitleHeading').show();
+									visibleGroups[methodConcept($(this).attr("category"))] = true;
 								if (visibleMethodsBeforeUpdate[methodId] !== true) {
 									$('#accordion' + methodId).addClass('planner-accordion-reveal planner-accordion-highlight');
 									window.setTimeout(function(targetId) {
@@ -546,6 +571,10 @@ series = {CHI EA '23}
 							} else {
 								$("#accordion" + methodId).hide(animationTime);
 							}
+						});
+
+						$('.measure-group').each(function() {
+							$(this).toggle(visibleGroups[$(this).attr("data-group")] === true);
 						});
 
 						$(xml).find('options').each(function() {
