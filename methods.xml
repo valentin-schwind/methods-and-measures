@@ -271,11 +271,15 @@
 
 		<method id="scnearioofuse" category="empirical,single" title="Qualitative Investigation: Scenario of Use / Case Study / Use Case Study">
 			<p><strong>Description: </strong>All three methods, Scenario of Use, Case Study and Use Case Study, are similar approaches used to understand how people interact with technology in very specific contexts, and to inform the design and evaluation of technology. They provide detailed and in-depth insights into how people use technology in their everyday lives and help to identify potential issues and areas for improvement.</p><p>A Scenario of Use is a description of a specific situation or context in which a product or system is used. It describes the goals, actions, and interactions of the user, as well as the context in which the product or system is used. Scenarios of use are used to inform the design of a product or system, and to evaluate its usability and effectiveness.</p>  <p>A Case Study is a research method that involves in-depth examination of a specific instance or example of a phenomenon. In HCI, case studies are used to understand the specific experiences and behaviors of individuals or groups in relation to a particular technology or system. They typically involve collecting a variety of data, such as interviews, observations, and documentation, and analyzing it to gain a detailed understanding of the case.</p>  <p>A Use Case Study is a specific type of case study that focuses on the use of a particular product or system. It involves studying how people use a product or system in real-world settings, and understanding the tasks, goals, and interactions that are associated with its use. Use case studies are used to evaluate the usability and effectiveness of a product or system, and to identify potential design improvements.</p>
-<div class="method-citation"><div class="citation-copy">Carroll, J. M. (2000). Making Use: Scenario-Based Design of Human-Computer Interactions. Cambridge, MA: MIT Press. DOI: <a href='https://doi.org/10.7551/mitpress/4293.001.0001' target='_blank'>10.7551/mitpress/4293.001.0001</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Carroll, J. M. (2000). Making Use: Scenario-Based Design of Human-Computer Interactions. Cambridge, MA: MIT Press. DOI: 10.7551/mitpress/4293.001.0001</div><div class="cite-data-bibtex" style="display:none">@misc{Carroll2000,
-  author = {Carroll, J. M},
-  title = {Making Use: Scenario-Based Design of Human-Computer Interactions},
-  year = {2000},
-  note = {Carroll, J. M. (2000). Making Use: Scenario-Based Design of Human-Computer Interactions. Cambridge, MA: MIT Press. DOI: 10.7551/mitpress/4293.001.0001}
+<div class="method-citation"><div class="citation-copy">Carroll, J. M. (2000). Making Use: Scenario-Based Design of Human-Computer Interactions. Cambridge, MA: MIT Press. DOI: <a href='https://doi.org/10.7551/mitpress/4398.001.0001' target='_blank'>10.7551/mitpress/4398.001.0001</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Carroll, J. M. (2000). Making Use: Scenario-Based Design of Human-Computer Interactions. Cambridge, MA: MIT Press. DOI: 10.7551/mitpress/4398.001.0001</div><div class="cite-data-bibtex" style="display:none">@book{Carroll_2000,
+  title={Making Use: Scenario-Based Design of Human-Computer Interactions},
+  ISBN={9780262269926},
+  url={http://dx.doi.org/10.7551/mitpress/4398.001.0001},
+  DOI={10.7551/mitpress/4398.001.0001},
+  publisher={The MIT Press},
+  author={Carroll, John M.},
+  year={2000},
+  month=Aug
 }</div></div>
 			<p><strong>Link:</strong> <a href="https://www.nngroup.com/articles/quantifying-case-study/" target="_blank">Nielsen Norman Group</a></p>			
 		</method>
@@ -391,18 +395,18 @@
 
 		<method id="paralleldesign" category="formative,solutions,designprocess" title="Design Method: Parallel Design">
 			<p><strong>Description: </strong>Parallel design is a method used in human-computer interaction (HCI) and user-centered design to simultaneously explore multiple design options and evaluate them with users. It is a technique that involves creating multiple design concepts in parallel and testing them with users to identify the best design solution.</p><p>The process of parallel design typically involves creating multiple design concepts, each of which addresses a specific design problem or goal. These concepts are then evaluated with users, who provide feedback on their preferences, strengths, and weaknesses. This allows the design team to identify the best design solution and make adjustments as needed.</p><p>Parallel design can be done using a variety of techniques, such as paper prototyping, wireframing, or digital prototyping. The choice of technique will depend on the goals of the evaluation, the resources available, and the level of detail required.  During the testing, users interact with the design concepts and the designer or facilitator can observe and note any issues or problems that arise. The design concepts can be used to test usability, user flow, and overall user experience.  Parallel design is a valuable tool for HCI designers because it allows them to explore multiple design options simultaneously, and evaluate them with users to identify the best design solution. It also allows designers to make changes and iterate on the design quickly, based on feedback from users.</p><p>Parallel design is considered a user-centered design method, as it puts the user at the center of the design process, by involving them in the evaluation of multiple design options. It's useful when testing a wide range of design options, when the goal is to test usability, user flow, and overall user experience, and when the budget and time allows it.</p>
-<div class="method-citation"><div class="citation-copy">Nielsen, J., &amp; Faber, J. M. (1996). Improving system usability through parallel design. IEEE Computer, 29(2), 29-35. DOI: <a href='https://doi.org/10.1109/2.485843' target='_blank'>10.1109/2.485843</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Nielsen, J., &amp; Faber, J. M. (1996). Improving system usability through parallel design. IEEE Computer, 29(2), 29-35. DOI: 10.1109/2.485843</div><div class="cite-data-bibtex" style="display:none">@article{Amza_1996,
-  title={TreadMarks: shared memory computing on networks of workstations},
+<div class="method-citation"><div class="citation-copy">Nielsen, J., &amp; Faber, J. M. (1996). Improving system usability through parallel design. IEEE Computer, 29(2), 29-35. DOI: <a href='https://doi.org/10.1109/2.485844' target='_blank'>10.1109/2.485844</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Nielsen, J., &amp; Faber, J. M. (1996). Improving system usability through parallel design. IEEE Computer, 29(2), 29-35. DOI: 10.1109/2.485844</div><div class="cite-data-bibtex" style="display:none">@article{Nielsen_1996,
+  title={Improving system usability through parallel design},
   volume={29},
   ISSN={0018-9162},
-  url={http://dx.doi.org/10.1109/2.485843},
-  DOI={10.1109/2.485843},
+  url={http://dx.doi.org/10.1109/2.485844},
+  DOI={10.1109/2.485844},
   number={2},
   journal={Computer},
   publisher={Institute of Electrical and Electronics Engineers (IEEE)},
-  author={Amza, C. and Cox, A.L. and Dwarkadas, S. and Keleher, P. and Honghui Lu and Rajamony, R. and Weimin Yu and Zwaenepoel, W.},
+  author={Nielsen, J. and Faber, J.M.},
   year={1996},
-  pages={18–28}
+  pages={29–35}
 }</div></div>
 			<p><strong>Link:</strong> <a href="https://www.usabilitybok.org/parallel-design" target="_blank">usabilitybok.org</a></p>  
 		</method>
@@ -442,11 +446,8 @@
 
 		<method id="contextualinquiry" category="formative,solutions,designprocess" title="Design Method: Contextual Inquiry">
 			<p><strong>Description: </strong>Contextual inquiry is a method used in human-computer interaction (HCI) to understand how users interact with technology in their natural environment. The goal of contextual inquiry is to understand the user's goals, tasks, workflows, and processes, as well as their physical and social context. The method of contextual inquiry typically involves conducting interviews with users in their work or home environment, observing them as they perform tasks using technology, and collecting artifacts such as notes, sketches, and photographs. The data collected during contextual inquiry is used to identify patterns and problems in the user's workflow and to understand how the technology fits into the user's broader context. Contextual inquiry is a valuable tool for HCI designers because it provides a more complete understanding of how users interact with technology and how it fits into their daily lives. This information can be used to inform the design of technology that is better suited to the user's needs and is more likely to be used effectively. Contextual inquiry is considered a qualitative research method, meaning the data collected is non-numerical, and it's analyzed by identifying patterns, themes, and categories in the data. It's useful when the research question is open-ended, and the aim is to understand the user's experience.</p>
-<div class="method-citation"><div class="citation-copy">Beyer, H., &amp; Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. San Francisco: Morgan Kaufmann. DOI: <a href='https://doi.org/10.1016/B978-1-55860-411-7.X5000-1' target='_blank'>10.1016/B978-1-55860-411-7.X5000-1</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Beyer, H., &amp; Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. San Francisco: Morgan Kaufmann. DOI: 10.1016/B978-1-55860-411-7.X5000-1</div><div class="cite-data-bibtex" style="display:none">@misc{Beyer1998,
-  author = {Beyer, H. and Holtzblatt, K},
-  title = {Contextual Design: Defining Customer-Centered Systems},
-  year = {1998},
-  note = {Beyer, H., &amp; Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. San Francisco: Morgan Kaufmann. DOI: 10.1016/B978-1-55860-411-7.X5000-1}
+<div class="method-citation"><div class="citation-copy">Beyer, H., &amp; Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. San Francisco: Morgan Kaufmann.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Beyer, H., &amp; Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. San Francisco: Morgan Kaufmann.</div><div class="cite-data-bibtex" style="display:none">@misc{ref,
+  note = {Beyer, H., &amp; Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. San Francisco: Morgan Kaufmann.}
 }</div></div>
 			<p><strong>Link:</strong> <a href="https://en.wikipedia.org/wiki/Contextual_inquiry" target="_blank">Wikipedia</a></p>    
 			
@@ -762,11 +763,16 @@
 
 		<method id="ngomsl" category="analytical,modeldriven" title="Model-driven Analysis: Structured Natural Language GOMS (CMN-GOMS)">
 			<p><strong>Description: </strong>NGOMSL is a structured natural language notation for representing GOMS models and a procedure for constructing them. This program form provides predictions of operator sequences, execution time and time to learn methods. An analyst constructs an NGOMSL model by performing a top-down, breadth-first expansion of the user's top-level goals into methods, until the methods contain only primitive operators, typically keystroke-level operators. This model explicitly represents the goal structure just like the CMN-GOMS and can so represent high-level goals.</p>
-<div class="method-citation"><div class="citation-copy">Kieras, D. E. (1988). Towards a Practical GOMS Model Methodology for User Interface Design. In M. Helander (Ed.), Handbook of Human-Computer Interaction (pp. 135-157). Amsterdam: North-Holland. DOI: <a href='https://doi.org/10.1016/B978-0-444-70536-5.50012-1' target='_blank'>10.1016/B978-0-444-70536-5.50012-1</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Kieras, D. E. (1988). Towards a Practical GOMS Model Methodology for User Interface Design. In M. Helander (Ed.), Handbook of Human-Computer Interaction (pp. 135-157). Amsterdam: North-Holland. DOI: 10.1016/B978-0-444-70536-5.50012-1</div><div class="cite-data-bibtex" style="display:none">@misc{Kieras1988,
-  author = {Kieras, D. E},
-  title = {Towards a Practical GOMS Model Methodology for User Interface Design},
-  year = {1988},
-  note = {Kieras, D. E. (1988). Towards a Practical GOMS Model Methodology for User Interface Design. In M. Helander (Ed.), Handbook of Human-Computer Interaction (pp. 135-157). Amsterdam: North-Holland. DOI: 10.1016/B978-0-444-70536-5.50012-1}
+<div class="method-citation"><div class="citation-copy">Kieras, D. E. (1988). Towards a Practical GOMS Model Methodology for User Interface Design. In M. Helander (Ed.), Handbook of Human-Computer Interaction (pp. 135-157). Amsterdam: North-Holland. DOI: <a href='https://doi.org/10.1016/b978-0-444-70536-5.50012-9' target='_blank'>10.1016/b978-0-444-70536-5.50012-9</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Kieras, D. E. (1988). Towards a Practical GOMS Model Methodology for User Interface Design. In M. Helander (Ed.), Handbook of Human-Computer Interaction (pp. 135-157). Amsterdam: North-Holland. DOI: 10.1016/b978-0-444-70536-5.50012-9</div><div class="cite-data-bibtex" style="display:none">@inbook{Kieras_1988,
+  title={Towards a Practical GOMS Model Methodology for User Interface Design},
+  ISBN={9780444705365},
+  url={http://dx.doi.org/10.1016/b978-0-444-70536-5.50012-9},
+  DOI={10.1016/b978-0-444-70536-5.50012-9},
+  booktitle={Handbook of Human-Computer Interaction},
+  publisher={Elsevier},
+  author={Kieras, David E.},
+  year={1988},
+  pages={135–157}
 }</div></div>
 			<p><strong>Link:</strong>  <a href="https://en.wikipedia.org/wiki/GOMS#NGOMSL" target='_blank'>Wikipedia</a></p>
 		</method>
@@ -925,16 +931,19 @@
 
 		<method id="psq" category="empirical,quantitative,subjective,stress" title="Quantitative Subjective Stress: Perceived Stress Questionnaire (PSQ)">
 			<p><strong>Description: </strong>The Perceived Stress Questionnaire (PSQ) is a self-report measure designed to assess an individual's perception of stress in their life. The questionnaire was developed by Levenstein and colleagues in 1993 and has been widely used in research and clinical settings to evaluate the impact of stress on health and well-being. The PSQ consists of 30 items, which are rated on a 4-point Likert scale from "almost never" to "almost always." The questionnaire measures four dimensions of perceived stress: stressors, worries, tension, and lack of joy. Stressors refer to the degree to which the individual perceives their life events and circumstances as stressful. Worries refer to the degree to which the individual experiences anxiety and concerns about their future. Tension refers to the degree to which the individual experiences physical and psychological tension and discomfort. Lack of joy refers to the degree to which the individual experiences a lack of pleasure and enjoyment in their life.</p>
-			<div class="method-citation"><div class="citation-copy">Levenstein, S., Prantera, C., Varvo, V., Scribano, M. L., Berto, E., Luzi, C., and Andreoli, A. (1993). Development of the Perceived Stress Questionnaire: a new tool for psychosomatic research. Journal of psychosomatic research, 37(1), 19-32. DOI: <a href="https://doi.org/10.23668/psycharchives.2889">10.23668/psycharchives.2889</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Levenstein, S., Prantera, C., Varvo, V., Scribano, M. L., Berto, E., Luzi, C., and Andreoli, A. (1993). Development of the Perceived Stress Questionnaire: a new tool for psychosomatic research. Journal of psychosomatic research, 37(1), 19-32. DOI: 10.23668/psycharchives.2889</div><div class="cite-data-bibtex" style="display:none">@misc{https://doi.org/10.23668/psycharchives.2889,
-  doi = {10.23668/PSYCHARCHIVES.2889},
-  url = {https://www.psycharchives.org/handle/20.500.12034/364.2},
-  author = {Fliege, H. and Rose, M. and Arck, P. and Levenstein, S. and Klapp, B.F.},
-  keywords = {150},
-  language = {de},
-  title = {PSQ - Perceived Stress Questionnaire},
-  publisher = {ZPID (Leibniz Institute for Psychology Information) – Testarchiv},
-  year = {2009},
-  copyright = {CC-BY-NC-ND 3.0}
+			<div class="method-citation"><div class="citation-copy">Levenstein, S., Prantera, C., Varvo, V., Scribano, M. L., Berto, E., Luzi, C., and Andreoli, A. (1993). Development of the Perceived Stress Questionnaire: a new tool for psychosomatic research. Journal of psychosomatic research, 37(1), 19-32. DOI: <a href="https://doi.org/10.1016/0022-3999(93)90120-5">10.1016/0022-3999(93)90120-5</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Levenstein, S., Prantera, C., Varvo, V., Scribano, M. L., Berto, E., Luzi, C., and Andreoli, A. (1993). Development of the Perceived Stress Questionnaire: a new tool for psychosomatic research. Journal of psychosomatic research, 37(1), 19-32. DOI: 10.1016/0022-3999(93)90120-5</div><div class="cite-data-bibtex" style="display:none">@article{Levenstein_1993,
+  title={Development of the perceived stress questionnaire: A new tool for psychosomatic research},
+  volume={37},
+  ISSN={0022-3999},
+  url={http://dx.doi.org/10.1016/0022-3999(93)90120-5},
+  DOI={10.1016/0022-3999(93)90120-5},
+  number={1},
+  journal={Journal of Psychosomatic Research},
+  publisher={Elsevier BV},
+  author={Levenstein, S. and Prantera, C. and Varvo, V. and Scribano, M.L. and Berto, E. and Luzi, C. and Andreoli, A.},
+  year={1993},
+  month=Jan,
+  pages={19–32}
 }</div></div> 
 			<p><strong>Link: </strong> <a href="https://www.testarchiv.eu/de/test/9004426">Perceived Stress Questionnaire</a></p> 
 		</method>
@@ -1134,19 +1143,19 @@
 
 		<method id="esq" category="empirical,quantitative,subjective,emotions" title="Quantitative Subjective Emotions: Emotional State Questionnaire (ESQ)">
 			<p><strong>Description: </strong>The Emotional States Questionnaire (ESQ) is a self-report questionnaire that measures an individual's emotional responses to a specific event or situation. The ESQ is used to assess emotional states such as anxiety, sadness, anger, joy, and other emotions. The questionnaire consists of a list of emotions, and respondents are asked to rate the intensity of each emotion they experienced during a particular event or situation. The ESQ has been used in various research contexts, including psychology, health sciences, and social sciences, to measure emotional responses to different events or interventions. The ESQ has been validated and shown to have good reliability and validity in measuring emotional states. The questionnaire can be modified to suit different research contexts and can be used in both clinical and non-clinical settings to assess emotional responses to specific events or situations.</p>
-			<div class="method-citation"><div class="citation-copy">Cassé-Perrot, C., Fakra, E., Jouve, E., and Blin, O. (2007). Conceptualisation and validation of the" Emotional State Questionnaire (ESQ)": evaluation of an emotional profile. L'encephale, 33(2), 169-178. DOI: <a target="_blank" href="https://doi.org/10.1080/10447318.2014.930312">10.1080/10447318.2014.930312</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Cassé-Perrot, C., Fakra, E., Jouve, E., and Blin, O. (2007). Conceptualisation and validation of the" Emotional State Questionnaire (ESQ)": evaluation of an emotional profile. L'encephale, 33(2), 169-178. DOI: 10.1080/10447318.2014.930312</div><div class="cite-data-bibtex" style="display:none">@article{Lewis_2014,
-  title={Development and Psychometric Evaluation of the Emotional Metric Outcomes (EMO) Questionnaire},
-  volume={30},
-  ISSN={1532-7590},
-  url={http://dx.doi.org/10.1080/10447318.2014.930312},
-  DOI={10.1080/10447318.2014.930312},
-  number={9},
-  journal={International Journal of Human-Computer Interaction},
-  publisher={Informa UK Limited},
-  author={Lewis, James R. and Mayes, Daniel K.},
-  year={2014},
-  month=June,
-  pages={685–702}
+			<div class="method-citation"><div class="citation-copy">Cassé-Perrot, C., Fakra, E., Jouve, E., and Blin, O. (2007). Conceptualisation and validation of the" Emotional State Questionnaire (ESQ)": evaluation of an emotional profile. L'encephale, 33(2), 169-178. DOI: <a target="_blank" href="https://doi.org/10.1016/s0013-7006(07)91547-x">10.1016/s0013-7006(07)91547-x</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Cassé-Perrot, C., Fakra, E., Jouve, E., and Blin, O. (2007). Conceptualisation and validation of the" Emotional State Questionnaire (ESQ)": evaluation of an emotional profile. L'encephale, 33(2), 169-178. DOI: 10.1016/s0013-7006(07)91547-x</div><div class="cite-data-bibtex" style="display:none">@article{Cass_Perrot_2007,
+  title={Conceptualisation et validation factorielle d’un questionnaire mesurant le profil émotionnel : Emotional State Questionnaire (ESQ)},
+  volume={33},
+  ISSN={0013-7006},
+  url={http://dx.doi.org/10.1016/s0013-7006(07)91547-x},
+  DOI={10.1016/s0013-7006(07)91547-x},
+  number={2},
+  journal={L’Encéphale},
+  publisher={Elsevier BV},
+  author={Cassé-Perrot, C. and Fakra, E. and Jouve, E. and Blin, O.},
+  year={2007},
+  month=Apr,
+  pages={169–178}
 }</div></div>  
 		</method> 
 
@@ -1189,7 +1198,7 @@
 
 		<method id="iri" category="empirical,quantitative,subjective,empathy" title="Quantitative Subjective Empathy: Interpersonal Reactivity Index (IRI)">
 			<p><strong>Description: </strong>Describes the Interpersonal Reactivity Index (IRI) and its relationships with measures of social functioning, self-esteem, emotionality, and sensitivity to others. 677 male and 667 female undergraduates served as Ss. Each of the 4 IRI subscales displayed a distinctive and predictable pattern of relationships with these measures, as well as with previous unidimensional empathy measures. Findings provide evidence for a multidimensional approach to empathy. (29 ref) (PsycINFO Database Record (c) 2019 APA, all rights reserved)</p>
-			<div class="method-citation"><div class="citation-copy">Davis, M. H. A multidimensional approach to individual differences in empathy. Cat. Sel. Doc. Psychol. 10, 85 (1980). DOI: <a target="_blank" href="https://doi.org/10.1037/0022-3514.44.1.113">10.1037/0022-3514.44.1.113</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Davis, M. H. A multidimensional approach to individual differences in empathy. Cat. Sel. Doc. Psychol. 10, 85 (1980). DOI: 10.1037/0022-3514.44.1.113</div><div class="cite-data-bibtex" style="display:none">@article{Davis_1983,
+			<div class="method-citation"><div class="citation-copy">Davis, M. H. (1983). Measuring individual differences in empathy: Evidence for a multidimensional approach. Journal of Personality and Social Psychology, 44(1), 113-126. DOI: <a href='https://doi.org/10.1037/0022-3514.44.1.113' target='_blank'>10.1037/0022-3514.44.1.113</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Davis, M. H. (1983). Measuring individual differences in empathy: Evidence for a multidimensional approach. Journal of Personality and Social Psychology, 44(1), 113-126. DOI: 10.1037/0022-3514.44.1.113</div><div class="cite-data-bibtex" style="display:none">@article{Davis_1983,
   title={Measuring individual differences in empathy: Evidence for a multidimensional approach.},
   volume={44},
   ISSN={0022-3514},
@@ -1208,19 +1217,8 @@
 
 		<method id="rses" category="empirical,quantitative,subjective,selfesteem" title="Quantitative Subjective Self-Esteem: Rosenberg Self-Esteem Scale (RSES)">
 			<p><strong>Description: </strong>The Rosenberg Self-Esteem Scale (RSES) was developed to measure explicit self-esteem. The scale was intended to be mono-dimensional and consists of 10 items containing 5 positive affirmations and 5 negative affirmations. Participants provide a graded response (from 1 = "strongly disagree" to 4 = "strongly agree "). The scale measures one's global self-worth and includes aspects related to self-derogation (i.e., a defence of positive self-images against any threat) and self-enhancement (i.e., rise in the eyes of others).</p>
-			<div class="method-citation"><div class="citation-copy">Rosenberg, M. (1979). Conceiving the self. In Conceiving the self (pp. 318-318). DOI: <a target="_blank" href="https://doi.org/10.1016/j.cognition.2007.12.004">10.1016/j.cognition.2007.12.004</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Rosenberg, M. (1979). Conceiving the self. In Conceiving the self (pp. 318-318). DOI: 10.1016/j.cognition.2007.12.004</div><div class="cite-data-bibtex" style="display:none">@article{Longo_2008,
-  title={What is embodiment? A psychometric approach},
-  volume={107},
-  ISSN={0010-0277},
-  url={http://dx.doi.org/10.1016/j.cognition.2007.12.004},
-  DOI={10.1016/j.cognition.2007.12.004},
-  number={3},
-  journal={Cognition},
-  publisher={Elsevier BV},
-  author={Longo, Matthew R. and Schüür, Friederike and Kammers, Marjolein P.M. and Tsakiris, Manos and Haggard, Patrick},
-  year={2008},
-  month=June,
-  pages={978–998}
+			<div class="method-citation"><div class="citation-copy">Rosenberg, M. (1965). Society and the Adolescent Self-Image. Princeton, NJ: Princeton University Press.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Rosenberg, M. (1965). Society and the Adolescent Self-Image. Princeton, NJ: Princeton University Press.</div><div class="cite-data-bibtex" style="display:none">@misc{ref,
+  note = {Rosenberg, M. (1965). Society and the Adolescent Self-Image. Princeton, NJ: Princeton University Press.}
 }</div></div> 
 			<p><strong>Link: </strong><a target="_blank" href="https://zis.gesis.org/skala/Rosenberg-Self-Esteem-Scale">RSES Online</a></p> 
 		</method> 
@@ -1600,11 +1598,18 @@
 
 		<method id="PENS" category="empirical,quantitative,subjective,games,randomsample" title="Quantitative Subjective Gaming Experience: Player Experience of Need Satisfaction (PENS)">
 			<p><strong>Description: </strong>The Player Experience of Need Satisfaction (PENS) is a questionnaire grounded in Self-Determination Theory for assessing how strongly a game supports psychological needs such as competence, autonomy, and relatedness. In games user research, it is useful when the goal is to understand motivational quality, need satisfaction, and the experiential foundations of player engagement.</p>
-			<div class="method-citation"><div class="citation-copy">Johnson, D., Gardner, M. J., and Perry, R. (2018). Validation of two game experience scales: The Player Experience of Need Satisfaction (PENS) and Game Experience Questionnaire (GEQ). Int. J. Hum. Comput. Stud., 118, 38–46. doi:  <a href="https://pdf.sciencedirectassets.com/272548/1-s2.0-S1071581918X00081/1-s2.0-S1071581918302337/main.pdf?" target='_blank'>10.1007/s11257-019-09223-w</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Johnson, D., Gardner, M. J., and Perry, R. (2018). Validation of two game experience scales: The Player Experience of Need Satisfaction (PENS) and Game Experience Questionnaire (GEQ). Int. J. Hum. Comput. Stud., 118, 38-46. doi: 10.1007/s11257-019-09223-w</div><div class="cite-data-bibtex" style="display:none">@misc{Johnson2018,
-  author = {Johnson, D., Gardner, M. J. and Perry, R},
-  title = {Validation of two game experience scales: The Player Experience of Need Satisfaction (PENS) and Game Experience Questionnaire (GEQ)},
-  year = {2018},
-  note = {Johnson, D., Gardner, M. J., and Perry, R. (2018). Validation of two game experience scales: The Player Experience of Need Satisfaction (PENS) and Game Experience Questionnaire (GEQ). Int. J. Hum. Comput. Stud., 118, 38-46. doi: 10.1007/s11257-019-09223-w}
+			<div class="method-citation"><div class="citation-copy">Johnson, D., Gardner, M. J., and Perry, R. (2018). Validation of two game experience scales: The Player Experience of Need Satisfaction (PENS) and Game Experience Questionnaire (GEQ). Int. J. Hum. Comput. Stud., 118, 38–46. doi:  <a href="https://pdf.sciencedirectassets.com/272548/1-s2.0-S1071581918X00081/1-s2.0-S1071581918302337/main.pdf?" target='_blank'>10.1016/j.ijhcs.2018.05.003</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Johnson, D., Gardner, M. J., and Perry, R. (2018). Validation of two game experience scales: The Player Experience of Need Satisfaction (PENS) and Game Experience Questionnaire (GEQ). Int. J. Hum. Comput. Stud., 118, 38-46. doi: 10.1016/j.ijhcs.2018.05.003</div><div class="cite-data-bibtex" style="display:none">@article{Johnson_2018,
+  title={Validation of two game experience scales: The Player Experience of Need Satisfaction (PENS) and Game Experience Questionnaire (GEQ)},
+  volume={118},
+  ISSN={1071-5819},
+  url={http://dx.doi.org/10.1016/j.ijhcs.2018.05.003},
+  DOI={10.1016/j.ijhcs.2018.05.003},
+  journal={International Journal of Human-Computer Studies},
+  publisher={Elsevier BV},
+  author={Johnson, Daniel and Gardner, M. John and Perry, Ryan},
+  year={2018},
+  month=Oct,
+  pages={38–46}
 }</div></div>
 			<div class="method-citation"><div class="citation-copy">Ryan, R. M., Rigby, C. S., and Przybylski, A. (2006). The Motivational Pull of Video Games: A Self-Determination Theory Approach. Motiv. Emot., 30(4), 344–360. doi: <a href="https://link.springer.com/article/10.1007/s11031-006-9051-8" target='_blank'> 10.1007/s11031-006-9051-8</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Ryan, R. M., Rigby, C. S., and Przybylski, A. (2006). The Motivational Pull of Video Games: A Self-Determination Theory Approach. Motiv. Emot., 30(4), 344-360. doi: 10.1007/s11031-006-9051-8</div><div class="cite-data-bibtex" style="display:none">@misc{Ryan2006,
   author = {Ryan, R. M., Rigby, C. S. and Przybylski, A},
@@ -1857,11 +1862,19 @@
 
 		<method id="stroop" category="empirical,quantitative,objective,memory,randomsample" title="Quantitative Objective Memory: Stroop Test">
 			<p><strong>Description: </strong>The Stroop test is a classic neuropsychological task that is widely used to assess memory attention, cognitive flexibility, and processing speed. The test was developed by J.R. Stroop in 1935 and has been used in research and clinical settings to evaluate executive functioning, brain injury, and various cognitive disorders. In the standard version of the Stroop test, participants are presented with a list of words that are printed in colored ink. The task is to name the color of the ink as quickly and accurately as possible. The test consists of three parts: In the first part, the words are all printed in black ink, and participants are asked to read the words as quickly as possible. In the second part, the words are printed in different colors, but the color of the ink and the word meaning are the same. For example, the word "red" might be printed in red ink. Participants are again asked to name the color of the ink. In the third part, the words are printed in different colors, and the color of the ink and the word meaning are different. For example, the word "red" might be printed in blue ink. Participants are asked to name the color of the ink as quickly and accurately as possible. The Stroop effect occurs when the word meaning interferes with the naming of the ink color, resulting in slower reaction times and increased errors in the third part of the test. This interference is thought to reflect the automatic processing of word meanings and the need for cognitive control to overcome this interference and focus on the task-relevant information (i.e., the color of the ink). The Stroop test is a widely used and well-established measure of attentional control and cognitive flexibility. It is used in both research and clinical settings to assess various cognitive disorders such as attention-deficit/hyperactivity disorder (ADHD), Alzheimer's disease, and traumatic brain injury.</p>
-			<div class="method-citation"><div class="citation-copy">Kirchner, W. K. (1958). Age differences in short-term retention of rapidly changing information. Journal of Experimental Psychology, 55(4), 352–358. <a href="https://psycnet.apa.org/doi/10.1037/h0054651" target='_blank'>10.1207/s15327051hci0701_3</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Kirchner, W. K. (1958). Age differences in short-term retention of rapidly changing information. Journal of Experimental Psychology, 55(4), 352-358. 10.1207/s15327051hci0701_3</div><div class="cite-data-bibtex" style="display:none">@misc{Kirchner1958,
-  author = {Kirchner, W. K},
-  title = {Age differences in short-term retention of rapidly changing information},
-  year = {1958},
-  note = {Kirchner, W. K. (1958). Age differences in short-term retention of rapidly changing information. Journal of Experimental Psychology, 55(4), 352-358. 10.1207/s15327051hci0701_3}
+			<div class="method-citation"><div class="citation-copy">Stroop, J. R. (1935). Studies of interference in serial verbal reactions. Journal of Experimental Psychology, 18(6), 643-662. DOI: <a href='https://doi.org/10.1037/h0054651' target='_blank'>10.1037/h0054651</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Stroop, J. R. (1935). Studies of interference in serial verbal reactions. Journal of Experimental Psychology, 18(6), 643-662. DOI: 10.1037/h0054651</div><div class="cite-data-bibtex" style="display:none">@article{Stroop_1935,
+  title={Studies of interference in serial verbal reactions.},
+  volume={18},
+  ISSN={0022-1015},
+  url={http://dx.doi.org/10.1037/h0054651},
+  DOI={10.1037/h0054651},
+  number={6},
+  journal={Journal of Experimental Psychology},
+  publisher={American Psychological Association (APA)},
+  author={Stroop, J. R.},
+  year={1935},
+  month=Dec,
+  pages={643–662}
 }</div></div>
 			<p><strong>Link</strong> <a href='https://psynet.ruhr-uni-bochum.de/cognition/stroop/intro/index.htm' target='_blank'>Stroop-Test Online</a>, <a href='https://en.wikipedia.org/wiki/Stroop_effect' target='_blank'>Wikipedia</a></p>
 		</method>
@@ -2641,11 +2654,17 @@
 			</ul>
 			Castillo, S., and Grbovic, P. (2022).  IEEE Access, 10, 23700-23707. <a href='https://ieeexplore.ieee.org/ielx7/6287639/9668973/09698182.pdf' target='_blank'>The APISSER Methodology for Systematic Literature Reviews in Engineering</a>, 13(3), 141-146.
 			Grant, M.J. and Booth, A. (2009).  <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1471-1842.2009.00848.x" target='_blank'>A typology of reviews: An analysis of 14 review types and associated methodologies.</a> Health Information and Libraries Journal, 26(2), 91-108.
-			<div class="method-citation"><div class="citation-copy">Castillo-Segura, P., Fernandez-Panadero, C., Alario-Hoyos, C., Munoz-Merino, P. J., &amp; Delgado Kloos, C. (2022). The APISSER Methodology for Systematic Literature Reviews in Engineering. IEEE Access, 10, 23700-23707. DOI: <a href='https://doi.org/10.1109/ACCESS.2022.3145067' target='_blank'>10.1109/ACCESS.2022.3145067</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Castillo-Segura, P., Fernandez-Panadero, C., Alario-Hoyos, C., Munoz-Merino, P. J., &amp; Delgado Kloos, C. (2022). The APISSER Methodology for Systematic Literature Reviews in Engineering. IEEE Access, 10, 23700-23707. DOI: 10.1109/ACCESS.2022.3145067</div><div class="cite-data-bibtex" style="display:none">@misc{CastilloSegura2022,
-  author = {Castillo-Segura, P., Fernandez-Panadero, C., Alario-Hoyos, C., Munoz-Merino, P. J. and Delgado Kloos, C},
-  title = {The APISSER Methodology for Systematic Literature Reviews in Engineering},
-  year = {2022},
-  note = {Castillo-Segura, P., Fernandez-Panadero, C., Alario-Hoyos, C., Munoz-Merino, P. J., &amp; Delgado Kloos, C. (2022). The APISSER Methodology for Systematic Literature Reviews in Engineering. IEEE Access, 10, 23700-23707. DOI: 10.1109/ACCESS.2022.3145067}
+			<div class="method-citation"><div class="citation-copy">Castillo-Segura, P., Fernandez-Panadero, C., Alario-Hoyos, C., Munoz-Merino, P. J., &amp; Delgado Kloos, C. (2022). The APISSER Methodology for Systematic Literature Reviews in Engineering. IEEE Access, 10, 23700-23707. DOI: <a href='https://doi.org/10.1109/access.2022.3148206' target='_blank'>10.1109/access.2022.3148206</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Castillo-Segura, P., Fernandez-Panadero, C., Alario-Hoyos, C., Munoz-Merino, P. J., &amp; Delgado Kloos, C. (2022). The APISSER Methodology for Systematic Literature Reviews in Engineering. IEEE Access, 10, 23700-23707. DOI: 10.1109/access.2022.3148206</div><div class="cite-data-bibtex" style="display:none">@article{Castillo_2022,
+  title={The APISSER Methodology for Systematic Literature Reviews in Engineering},
+  volume={10},
+  ISSN={2169-3536},
+  url={http://dx.doi.org/10.1109/access.2022.3148206},
+  DOI={10.1109/access.2022.3148206},
+  journal={IEEE Access},
+  publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+  author={Castillo, Stefanie and Grbovic, Petar},
+  year={2022},
+  pages={23700–23707}
 }</div></div>
 		</method>
 
