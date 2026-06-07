@@ -236,7 +236,37 @@ series = {CHI EA '23}
 												});
 											})();
 										</script>
-						</footer>
+						<script>
+											(function () {
+												function copyText(text) {
+													function fb() {
+														var ta = document.createElement('textarea');
+														ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+														document.body.appendChild(ta); ta.focus(); ta.select();
+														try { document.execCommand('copy'); } catch (e) {}
+														document.body.removeChild(ta);
+													}
+													if (navigator.clipboard && navigator.clipboard.writeText) {
+														navigator.clipboard.writeText(text).catch(fb);
+													} else { fb(); }
+												}
+												document.addEventListener('click', function (e) {
+													var btn = e.target.closest ? e.target.closest('.citation-copy-btn[data-cite-copy]') : null;
+													if (!btn) return;
+													var box = btn.closest('.method-citation');
+													if (!box) return;
+													var kind = btn.getAttribute('data-cite-copy');
+													var node = box.querySelector(kind === 'bibtex' ? '.cite-data-bibtex' : '.cite-data-plain');
+													if (!node) return;
+													copyText(node.textContent.trim());
+													var original = btn.getAttribute('data-label') || btn.textContent;
+													btn.setAttribute('data-label', original);
+													btn.textContent = 'Copied!';
+													setTimeout(function () { btn.textContent = original; }, 1500);
+												});
+											})();
+										</script>
+									</footer>
 					</div>
 				</form>
 			</div>
