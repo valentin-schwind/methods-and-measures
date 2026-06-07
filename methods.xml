@@ -991,8 +991,34 @@
 
 		<method id="tam" category="empirical,quantitative,subjective,socialacceptance" title="Quantitative Subjective Social Acceptance: Technology Acceptance Model (TAM)">
 			<p><strong>Description: </strong>The Technology Acceptance Model (TAM) is a widely used theoretical framework that helps researchers and practitioners understand and predict the acceptance and usage of new technologies by individuals. TAM was first introduced in the 1980s by Davis, Bagozzi, and Warshaw and has since been revised several times to incorporate new factors and variables. TAM 3.0 is the latest version of the model, which was developed by Venkatesh and colleagues in 2012. It includes new constructs such as Perceived Enjoyment and Perceived Social Norms and also integrates some of the previous extensions made to the original model. TAM 3.0 is an improvement over previous versions because it provides a more comprehensive and accurate understanding of users' attitudes and intentions towards technology adoption. By using TAM 3.0, researchers and practitioners can better identify the factors that affect user acceptance and tailor their interventions accordingly. This can lead to more successful technology implementations and better outcomes for both individuals and organizations.</p>
-			<p><strong>Source (TAM): </strong>Davis, F., Bagozzi, P. and Warshaw, P. (1989), ‘User acceptance of computer technology - a comparison of two theoretical models’, Management Science 35(8), 982–1003.</p>
-			<p><strong>Source (TAM3): </strong>Venkatesh, V., and Bala, H. (2008). Technology acceptance model 3 and a research agenda on interventions. Decision sciences, 39(2), 273-315.</p>
+			<div class="method-citation"><div class="citation-copy"><strong>TAM: </strong>Davis, F., Bagozzi, P. and Warshaw, P. (1989), ‘User acceptance of computer technology - a comparison of two theoretical models’, Management Science 35(8), 982–1003. DOI: <a href='https://doi.org/10.1287/mnsc.35.8.982' target='_blank'>10.1287/mnsc.35.8.982</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Davis, F., Bagozzi, P. and Warshaw, P. (1989), ‘User acceptance of computer technology - a comparison of two theoretical models’, Management Science 35(8), 982–1003. DOI: 10.1287/mnsc.35.8.982</div><div class="cite-data-bibtex" style="display:none">@article{Davis_1989,
+  title={User Acceptance of Computer Technology: A Comparison of Two Theoretical Models},
+  volume={35},
+  ISSN={1526-5501},
+  url={http://dx.doi.org/10.1287/mnsc.35.8.982},
+  DOI={10.1287/mnsc.35.8.982},
+  number={8},
+  journal={Management Science},
+  publisher={Institute for Operations Research and the Management Sciences (INFORMS)},
+  author={Davis, Fred D. and Bagozzi, Richard P. and Warshaw, Paul R.},
+  year={1989},
+  month=Aug,
+  pages={982–1003}
+}</div></div>
+			<div class="method-citation"><div class="citation-copy"><strong>TAM3: </strong>Venkatesh, V., and Bala, H. (2008). Technology acceptance model 3 and a research agenda on interventions. Decision sciences, 39(2), 273-315. DOI: <a href='https://doi.org/10.1111/j.1540-5915.2008.00192.x' target='_blank'>10.1111/j.1540-5915.2008.00192.x</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Venkatesh, V., and Bala, H. (2008). Technology acceptance model 3 and a research agenda on interventions. Decision sciences, 39(2), 273-315. DOI: 10.1111/j.1540-5915.2008.00192.x</div><div class="cite-data-bibtex" style="display:none">@article{Venkatesh_2008,
+  title={Technology Acceptance Model 3 and a Research Agenda on Interventions},
+  volume={39},
+  ISSN={1540-5915},
+  url={http://dx.doi.org/10.1111/j.1540-5915.2008.00192.x},
+  DOI={10.1111/j.1540-5915.2008.00192.x},
+  number={2},
+  journal={Decision Sciences},
+  publisher={Wiley},
+  author={Venkatesh, Viswanath and Bala, Hillol},
+  year={2008},
+  month=May,
+  pages={273–315}
+}</div></div>
 			<p><strong>Download (TAM3): </strong><a target="_blank" href="https://core.ac.uk/download/pdf/144826641.pdf">Technology Acceptance Model</a> (p. 313 - 314)</p>
 			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Technology_acceptance_model" target='_blank'>Wikipedia</a></p>
 		</method>
@@ -1201,8 +1227,33 @@
 
 		<method id="propdrift" category="empirical,quantitative,subjective,bodyownership" title="Quantitative Subjective Body-Ownership: Proprioceptive Drift">
 			<p><strong>Description: </strong>Proprioceptive drift refers to the phenomenon in which individuals misperceive the location of their body parts after experiencing a period of sensory stimulation or deprivation. Specifically, proprioceptive drift occurs when an individual perceives their limb as being shifted away from its actual location, in the direction of a visual or tactile stimulus that was applied to the limb. Proprioceptive drift is a multimodal measure combining the processing of visual, tactile, and proprioceptive information and is based on the assumption that there is a reference description of the visual, anatomical and structural properties of the body, and that during the RHI certain multimodal brain regionsact as comparators, matching the (dummy) viewed hand with the body model reference. Modulating this comparator process has an effect on proprioceptive drift, as is evident in various experiments stimulating the brain during the RHI</p>
-			<p><strong>Source (Original Work): </strong>Welch, R.B., Widawski, M.H., Harrington, J. et al. An examination of the relationship between visual capture and prism adaptation. Perception and Psychophysics 25, 126–132 (1979). DOI: <a target="_blank" href="https://doi.org/10.3758/BF03198798">10.3758/BF03198798</a></p> 
-			<p><strong>Source (Rubber Hand): </strong>Tsakiris, M., and Haggard, P. (2005). The Rubber Hand Illusion Revisited: Visuotactile Integration and Self-Attribution. Journal of Experimental Psychology: Human Perception and Performance, 31(1), 80–91. DOI: <a target="_blank" href="https://doi.org/10.1037/0096-1523.31.1.80">10.1037/0096-1523.31.1.80</a></p> 
+			<div class="method-citation"><div class="citation-copy"><strong>Original Work: </strong>Welch, R.B., Widawski, M.H., Harrington, J. et al. An examination of the relationship between visual capture and prism adaptation. Perception and Psychophysics 25, 126–132 (1979). DOI: <a target="_blank" href="https://doi.org/10.3758/BF03198798">10.3758/BF03198798</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Welch, R.B., Widawski, M.H., Harrington, J. et al. An examination of the relationship between visual capture and prism adaptation. Perception and Psychophysics 25, 126–132 (1979). DOI: 10.3758/BF03198798</div><div class="cite-data-bibtex" style="display:none">@article{Welch_1979,
+  title={An examination of the relationship between visual capture and prism adaptation},
+  volume={25},
+  ISSN={1532-5962},
+  url={http://dx.doi.org/10.3758/BF03198798},
+  DOI={10.3758/bf03198798},
+  number={2},
+  journal={Perception &amp;amp; Psychophysics},
+  publisher={Springer Science and Business Media LLC},
+  author={Welch, Robert B. and Widawski, Mel H. and Harrington, Janice and Warren, David H.},
+  year={1979},
+  month=Mar,
+  pages={126–132}
+}</div></div> 
+			<div class="method-citation"><div class="citation-copy"><strong>Rubber Hand: </strong>Tsakiris, M., and Haggard, P. (2005). The Rubber Hand Illusion Revisited: Visuotactile Integration and Self-Attribution. Journal of Experimental Psychology: Human Perception and Performance, 31(1), 80–91. DOI: <a target="_blank" href="https://doi.org/10.1037/0096-1523.31.1.80">10.1037/0096-1523.31.1.80</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Tsakiris, M., and Haggard, P. (2005). The Rubber Hand Illusion Revisited: Visuotactile Integration and Self-Attribution. Journal of Experimental Psychology: Human Perception and Performance, 31(1), 80–91. DOI: 10.1037/0096-1523.31.1.80</div><div class="cite-data-bibtex" style="display:none">@article{Tsakiris_2005,
+  title={The Rubber Hand Illusion Revisited: Visuotactile Integration and Self-Attribution.},
+  volume={31},
+  ISSN={0096-1523},
+  url={http://dx.doi.org/10.1037/0096-1523.31.1.80},
+  DOI={10.1037/0096-1523.31.1.80},
+  number={1},
+  journal={Journal of Experimental Psychology: Human Perception and Performance},
+  publisher={American Psychological Association (APA)},
+  author={Tsakiris, Manos and Haggard, Patrick},
+  year={2005},
+  pages={80–91}
+}</div></div> 
 		</method> 
 
 		<method id="eq" category="empirical,quantitative,subjective,bodyownership" title="Quantitative Subjective Body-Ownership: Embodiment Questionnaire (EQ)">
@@ -1849,7 +1900,20 @@
 
 		<method id="ues" category="empirical,quantitative,subjective,userexperience" title="Quantitative Subjective User Experience: User Engagement Scale (UES)">
 			<p><strong>Description: </strong>The User Engagement Scale measures the degree to which users are focused, involved, and absorbed during interaction. It is useful when engagement should be distinguished from general usability or overall satisfaction.</p>
-			<p><strong>Source (Original Concept): </strong>O'Brien, H. L., and Toms, E. G. (2010). The development and evaluation of a survey to measure user engagement. Journal of the American Society for Information Science and Technology, 61(1), 50-69. DOI: <a target="_blank" href="https://doi.org/10.1002/asi.21229">10.1002/asi.21229</a></p>
+			<div class="method-citation"><div class="citation-copy"><strong>Original Concept: </strong>O'Brien, H. L., and Toms, E. G. (2010). The development and evaluation of a survey to measure user engagement. Journal of the American Society for Information Science and Technology, 61(1), 50-69. DOI: <a target="_blank" href="https://doi.org/10.1002/asi.21229">10.1002/asi.21229</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">O'Brien, H. L., and Toms, E. G. (2010). The development and evaluation of a survey to measure user engagement. Journal of the American Society for Information Science and Technology, 61(1), 50-69. DOI: 10.1002/asi.21229</div><div class="cite-data-bibtex" style="display:none">@article{O_Brien_2009,
+  title={The development and evaluation of a survey to measure user engagement},
+  volume={61},
+  ISSN={1532-2890},
+  url={http://dx.doi.org/10.1002/asi.21229},
+  DOI={10.1002/asi.21229},
+  number={1},
+  journal={Journal of the American Society for Information Science and Technology},
+  publisher={Wiley},
+  author={O’Brien, Heather L. and Toms, Elaine G.},
+  year={2009},
+  month=Dec,
+  pages={50–69}
+}</div></div>
 			<p><strong>Link: </strong><a href="https://dissemination-implementation.org/assessment-instrument/user-engagement-scale/" target='_blank'>Instrument page</a></p>
 		</method>
 
