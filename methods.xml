@@ -43,13 +43,13 @@
 	<options type="checkbox" id="concept" question="Which concepts do you want to measure?">
 		<option id="demographics" alwaysOn="on" disabled="on">Demographics (required)</option>
 		<option id="attention" onlyIf="objective">Attention</option>
-		<option id="accessibility" onlyIf="objective">Accessibility</option>
+		<option id="accessibility">Accessibility</option>
 		<option id="awareness">Awareness</option>
 		<option id="biases" onlyIf="objective">Bias</option>
 		<option id="bodyownership" onlyIf="subjective">Body Ownership</option>
 		<option id="collaboration">Collaboration</option>
-		<option id="creativity" onlyIf="subjective">Creativity</option>
-		<option id="emotions" onlyIf="subjective">Emotions</option>
+		<option id="creativity">Creativity</option>
+		<option id="emotions">Emotions</option>
 		<option id="empathy" onlyIf="subjective">Empathy</option>
 		<option id="explainability" onlyIf="subjective">Explainability</option>
 		<option id="ergonomics">Ergonomics</option>
@@ -79,7 +79,12 @@
 		<option id="trust" onlyIf="subjective">Trust</option>
 		<option id="usability" onlyIf="subjective">Usability</option>
 		<option id="userexperience" onlyIf="subjective">User Experience</option> 
-		<option id="workload" onlyIf="subjective">Cognitive Load</option>
+		<option id="workload">Cognitive Load</option>
+		<option id="privacy" onlyIf="subjective">Privacy</option>
+		<option id="aesthetics" onlyIf="subjective">Aesthetics</option>
+		<option id="socialpresence" onlyIf="subjective">Social Presence</option>
+		<option id="habit" onlyIf="subjective">Habit</option>
+		<option id="curiosity" onlyIf="subjective">Curiosity</option>
 	</options>
 	<measures>
 		<method id="demographics" category="summative,demographics" title="Demographics (required)">
@@ -2752,6 +2757,1319 @@
   year={2009},
   month=Mar
 }</div></div>
+		</method>
+			<method id="transferassess" category="empirical,quantitative,objective,learning" title="Quantitative Objective Learning: Transfer &amp; Retention Assessment">
+			<p><strong>Description: </strong>Pre/post knowledge tests plus near- and far-transfer items measuring retention and application of learning to novel contexts, structured by a transfer taxonomy.</p>
+			<div class="method-citation"><div class="citation-copy">Barnett, S. M., &amp; Ceci, S. J. (2002). When and where do we apply what we learn? A taxonomy for far transfer. Psychological Bulletin, 128(4), 612-637. DOI: <a href='https://doi.org/10.1037/0033-2909.128.4.612' target='_blank'>10.1037/0033-2909.128.4.612</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Barnett, S. M., &amp; Ceci, S. J. (2002). When and where do we apply what we learn? A taxonomy for far transfer. Psychological Bulletin, 128(4), 612-637. DOI: 10.1037/0033-2909.128.4.612</div><div class="cite-data-bibtex" style="display:none">@article{Barnett_2002,
+  title={When and where do we apply what we learn?: A taxonomy for far transfer.},
+  volume={128},
+  ISSN={0033-2909},
+  url={http://dx.doi.org/10.1037/0033-2909.128.4.612},
+  DOI={10.1037/0033-2909.128.4.612},
+  number={4},
+  journal={Psychological Bulletin},
+  publisher={American Psychological Association (APA)},
+  author={Barnett, Susan M. and Ceci, Stephen J.},
+  year={2002},
+  pages={612–637}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Transfer_of_learning" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="mocap" category="empirical,quantitative,objective,movement" title="Quantitative Objective Movement: Optical Marker-Based Motion Capture">
+			<p><strong>Description: </strong>Multi-camera 3D tracking of reflective markers to reconstruct joint kinematics, segment angles and full-body movement.</p>
+			<div class="method-citation"><div class="citation-copy">Cappozzo, A., Della Croce, U., Leardini, A., &amp; Chiari, L. (2005). Human movement analysis using stereophotogrammetry. Part 1: theoretical background. Gait &amp; Posture, 21(2), 186-196. DOI: <a href='https://doi.org/10.1016/j.gaitpost.2004.01.010' target='_blank'>10.1016/j.gaitpost.2004.01.010</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Cappozzo, A., Della Croce, U., Leardini, A., &amp; Chiari, L. (2005). Human movement analysis using stereophotogrammetry. Part 1: theoretical background. Gait &amp; Posture, 21(2), 186-196. DOI: 10.1016/j.gaitpost.2004.01.010</div><div class="cite-data-bibtex" style="display:none">@article{Cappozzo_2005,
+  title={Human movement analysis using stereophotogrammetry},
+  volume={21},
+  ISSN={0966-6362},
+  url={http://dx.doi.org/10.1016/j.gaitpost.2004.01.010},
+  DOI={10.1016/j.gaitpost.2004.01.010},
+  number={2},
+  journal={Gait &amp;amp; Posture},
+  publisher={Elsevier BV},
+  author={Cappozzo, Aurelio and Della Croce, Ugo and Leardini, Alberto and Chiari, Lorenzo},
+  year={2005},
+  month=Feb,
+  pages={186–196}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Motion_capture" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="imumocap" category="empirical,quantitative,objective,movement" title="Quantitative Objective Movement: IMU / Inertial Motion Capture">
+			<p><strong>Description: </strong>Wearable accelerometer/gyroscope/magnetometer units estimating segment orientation, acceleration and activity for ambulatory movement analysis.</p>
+			<div class="method-citation"><div class="citation-copy">Roetenberg, D., Luinge, H., &amp; Slycke, P. (2009). Xsens MVN: Full 6DOF human motion tracking using miniature inertial sensors. Xsens Technologies (Technical Report).</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Roetenberg, D., Luinge, H., &amp; Slycke, P. (2009). Xsens MVN: Full 6DOF human motion tracking using miniature inertial sensors. Xsens Technologies (Technical Report).</div><div class="cite-data-bibtex" style="display:none">@misc{Roetenberg2009,
+  author = {Roetenberg, D., Luinge, H. and Slycke, P},
+  title = {Xsens MVN: Full 6DOF human motion tracking using miniature inertial sensors},
+  year = {2009},
+  note = {Roetenberg, D., Luinge, H., &amp; Slycke, P. (2009). Xsens MVN: Full 6DOF human motion tracking using miniature inertial sensors. Xsens Technologies (Technical Report).}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.xsens.com/motion-capture/xsens-mvn-awinda-starter" target='_blank'>Official page</a></p>
+		</method>
+		<method id="gaitanalysis" category="empirical,quantitative,objective,movement" title="Quantitative Objective Movement: Spatiotemporal Gait Analysis">
+			<p><strong>Description: </strong>Quantifies cadence, stride/step length, gait speed, double-support time and variability from instrumented walkways or sensors.</p>
+			<div class="method-citation"><div class="citation-copy">Hausdorff, J. M. (2007). Gait dynamics, fractals and falls: Finding meaning in the stride-to-stride fluctuations of human walking. Human Movement Science, 26(4), 555-589. DOI: <a href='https://doi.org/10.1016/j.humov.2007.05.003' target='_blank'>10.1016/j.humov.2007.05.003</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Hausdorff, J. M. (2007). Gait dynamics, fractals and falls: Finding meaning in the stride-to-stride fluctuations of human walking. Human Movement Science, 26(4), 555-589. DOI: 10.1016/j.humov.2007.05.003</div><div class="cite-data-bibtex" style="display:none">@article{Hausdorff_2007,
+  title={Gait dynamics, fractals and falls: Finding meaning in the stride-to-stride fluctuations of human walking},
+  volume={26},
+  ISSN={0167-9457},
+  url={http://dx.doi.org/10.1016/j.humov.2007.05.003},
+  DOI={10.1016/j.humov.2007.05.003},
+  number={4},
+  journal={Human Movement Science},
+  publisher={Elsevier BV},
+  author={Hausdorff, Jeffrey M.},
+  year={2007},
+  month=Aug,
+  pages={555–589}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Gait_analysis" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="posturalsway" category="empirical,quantitative,objective,movement" title="Quantitative Objective Movement: Postural Sway / Center-of-Pressure">
+			<p><strong>Description: </strong>Force-plate center-of-pressure metrics (sway area, path length, velocity) quantifying standing balance and postural steadiness.</p>
+			<div class="method-citation"><div class="citation-copy">Prieto, T. E., Myklebust, J. B., Hoffmann, R. G., Lovett, E. G., &amp; Myklebust, B. M. (1996). Measures of postural steadiness: differences between healthy young and elderly adults. IEEE Transactions on Biomedical Engineering, 43(9), 956-966. DOI: <a href='https://doi.org/10.1109/10.532130' target='_blank'>10.1109/10.532130</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Prieto, T. E., Myklebust, J. B., Hoffmann, R. G., Lovett, E. G., &amp; Myklebust, B. M. (1996). Measures of postural steadiness: differences between healthy young and elderly adults. IEEE Transactions on Biomedical Engineering, 43(9), 956-966. DOI: 10.1109/10.532130</div><div class="cite-data-bibtex" style="display:none">@article{Prieto_1996,
+  title={Measures of postural steadiness: differences between healthy young and elderly adults},
+  volume={43},
+  ISSN={0018-9294},
+  url={http://dx.doi.org/10.1109/10.532130},
+  DOI={10.1109/10.532130},
+  number={9},
+  journal={IEEE Transactions on Biomedical Engineering},
+  publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+  author={Prieto, T.E. and Myklebust, J.B. and Hoffmann, R.G. and Lovett, E.G. and Myklebust, B.M.},
+  year={1996},
+  pages={956–966}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Posturography" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="movementsmoothness" category="empirical,quantitative,objective,movement" title="Quantitative Objective Movement: Movement Smoothness (Jerk / SPARC)">
+			<p><strong>Description: </strong>Kinematic smoothness indices (normalized jerk, spectral arc length) quantifying movement quality in reaching and motor control.</p>
+			<div class="method-citation"><div class="citation-copy">Rohrer, B., Fasoli, S., Krebs, H. I., et al. (2002). Movement smoothness changes during stroke recovery. Journal of Neuroscience, 22(18), 8297-8304. DOI: <a href='https://doi.org/10.1523/JNEUROSCI.22-18-08297.2002' target='_blank'>10.1523/JNEUROSCI.22-18-08297.2002</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Rohrer, B., Fasoli, S., Krebs, H. I., et al. (2002). Movement smoothness changes during stroke recovery. Journal of Neuroscience, 22(18), 8297-8304. DOI: 10.1523/JNEUROSCI.22-18-08297.2002</div><div class="cite-data-bibtex" style="display:none">@article{Rohrer_2002,
+  title={Movement Smoothness Changes during Stroke Recovery},
+  volume={22},
+  ISSN={1529-2401},
+  url={http://dx.doi.org/10.1523/JNEUROSCI.22-18-08297.2002},
+  DOI={10.1523/jneurosci.22-18-08297.2002},
+  number={18},
+  journal={The Journal of Neuroscience},
+  publisher={Society for Neuroscience},
+  author={Rohrer, Brandon and Fasoli, Susan and Krebs, Hermano Igo and Hughes, Richard and Volpe, Bruce and Frontera, Walter R. and Stein, Joel and Hogan, Neville},
+  year={2002},
+  month=Sept,
+  pages={8297–8304}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://github.com/siva82kb/SPARC" target='_blank'>SPARC repository</a></p>
+		</method>
+		<method id="markerless" category="empirical,quantitative,objective,movement" title="Quantitative Objective Movement: Markerless Skeletal Tracking (RGB-D)">
+			<p><strong>Description: </strong>Depth-camera or vision-based real-time skeletal joint tracking for gesture, posture and reach measurement without markers.</p>
+			<div class="method-citation"><div class="citation-copy">Shotton, J., Fitzgibbon, A., Cook, M., et al. (2011). Real-time human pose recognition in parts from single depth images. Proc. CVPR 2011, 1297-1304. DOI: <a href='https://doi.org/10.1109/CVPR.2011.5995316' target='_blank'>10.1109/CVPR.2011.5995316</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Shotton, J., Fitzgibbon, A., Cook, M., et al. (2011). Real-time human pose recognition in parts from single depth images. Proc. CVPR 2011, 1297-1304. DOI: 10.1109/CVPR.2011.5995316</div><div class="cite-data-bibtex" style="display:none">@inproceedings{Shotton_2011,
+  title={Real-time human pose recognition in parts from single depth images},
+  url={http://dx.doi.org/10.1109/CVPR.2011.5995316},
+  DOI={10.1109/cvpr.2011.5995316},
+  booktitle={CVPR 2011},
+  publisher={IEEE},
+  author={Shotton, Jamie and Fitzgibbon, Andrew and Cook, Mat and Sharp, Toby and Finocchio, Mark and Moore, Richard and Kipman, Alex and Blake, Andrew},
+  year={2011},
+  month=June,
+  pages={1297–1304}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Kinect" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="imienjoyment" category="empirical,quantitative,subjective,hedonicpragmatic" title="Quantitative Subjective Fun: IMI Interest/Enjoyment Subscale">
+			<p><strong>Description: </strong>Self-Determination-Theory self-report of intrinsic enjoyment and interest in an activity; the standard measure of intrinsic enjoyment ('fun').</p>
+			<div class="method-citation"><div class="citation-copy">McAuley, E., Duncan, T., &amp; Tammen, V. V. (1989). Psychometric properties of the Intrinsic Motivation Inventory in a competitive sport setting. Research Quarterly for Exercise and Sport, 60(1), 48-58. DOI: <a href='https://doi.org/10.1080/02701367.1989.10607413' target='_blank'>10.1080/02701367.1989.10607413</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">McAuley, E., Duncan, T., &amp; Tammen, V. V. (1989). Psychometric properties of the Intrinsic Motivation Inventory in a competitive sport setting. Research Quarterly for Exercise and Sport, 60(1), 48-58. DOI: 10.1080/02701367.1989.10607413</div><div class="cite-data-bibtex" style="display:none">@article{McAuley_1989,
+  title={Psychometric Properties of the Intrinsic Motivation Inventory in a Competitive Sport Setting: A Confirmatory Factor Analysis},
+  volume={60},
+  ISSN={2168-3824},
+  url={http://dx.doi.org/10.1080/02701367.1989.10607413},
+  DOI={10.1080/02701367.1989.10607413},
+  number={1},
+  journal={Research Quarterly for Exercise and Sport},
+  publisher={Informa UK Limited},
+  author={McAuley, Edward and Duncan, Terry and Tammen, Vance V.},
+  year={1989},
+  month=Mar,
+  pages={48–58}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://selfdeterminationtheory.org/intrinsic-motivation-inventory/" target='_blank'>Official page</a></p>
+		</method>
+		<method id="paces" category="empirical,quantitative,subjective,hedonicpragmatic" title="Quantitative Subjective Fun: Physical Activity Enjoyment Scale (PACES)">
+			<p><strong>Description: </strong>Bipolar-adjective scale assessing enjoyment of an activity; widely adapted beyond physical activity as a general enjoyment measure.</p>
+			<div class="method-citation"><div class="citation-copy">Kendzierski, D., &amp; DeCarlo, K. J. (1991). Physical Activity Enjoyment Scale: Two validation studies. Journal of Sport &amp; Exercise Psychology, 13(1), 50-64. DOI: <a href='https://doi.org/10.1123/jsep.13.1.50' target='_blank'>10.1123/jsep.13.1.50</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Kendzierski, D., &amp; DeCarlo, K. J. (1991). Physical Activity Enjoyment Scale: Two validation studies. Journal of Sport &amp; Exercise Psychology, 13(1), 50-64. DOI: 10.1123/jsep.13.1.50</div><div class="cite-data-bibtex" style="display:none">@article{Kendzierski_1991,
+  title={Physical Activity Enjoyment Scale: Two Validation Studies},
+  volume={13},
+  ISSN={1543-2904},
+  url={http://dx.doi.org/10.1123/jsep.13.1.50},
+  DOI={10.1123/jsep.13.1.50},
+  number={1},
+  journal={Journal of Sport and Exercise Psychology},
+  publisher={Human Kinetics},
+  author={Kendzierski, Deborah and DeCarlo, Kenneth J.},
+  year={1991},
+  month=Mar,
+  pages={50–64}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.sralab.org/rehabilitation-measures/physical-activity-enjoyment-scale" target='_blank'>Instrument page</a></p>
+		</method>
+		<method id="digitspan" category="empirical,quantitative,objective,memory" title="Quantitative Objective Memory: Digit Span (forward/backward)">
+			<p><strong>Description: </strong>Immediate recall of orally presented digit sequences; forward span indexes verbal short-term storage, backward span working-memory manipulation.</p>
+			<div class="method-citation"><div class="citation-copy">Wechsler, D. (2008). Wechsler Adult Intelligence Scale - Fourth Edition (WAIS-IV). Pearson. DOI: <a href='https://doi.org/10.1037/t15169-000' target='_blank'>10.1037/t15169-000</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Wechsler, D. (2008). Wechsler Adult Intelligence Scale - Fourth Edition (WAIS-IV). Pearson. DOI: 10.1037/t15169-000</div><div class="cite-data-bibtex" style="display:none">@misc{Wechsler_2008,
+  title={Wechsler Adult Intelligence Scale--Fourth Edition},
+  url={http://dx.doi.org/10.1037/t15169-000},
+  DOI={10.1037/t15169-000},
+  journal={PsycTESTS Dataset},
+  publisher={American Psychological Association (APA)},
+  author={Wechsler, David},
+  year={2008}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Memory_span" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="corsi" category="empirical,quantitative,objective,memory" title="Quantitative Objective Memory: Corsi Block-Tapping Test">
+			<p><strong>Description: </strong>Reproduction of sequences of tapped spatial blocks; standard span measure of visuospatial short-term/working memory.</p>
+			<div class="method-citation"><div class="citation-copy">Kessels, R. P. C., van Zandvoort, M. J. E., Postma, A., Kappelle, L. J., &amp; de Haan, E. H. F. (2000). The Corsi Block-Tapping Task: Standardization and normative data. Applied Neuropsychology, 7(4), 252-258. DOI: <a href='https://doi.org/10.1207/S15324826AN0704_8' target='_blank'>10.1207/S15324826AN0704_8</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Kessels, R. P. C., van Zandvoort, M. J. E., Postma, A., Kappelle, L. J., &amp; de Haan, E. H. F. (2000). The Corsi Block-Tapping Task: Standardization and normative data. Applied Neuropsychology, 7(4), 252-258. DOI: 10.1207/S15324826AN0704_8</div><div class="cite-data-bibtex" style="display:none">@article{Kessels_2000,
+  title={The Corsi Block-Tapping Task: Standardization and Normative Data},
+  volume={7},
+  ISSN={1532-4826},
+  url={http://dx.doi.org/10.1207/S15324826AN0704_8},
+  DOI={10.1207/s15324826an0704_8},
+  number={4},
+  journal={Applied Neuropsychology},
+  publisher={Informa UK Limited},
+  author={Kessels, Roy P. C. and van Zandvoort, Martine J. E. and Postma, Albert and Kappelle, L. Jaap and de Haan, Edward H. F.},
+  year={2000},
+  month=Dec,
+  pages={252–258}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Corsi_block-tapping_test" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="recognitiondprime" category="empirical,quantitative,objective,memory" title="Quantitative Objective Memory: Recognition Memory d' (Signal Detection)">
+			<p><strong>Description: </strong>Old/new recognition test scored with signal-detection theory to separate memory sensitivity (d') from response bias.</p>
+			<div class="method-citation"><div class="citation-copy">Snodgrass, J. G., &amp; Corwin, J. (1988). Pragmatics of measuring recognition memory: Applications to dementia and amnesia. Journal of Experimental Psychology: General, 117(1), 34-50. DOI: <a href='https://doi.org/10.1037/0096-3445.117.1.34' target='_blank'>10.1037/0096-3445.117.1.34</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Snodgrass, J. G., &amp; Corwin, J. (1988). Pragmatics of measuring recognition memory: Applications to dementia and amnesia. Journal of Experimental Psychology: General, 117(1), 34-50. DOI: 10.1037/0096-3445.117.1.34</div><div class="cite-data-bibtex" style="display:none">@article{Snodgrass_1988,
+  title={Pragmatics of measuring recognition memory: Applications to dementia and amnesia.},
+  volume={117},
+  ISSN={0096-3445},
+  url={http://dx.doi.org/10.1037/0096-3445.117.1.34},
+  DOI={10.1037/0096-3445.117.1.34},
+  number={1},
+  journal={Journal of Experimental Psychology: General},
+  publisher={American Psychological Association (APA)},
+  author={Snodgrass, Joan G. and Corwin, June},
+  year={1988},
+  month=Mar,
+  pages={34–50}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Sensitivity_index" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="paas" category="empirical,quantitative,subjective,workload" title="Quantitative Subjective Cognitive Load: Paas Mental-Effort Scale">
+			<p><strong>Description: </strong>Unidimensional 9-point self-report of invested mental effort; the canonical single-item cognitive-load measure.</p>
+			<div class="method-citation"><div class="citation-copy">Paas, F. G. W. C. (1992). Training strategies for attaining transfer of problem-solving skill in statistics: A cognitive-load approach. Journal of Educational Psychology, 84(4), 429-434. DOI: <a href='https://doi.org/10.1037/0022-0663.84.4.429' target='_blank'>10.1037/0022-0663.84.4.429</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Paas, F. G. W. C. (1992). Training strategies for attaining transfer of problem-solving skill in statistics: A cognitive-load approach. Journal of Educational Psychology, 84(4), 429-434. DOI: 10.1037/0022-0663.84.4.429</div><div class="cite-data-bibtex" style="display:none">@article{Paas_1992,
+  title={Training strategies for attaining transfer of problem-solving skill in statistics: A cognitive-load approach.},
+  volume={84},
+  ISSN={0022-0663},
+  url={http://dx.doi.org/10.1037/0022-0663.84.4.429},
+  DOI={10.1037/0022-0663.84.4.429},
+  number={4},
+  journal={Journal of Educational Psychology},
+  publisher={American Psychological Association (APA)},
+  author={Paas, Fred G. W. C.},
+  year={1992},
+  month=Dec,
+  pages={429–434}
+}</div></div>
+		</method>
+		<method id="swat" category="empirical,quantitative,subjective,workload" title="Quantitative Subjective Cognitive Load: Subjective Workload Assessment Technique (SWAT)">
+			<p><strong>Description: </strong>Three-dimensional workload rating (time load, mental effort, psychological stress) built on conjoint measurement theory.</p>
+			<div class="method-citation"><div class="citation-copy">Reid, G. B., &amp; Nygren, T. E. (1988). The Subjective Workload Assessment Technique: A scaling procedure for measuring mental workload. Advances in Psychology, 52, 185-218. DOI: <a href='https://doi.org/10.1016/S0166-4115(08)62387-0' target='_blank'>10.1016/S0166-4115(08)62387-0</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Reid, G. B., &amp; Nygren, T. E. (1988). The Subjective Workload Assessment Technique: A scaling procedure for measuring mental workload. Advances in Psychology, 52, 185-218. DOI: 10.1016/S0166-4115(08)62387-0</div><div class="cite-data-bibtex" style="display:none">@inbook{1988,
+  ISBN={9780444703880},
+  ISSN={0166-4115},
+  url={http://dx.doi.org/10.1016/S0166-4115(08)62387-0},
+  DOI={10.1016/s0166-4115(08)62387-0},
+  booktitle={Human Mental Workload},
+  publisher={Elsevier},
+  year={1988},
+  pages={185–218}
+}</div></div>
+			<p><strong>Link: </strong><a href="http://hriscaledatabase.psychology.gmu.edu/workload/2025/03/28/SWAT.html" target='_blank'>HRI Scale Database</a></p>
+		</method>
+		<method id="tepr" category="empirical,quantitative,objective,workload" title="Quantitative Objective Cognitive Load: Task-Evoked Pupillary Response">
+			<p><strong>Description: </strong>Sub-millimeter task-locked pupil dilation that tracks processing load; an unobtrusive eye-tracker-based workload index.</p>
+			<div class="method-citation"><div class="citation-copy">Beatty, J. (1982). Task-evoked pupillary responses, processing load, and the structure of processing resources. Psychological Bulletin, 91(2), 276-292. DOI: <a href='https://doi.org/10.1037/0033-2909.91.2.276' target='_blank'>10.1037/0033-2909.91.2.276</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Beatty, J. (1982). Task-evoked pupillary responses, processing load, and the structure of processing resources. Psychological Bulletin, 91(2), 276-292. DOI: 10.1037/0033-2909.91.2.276</div><div class="cite-data-bibtex" style="display:none">@article{Beatty_1982,
+  title={Task-evoked pupillary responses, processing load, and the structure of processing resources.},
+  volume={91},
+  ISSN={0033-2909},
+  url={http://dx.doi.org/10.1037/0033-2909.91.2.276},
+  DOI={10.1037/0033-2909.91.2.276},
+  number={2},
+  journal={Psychological Bulletin},
+  publisher={American Psychological Association (APA)},
+  author={Beatty, Jackson},
+  year={1982},
+  pages={276–292}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Pupillary_response" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="eegengagement" category="empirical,quantitative,objective,workload" title="Quantitative Objective Cognitive Load: EEG Engagement Index">
+			<p><strong>Description: </strong>Spectral-power ratio beta/(alpha+theta) from EEG used as a closed-loop indicator of operator engagement and workload.</p>
+			<div class="method-citation"><div class="citation-copy">Pope, A. T., Bogart, E. H., &amp; Bartolome, D. S. (1995). Biocybernetic system evaluates indices of operator engagement in automated task. Biological Psychology, 40(1-2), 187-195. DOI: <a href='https://doi.org/10.1016/0301-0511(95)05116-3' target='_blank'>10.1016/0301-0511(95)05116-3</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Pope, A. T., Bogart, E. H., &amp; Bartolome, D. S. (1995). Biocybernetic system evaluates indices of operator engagement in automated task. Biological Psychology, 40(1-2), 187-195. DOI: 10.1016/0301-0511(95)05116-3</div><div class="cite-data-bibtex" style="display:none">@article{Pope_1995,
+  title={Biocybernetic system evaluates indices of operator engagement in automated task},
+  volume={40},
+  ISSN={0301-0511},
+  url={http://dx.doi.org/10.1016/0301-0511(95)05116-3},
+  DOI={10.1016/0301-0511(95)05116-3},
+  number={1-2},
+  journal={Biological Psychology},
+  publisher={Elsevier BV},
+  author={Pope, Alan T and Bogart, Edward H and Bartolome, Debbie S},
+  year={1995},
+  month=May,
+  pages={187–195}
+}</div></div>
+		</method>
+		<method id="salivacortisol" category="empirical,quantitative,objective,stress" title="Quantitative Objective Stress: Salivary Cortisol &amp; Alpha-Amylase">
+			<p><strong>Description: </strong>Saliva biomarkers: cortisol indexes HPA-axis stress, alpha-amylase indexes sympathetic/noradrenergic activation.</p>
+			<div class="method-citation"><div class="citation-copy">Nater, U. M., &amp; Rohleder, N. (2009). Salivary alpha-amylase as a non-invasive biomarker for the sympathetic nervous system. Psychoneuroendocrinology, 34(4), 486-496. DOI: <a href='https://doi.org/10.1016/j.psyneuen.2009.01.014' target='_blank'>10.1016/j.psyneuen.2009.01.014</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Nater, U. M., &amp; Rohleder, N. (2009). Salivary alpha-amylase as a non-invasive biomarker for the sympathetic nervous system. Psychoneuroendocrinology, 34(4), 486-496. DOI: 10.1016/j.psyneuen.2009.01.014</div><div class="cite-data-bibtex" style="display:none">@article{Nater_2009,
+  title={Salivary alpha-amylase as a non-invasive biomarker for the sympathetic nervous system: Current state of research},
+  volume={34},
+  ISSN={0306-4530},
+  url={http://dx.doi.org/10.1016/j.psyneuen.2009.01.014},
+  DOI={10.1016/j.psyneuen.2009.01.014},
+  number={4},
+  journal={Psychoneuroendocrinology},
+  publisher={Elsevier BV},
+  author={Nater, U.M. and Rohleder, N.},
+  year={2009},
+  month=May,
+  pages={486–496}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Cortisol" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="fnirs" category="empirical,quantitative,objective,stress" title="Quantitative Objective Stress: fNIRS Prefrontal Hemodynamics">
+			<p><strong>Description: </strong>Functional near-infrared spectroscopy of prefrontal oxygenated-hemoglobin indexing mental workload and stress; motion-tolerant for ecological tasks.</p>
+			<div class="method-citation"><div class="citation-copy">Al-Shargie, F., Tang, T. B., &amp; Kiguchi, M. (2017). Assessment of mental stress effects on prefrontal cortical activities using canonical correlation analysis: an fNIRS-EEG study. Biomedical Optics Express, 8(5), 2583-2598. DOI: <a href='https://doi.org/10.1364/BOE.8.002583' target='_blank'>10.1364/BOE.8.002583</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Al-Shargie, F., Tang, T. B., &amp; Kiguchi, M. (2017). Assessment of mental stress effects on prefrontal cortical activities using canonical correlation analysis: an fNIRS-EEG study. Biomedical Optics Express, 8(5), 2583-2598. DOI: 10.1364/BOE.8.002583</div><div class="cite-data-bibtex" style="display:none">@article{Al_Shargie_2017,
+  title={Assessment of mental stress effects on prefrontal cortical activities using canonical correlation analysis: an fNIRS-EEG study},
+  volume={8},
+  ISSN={2156-7085},
+  url={http://dx.doi.org/10.1364/BOE.8.002583},
+  DOI={10.1364/boe.8.002583},
+  number={5},
+  journal={Biomedical Optics Express},
+  publisher={Optica Publishing Group},
+  author={Al-Shargie, Fares and Tang, Tong Boon and Kiguchi, Masashi},
+  year={2017},
+  month=Apr,
+  pages={2583}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Functional_near-infrared_spectroscopy" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="respiration" category="empirical,quantitative,objective,stress" title="Quantitative Objective Stress: Respiration Rate / Pattern">
+			<p><strong>Description: </strong>Respiratory rate, amplitude and variability that track arousal and the calm-tension dimension of affect; cheaply captured via a chest band.</p>
+			<div class="method-citation"><div class="citation-copy">Boiten, F. A., Frijda, N. H., &amp; Wientjes, C. J. E. (1994). Emotions and respiratory patterns: review and critical analysis. International Journal of Psychophysiology, 17(2), 103-128. DOI: <a href='https://doi.org/10.1016/0167-8760(94)90027-2' target='_blank'>10.1016/0167-8760(94)90027-2</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Boiten, F. A., Frijda, N. H., &amp; Wientjes, C. J. E. (1994). Emotions and respiratory patterns: review and critical analysis. International Journal of Psychophysiology, 17(2), 103-128. DOI: 10.1016/0167-8760(94)90027-2</div><div class="cite-data-bibtex" style="display:none">@article{Boiten_1994,
+  title={Emotions and respiratory patterns: review and critical analysis},
+  volume={17},
+  ISSN={0167-8760},
+  url={http://dx.doi.org/10.1016/0167-8760(94)90027-2},
+  DOI={10.1016/0167-8760(94)90027-2},
+  number={2},
+  journal={International Journal of Psychophysiology},
+  publisher={Elsevier BV},
+  author={Boiten, Frans A. and Frijda, Nico H. and Wientjes, Cornelis J.E.},
+  year={1994},
+  month=July,
+  pages={103–128}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Respiratory_rate" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="facialemg" category="empirical,quantitative,objective,emotions" title="Quantitative Objective Emotions: Facial EMG (Corrugator/Zygomaticus)">
+			<p><strong>Description: </strong>Micro-activation of corrugator supercilii (negative valence) and zygomaticus major (positive valence) indexing affective valence, even subthreshold.</p>
+			<div class="method-citation"><div class="citation-copy">Larsen, J. T., Norris, C. J., &amp; Cacioppo, J. T. (2003). Effects of positive and negative affect on electromyographic activity over zygomaticus major and corrugator supercilii. Psychophysiology, 40(5), 776-785. DOI: <a href='https://doi.org/10.1111/1469-8986.00078' target='_blank'>10.1111/1469-8986.00078</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Larsen, J. T., Norris, C. J., &amp; Cacioppo, J. T. (2003). Effects of positive and negative affect on electromyographic activity over zygomaticus major and corrugator supercilii. Psychophysiology, 40(5), 776-785. DOI: 10.1111/1469-8986.00078</div><div class="cite-data-bibtex" style="display:none">@article{Larsen_2003,
+  title={Effects of positive and negative affect on electromyographic activity over &lt;i&gt;zygomaticus major&lt;/i&gt; and &lt;i&gt;corrugator supercilii&lt;/i&gt;},
+  volume={40},
+  ISSN={1469-8986},
+  url={http://dx.doi.org/10.1111/1469-8986.00078},
+  DOI={10.1111/1469-8986.00078},
+  number={5},
+  journal={Psychophysiology},
+  publisher={Wiley},
+  author={Larsen, Jeff T. and Norris, Catherine J. and Cacioppo, John T.},
+  year={2003},
+  month=Aug,
+  pages={776–785}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Facial_electromyography" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="eegalpha" category="empirical,quantitative,objective,emotions" title="Quantitative Objective Emotions: Frontal EEG Alpha Asymmetry">
+			<p><strong>Description: </strong>Left-vs-right frontal alpha-band power difference indexing approach (left) vs withdrawal (right) motivational/affective tendency.</p>
+			<div class="method-citation"><div class="citation-copy">Coan, J. A., &amp; Allen, J. J. B. (2004). Frontal EEG asymmetry as a moderator and mediator of emotion. Biological Psychology, 67(1-2), 7-50. DOI: <a href='https://doi.org/10.1016/j.biopsycho.2004.03.002' target='_blank'>10.1016/j.biopsycho.2004.03.002</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Coan, J. A., &amp; Allen, J. J. B. (2004). Frontal EEG asymmetry as a moderator and mediator of emotion. Biological Psychology, 67(1-2), 7-50. DOI: 10.1016/j.biopsycho.2004.03.002</div><div class="cite-data-bibtex" style="display:none">@article{Coan_2004,
+  title={Frontal EEG asymmetry as a moderator and mediator of emotion},
+  volume={67},
+  ISSN={0301-0511},
+  url={http://dx.doi.org/10.1016/j.biopsycho.2004.03.002},
+  DOI={10.1016/j.biopsycho.2004.03.002},
+  number={1-2},
+  journal={Biological Psychology},
+  publisher={Elsevier BV},
+  author={Coan, James A and Allen, John J.B},
+  year={2004},
+  month=Oct,
+  pages={7–50}
+}</div></div>
+		</method>
+		<method id="facsauto" category="empirical,quantitative,objective,emotions" title="Quantitative Objective Emotions: Facial Action Coding System (FACS)">
+			<p><strong>Description: </strong>Coding of facial Action Units (manually or via computer-vision) to infer discrete emotions and valence/intensity from facial movement.</p>
+			<div class="method-citation"><div class="citation-copy">Ekman, P., &amp; Friesen, W. V. (1978). Facial Action Coding System: A Technique for the Measurement of Facial Movement. Consulting Psychologists Press.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Ekman, P., &amp; Friesen, W. V. (1978). Facial Action Coding System: A Technique for the Measurement of Facial Movement. Consulting Psychologists Press.</div><div class="cite-data-bibtex" style="display:none">@misc{Ekman1978,
+  author = {Ekman, P. and Friesen, W. V},
+  title = {Facial Action Coding System: A Technique for the Measurement of Facial Movement},
+  year = {1978},
+  note = {Ekman, P., &amp; Friesen, W. V. (1978). Facial Action Coding System: A Technique for the Measurement of Facial Movement. Consulting Psychologists Press.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Facial_Action_Coding_System" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="pupilarousal" category="empirical,quantitative,objective,emotions" title="Quantitative Objective Emotions: Pupillometry (Emotional Arousal)">
+			<p><strong>Description: </strong>Light-corrected pupil diameter that tracks emotional arousal via sympathetic activation (covaries with skin conductance); valence-insensitive.</p>
+			<div class="method-citation"><div class="citation-copy">Bradley, M. M., Miccoli, L., Escrig, M. A., &amp; Lang, P. J. (2008). The pupil as a measure of emotional arousal and autonomic activation. Psychophysiology, 45(4), 602-607. DOI: <a href='https://doi.org/10.1111/j.1469-8986.2008.00654.x' target='_blank'>10.1111/j.1469-8986.2008.00654.x</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Bradley, M. M., Miccoli, L., Escrig, M. A., &amp; Lang, P. J. (2008). The pupil as a measure of emotional arousal and autonomic activation. Psychophysiology, 45(4), 602-607. DOI: 10.1111/j.1469-8986.2008.00654.x</div><div class="cite-data-bibtex" style="display:none">@article{Bradley_2008,
+  title={The pupil as a measure of emotional arousal and autonomic activation},
+  volume={45},
+  ISSN={1469-8986},
+  url={http://dx.doi.org/10.1111/j.1469-8986.2008.00654.x},
+  DOI={10.1111/j.1469-8986.2008.00654.x},
+  number={4},
+  journal={Psychophysiology},
+  publisher={Wiley},
+  author={Bradley, Margaret M. and Miccoli, Laura and Escrig, Miguel A. and Lang, Peter J.},
+  year={2008},
+  month=May,
+  pages={602–607}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Pupillometry" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="gemaps" category="empirical,quantitative,objective,emotions" title="Quantitative Objective Emotions: Vocal/Prosodic Affect (GeMAPS)">
+			<p><strong>Description: </strong>Acoustic-prosodic features (pitch, energy, MFCCs, timing) extracted from voice to classify emotional state and arousal.</p>
+			<div class="method-citation"><div class="citation-copy">Eyben, F., Scherer, K. R., Schuller, B. W., et al. (2016). The Geneva Minimalistic Acoustic Parameter Set (GeMAPS) for voice research and affective computing. IEEE Transactions on Affective Computing, 7(2), 190-202. DOI: <a href='https://doi.org/10.1109/TAFFC.2015.2457417' target='_blank'>10.1109/TAFFC.2015.2457417</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Eyben, F., Scherer, K. R., Schuller, B. W., et al. (2016). The Geneva Minimalistic Acoustic Parameter Set (GeMAPS) for voice research and affective computing. IEEE Transactions on Affective Computing, 7(2), 190-202. DOI: 10.1109/TAFFC.2015.2457417</div><div class="cite-data-bibtex" style="display:none">@article{Eyben_2016,
+  title={The Geneva Minimalistic Acoustic Parameter Set (GeMAPS) for Voice Research and Affective Computing},
+  volume={7},
+  ISSN={1949-3045},
+  url={http://dx.doi.org/10.1109/TAFFC.2015.2457417},
+  DOI={10.1109/taffc.2015.2457417},
+  number={2},
+  journal={IEEE Transactions on Affective Computing},
+  publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+  author={Eyben, Florian and Scherer, Klaus R. and Schuller, Bjorn W. and Sundberg, Johan and Andre, Elisabeth and Busso, Carlos and Devillers, Laurence Y. and Epps, Julien and Laukka, Petri and Narayanan, Shrikanth S. and Truong, Khiet P.},
+  year={2016},
+  month=Apr,
+  pages={190–202}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://github.com/audeering/opensmile" target='_blank'>openSMILE repository</a></p>
+		</method>
+		<method id="tasksuccess" category="empirical,quantitative,objective,performance" title="Quantitative Objective Performance: Task Success / Completion Rate">
+			<p><strong>Description: </strong>Proportion of attempted tasks completed correctly; the ISO 9241-11 effectiveness measure.</p>
+			<div class="method-citation"><div class="citation-copy">International Organization for Standardization (2018). ISO 9241-11:2018 - Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts. Geneva: ISO.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">International Organization for Standardization (2018). ISO 9241-11:2018 - Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts. Geneva: ISO.</div><div class="cite-data-bibtex" style="display:none">@misc{InternationalOrganizationforStandardization2018,
+  author = {International Organization for Standardization},
+  title = {ISO 9241-11:2018 - Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts},
+  year = {2018},
+  note = {International Organization for Standardization (2018). ISO 9241-11:2018 - Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts. Geneva: ISO.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/" target='_blank'>Nielsen Norman Group</a></p>
+		</method>
+		<method id="lostness" category="empirical,quantitative,objective,performance" title="Quantitative Objective Performance: Lostness / Navigation Efficiency">
+			<p><strong>Description: </strong>Deviation of a user's node/page path from the optimal path, quantifying disorientation during navigation.</p>
+			<div class="method-citation"><div class="citation-copy">Smith, P. A. (1996). Towards a practical measure of hypertext usability. Interacting with Computers, 8(4), 365-381. DOI: <a href='https://doi.org/10.1016/S0953-5438(97)83779-4' target='_blank'>10.1016/S0953-5438(97)83779-4</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Smith, P. A. (1996). Towards a practical measure of hypertext usability. Interacting with Computers, 8(4), 365-381. DOI: 10.1016/S0953-5438(97)83779-4</div><div class="cite-data-bibtex" style="display:none">@article{Smith_1996,
+  title={Towards a practical measure of hypertext usability},
+  volume={8},
+  ISSN={0953-5438},
+  url={http://dx.doi.org/10.1016/S0953-5438(97)83779-4},
+  DOI={10.1016/s0953-5438(97)83779-4},
+  number={4},
+  journal={Interacting with Computers},
+  publisher={Oxford University Press (OUP)},
+  author={Smith, Pauline A.},
+  year={1996},
+  month=Dec,
+  pages={365–381}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://measuringu.com/lostness/" target='_blank'>MeasuringU</a></p>
+		</method>
+		<method id="learnability" category="empirical,quantitative,objective,performance" title="Quantitative Objective Performance: Software Learnability / Learning Curve">
+			<p><strong>Description: </strong>Change in performance (time, errors, success) across repeated trials, capturing initial and extended learnability of an interface.</p>
+			<div class="method-citation"><div class="citation-copy">Grossman, T., Fitzmaurice, G., &amp; Attar, R. (2009). A survey of software learnability: metrics, methodologies and guidelines. Proc. CHI 2009, 649-658. DOI: <a href='https://doi.org/10.1145/1518701.1518803' target='_blank'>10.1145/1518701.1518803</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Grossman, T., Fitzmaurice, G., &amp; Attar, R. (2009). A survey of software learnability: metrics, methodologies and guidelines. Proc. CHI 2009, 649-658. DOI: 10.1145/1518701.1518803</div><div class="cite-data-bibtex" style="display:none">@inproceedings{Grossman_2009,
+  series={CHI ’09},
+  title={A survey of software learnability: metrics, methodologies and guidelines},
+  url={http://dx.doi.org/10.1145/1518701.1518803},
+  DOI={10.1145/1518701.1518803},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  publisher={ACM},
+  author={Grossman, Tovi and Fitzmaurice, George and Attar, Ramtin},
+  year={2009},
+  month=Apr,
+  pages={649–658},
+  collection={CHI ’09}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.nngroup.com/articles/measure-learnability/" target='_blank'>Nielsen Norman Group</a></p>
+		</method>
+		<method id="mousedynamics" category="empirical,quantitative,objective,performance" title="Quantitative Objective Performance: Mouse / Cursor Movement Tracking">
+			<p><strong>Description: </strong>Logged cursor trajectories, speed, hovers and pauses used to infer attention, hesitation and usability problems.</p>
+			<div class="method-citation"><div class="citation-copy">Arroyo, E., Selker, T., &amp; Wei, W. (2006). Usability tool for analysis of web designs using mouse tracks. CHI '06 Extended Abstracts, 484-489. DOI: <a href='https://doi.org/10.1145/1125451.1125557' target='_blank'>10.1145/1125451.1125557</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Arroyo, E., Selker, T., &amp; Wei, W. (2006). Usability tool for analysis of web designs using mouse tracks. CHI '06 Extended Abstracts, 484-489. DOI: 10.1145/1125451.1125557</div><div class="cite-data-bibtex" style="display:none">@inproceedings{Arroyo_2006,
+  series={CHI06},
+  title={Usability tool for analysis of web designs using mouse tracks},
+  url={http://dx.doi.org/10.1145/1125451.1125557},
+  DOI={10.1145/1125451.1125557},
+  booktitle={CHI ’06 Extended Abstracts on Human Factors in Computing Systems},
+  publisher={ACM},
+  author={Arroyo, Ernesto and Selker, Ted and Wei, Willy},
+  year={2006},
+  month=Apr,
+  pages={484–489},
+  collection={CHI06}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Mouse_tracking" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="keystrokedynamics" category="empirical,quantitative,objective,performance" title="Quantitative Objective Performance: Keystroke Dynamics">
+			<p><strong>Description: </strong>Timing features of typing (dwell and flight times) logged as a behavioral signal for state, effort or identification.</p>
+			<div class="method-citation"><div class="citation-copy">Roy, S., et al. (2025). Keystroke Dynamics: Concepts, Techniques, and Applications. ACM Computing Surveys. DOI: <a href='https://doi.org/10.1145/3733103' target='_blank'>10.1145/3733103</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Roy, S., et al. (2025). Keystroke Dynamics: Concepts, Techniques, and Applications. ACM Computing Surveys. DOI: 10.1145/3733103</div><div class="cite-data-bibtex" style="display:none">@article{Shadman_2025,
+  title={Keystroke Dynamics: Concepts, Techniques, and Applications},
+  volume={57},
+  ISSN={1557-7341},
+  url={http://dx.doi.org/10.1145/3733103},
+  DOI={10.1145/3733103},
+  number={11},
+  journal={ACM Computing Surveys},
+  publisher={Association for Computing Machinery (ACM)},
+  author={Shadman, Rashik and Wahab, Ahmed Anu and Manno, Michael and Lukaszewski, Matthew and Hou, Daqing and Hussain, Faraz},
+  year={2025},
+  month=June,
+  pages={1–35}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Keystroke_dynamics" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="vo2max" category="empirical,quantitative,objective,fitness" title="Quantitative Objective Fitness: Maximal Oxygen Uptake (VO2max)">
+			<p><strong>Description: </strong>Gold-standard cardiorespiratory fitness measure from expired-gas analysis during graded maximal exercise.</p>
+			<div class="method-citation"><div class="citation-copy">Balke, B., &amp; Ware, R. W. (1959). An experimental study of physical fitness of Air Force personnel. United States Armed Forces Medical Journal, 10(6), 675-688.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Balke, B., &amp; Ware, R. W. (1959). An experimental study of physical fitness of Air Force personnel. United States Armed Forces Medical Journal, 10(6), 675-688.</div><div class="cite-data-bibtex" style="display:none">@misc{Balke1959,
+  author = {Balke, B. and Ware, R. W},
+  title = {An experimental study of physical fitness of Air Force personnel},
+  year = {1959},
+  note = {Balke, B., &amp; Ware, R. W. (1959). An experimental study of physical fitness of Air Force personnel. United States Armed Forces Medical Journal, 10(6), 675-688.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/VO2_max" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="sixmwt" category="empirical,quantitative,objective,fitness" title="Quantitative Objective Fitness: Six-Minute Walk Test (6MWT)">
+			<p><strong>Description: </strong>Distance walked in six minutes as a submaximal functional-capacity and exercise-tolerance measure.</p>
+			<div class="method-citation"><div class="citation-copy">ATS Committee on Proficiency Standards for Clinical Pulmonary Function Laboratories (2002). ATS Statement: Guidelines for the Six-Minute Walk Test. American Journal of Respiratory and Critical Care Medicine, 166(1), 111-117. DOI: <a href='https://doi.org/10.1164/ajrccm.166.1.at1102' target='_blank'>10.1164/ajrccm.166.1.at1102</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">ATS Committee on Proficiency Standards for Clinical Pulmonary Function Laboratories (2002). ATS Statement: Guidelines for the Six-Minute Walk Test. American Journal of Respiratory and Critical Care Medicine, 166(1), 111-117. DOI: 10.1164/ajrccm.166.1.at1102</div><div class="cite-data-bibtex" style="display:none">@article{2002,
+  volume={166},
+  ISSN={1535-4970},
+  url={http://dx.doi.org/10.1164/ajrccm.166.1.at1102},
+  DOI={10.1164/ajrccm.166.1.at1102},
+  number={1},
+  journal={American Journal of Respiratory and Critical Care Medicine},
+  publisher={Oxford University Press (OUP)},
+  year={2002},
+  month=July,
+  pages={111–117}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.physio-pedia.com/Six_Minute_Walk_Test_/_6_Minute_Walk_Test" target='_blank'>Physiopedia</a></p>
+		</method>
+		<method id="seq" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: Single Ease Question (SEQ)">
+			<p><strong>Description: </strong>Single 7-point post-task rating of how easy or difficult a task was to complete.</p>
+			<div class="method-citation"><div class="citation-copy">Sauro, J., &amp; Dumas, J. S. (2009). Comparison of three one-question, post-task usability questionnaires. Proc. CHI 2009, 1599-1608. DOI: <a href='https://doi.org/10.1145/1518701.1518946' target='_blank'>10.1145/1518701.1518946</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Sauro, J., &amp; Dumas, J. S. (2009). Comparison of three one-question, post-task usability questionnaires. Proc. CHI 2009, 1599-1608. DOI: 10.1145/1518701.1518946</div><div class="cite-data-bibtex" style="display:none">@inproceedings{Sauro_2009,
+  series={CHI ’09},
+  title={Comparison of three one-question, post-task usability questionnaires},
+  url={http://dx.doi.org/10.1145/1518701.1518946},
+  DOI={10.1145/1518701.1518946},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  publisher={ACM},
+  author={Sauro, Jeff and Dumas, Joseph S.},
+  year={2009},
+  month=Apr,
+  pages={1599–1608},
+  collection={CHI ’09}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://measuringu.com/seq10/" target='_blank'>MeasuringU</a></p>
+		</method>
+		<method id="umuxlite" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: UMUX-LITE">
+			<p><strong>Description: </strong>Two-item perceived-usability scale (usefulness + ease of use) that corresponds closely to the SUS.</p>
+			<div class="method-citation"><div class="citation-copy">Lewis, J. R., Utesch, B. S., &amp; Maher, D. E. (2013). UMUX-LITE: When there's no time for the SUS. Proc. CHI 2013, 2099-2102. DOI: <a href='https://doi.org/10.1145/2470654.2481287' target='_blank'>10.1145/2470654.2481287</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Lewis, J. R., Utesch, B. S., &amp; Maher, D. E. (2013). UMUX-LITE: When there's no time for the SUS. Proc. CHI 2013, 2099-2102. DOI: 10.1145/2470654.2481287</div><div class="cite-data-bibtex" style="display:none">@inproceedings{Lewis_2013,
+  series={CHI ’13},
+  title={UMUX-LITE: when there’s no time for the SUS},
+  url={http://dx.doi.org/10.1145/2470654.2481287},
+  DOI={10.1145/2470654.2481287},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  publisher={ACM},
+  author={Lewis, James R. and Utesch, Brian S. and Maher, Deborah E.},
+  year={2013},
+  month=Apr,
+  pages={2099–2102},
+  collection={CHI ’13}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://measuringu.com/umux-lite/" target='_blank'>MeasuringU</a></p>
+		</method>
+		<method id="pssuq" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: PSSUQ / CSUQ">
+			<p><strong>Description: </strong>16-item post-study usability questionnaire (CSUQ is the survey-reworded variant) covering system usefulness, information and interface quality.</p>
+			<div class="method-citation"><div class="citation-copy">Lewis, J. R. (1995). IBM computer usability satisfaction questionnaires: Psychometric evaluation and instructions for use. International Journal of Human-Computer Interaction, 7(1), 57-78. DOI: <a href='https://doi.org/10.1080/10447319509526110' target='_blank'>10.1080/10447319509526110</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Lewis, J. R. (1995). IBM computer usability satisfaction questionnaires: Psychometric evaluation and instructions for use. International Journal of Human-Computer Interaction, 7(1), 57-78. DOI: 10.1080/10447319509526110</div><div class="cite-data-bibtex" style="display:none">@article{Lewis_1995,
+  title={IBM computer usability satisfaction questionnaires: Psychometric evaluation and instructions for use},
+  volume={7},
+  ISSN={1532-7590},
+  url={http://dx.doi.org/10.1080/10447319509526110},
+  DOI={10.1080/10447319509526110},
+  number={1},
+  journal={International Journal of Human-Computer Interaction},
+  publisher={Informa UK Limited},
+  author={Lewis, James R.},
+  year={1995},
+  month=Jan,
+  pages={57–78}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://measuringu.com/pssuq/" target='_blank'>MeasuringU</a></p>
+		</method>
+		<method id="suprq" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: SUPR-Q">
+			<p><strong>Description: </strong>8-item website-quality measure spanning usability, trust/credibility, appearance and loyalty, scored as a percentile.</p>
+			<div class="method-citation"><div class="citation-copy">Sauro, J. (2015). SUPR-Q: A comprehensive measure of the quality of the website user experience. Journal of Usability Studies, 10(2), 68-86.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Sauro, J. (2015). SUPR-Q: A comprehensive measure of the quality of the website user experience. Journal of Usability Studies, 10(2), 68-86.</div><div class="cite-data-bibtex" style="display:none">@misc{Sauro2015,
+  author = {Sauro, J},
+  title = {SUPR-Q: A comprehensive measure of the quality of the website user experience},
+  year = {2015},
+  note = {Sauro, J. (2015). SUPR-Q: A comprehensive measure of the quality of the website user experience. Journal of Usability Studies, 10(2), 68-86.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://measuringu.com/product/suprq/" target='_blank'>MeasuringU</a></p>
+		</method>
+		<method id="ueqs" category="empirical,quantitative,subjective,userexperience" title="Quantitative Subjective User Experience: User Experience Questionnaire - Short (UEQ-S)">
+			<p><strong>Description: </strong>8-item semantic-differential short form of the UEQ measuring pragmatic and hedonic quality.</p>
+			<div class="method-citation"><div class="citation-copy">Schrepp, M., Hinderks, A., &amp; Thomaschewski, J. (2017). Design and evaluation of a short version of the User Experience Questionnaire (UEQ-S). International Journal of Interactive Multimedia and Artificial Intelligence, 4(6), 103-108. DOI: <a href='https://doi.org/10.9781/ijimai.2017.09.001' target='_blank'>10.9781/ijimai.2017.09.001</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Schrepp, M., Hinderks, A., &amp; Thomaschewski, J. (2017). Design and evaluation of a short version of the User Experience Questionnaire (UEQ-S). International Journal of Interactive Multimedia and Artificial Intelligence, 4(6), 103-108. DOI: 10.9781/ijimai.2017.09.001</div><div class="cite-data-bibtex" style="display:none">@article{Schrepp_2017,
+  title={Design and Evaluation of a Short Version of the User Experience Questionnaire (UEQ-S)},
+  volume={4},
+  ISSN={1989-1660},
+  url={http://dx.doi.org/10.9781/ijimai.2017.09.001},
+  DOI={10.9781/ijimai.2017.09.001},
+  number={6},
+  journal={International Journal of Interactive Multimedia and Artificial Intelligence},
+  publisher={Universidad Internacional de La Rioja},
+  author={Schrepp, Martin and Hinderks, Andreas and Thomaschewski, Jörg},
+  year={2017},
+  month=Dec,
+  pages={103–108}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.ueq-online.org/" target='_blank'>Official site</a></p>
+		</method>
+		<method id="csat" category="empirical,quantitative,subjective,satisfaction" title="Quantitative Subjective Satisfaction: Customer Satisfaction Score (CSAT)">
+			<p><strong>Description: </strong>Single-item rating of overall satisfaction with a product or interaction (e.g. 'How satisfied are you?' on a 1-5/1-7 scale).</p>
+			<div class="method-citation"><div class="citation-copy">Oliver, R. L. (1980). A cognitive model of the antecedents and consequences of satisfaction decisions. Journal of Marketing Research, 17(4), 460-469. DOI: <a href='https://doi.org/10.1177/002224378001700405' target='_blank'>10.1177/002224378001700405</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Oliver, R. L. (1980). A cognitive model of the antecedents and consequences of satisfaction decisions. Journal of Marketing Research, 17(4), 460-469. DOI: 10.1177/002224378001700405</div><div class="cite-data-bibtex" style="display:none">@article{Oliver_1980,
+  title={A Cognitive Model of the Antecedents and Consequences of Satisfaction Decisions},
+  volume={17},
+  ISSN={1547-7193},
+  url={http://dx.doi.org/10.1177/002224378001700405},
+  DOI={10.1177/002224378001700405},
+  number={4},
+  journal={Journal of Marketing Research},
+  publisher={SAGE Publications},
+  author={Oliver, Richard L.},
+  year={1980},
+  month=Nov,
+  pages={460–469}
+}</div></div>
+		</method>
+		<method id="mecspq" category="empirical,quantitative,subjective,presence" title="Quantitative Subjective Presence: MEC Spatial Presence Questionnaire (MEC-SPQ)">
+			<p><strong>Description: </strong>Theory-driven spatial-presence measure (self-location, possible actions) plus processual determinants like attention allocation and spatial-situation models.</p>
+			<div class="method-citation"><div class="citation-copy">Vorderer, P., Wirth, W., Gouveia, F. R., Biocca, F., Saari, T., et al. (2004). MEC Spatial Presence Questionnaire (MEC-SPQ): Short documentation and instructions for application. Report to the European Community, Project Presence (IST-2001-37661).</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Vorderer, P., Wirth, W., Gouveia, F. R., Biocca, F., Saari, T., et al. (2004). MEC Spatial Presence Questionnaire (MEC-SPQ): Short documentation and instructions for application. Report to the European Community, Project Presence (IST-2001-37661).</div><div class="cite-data-bibtex" style="display:none">@misc{Vorderer2004,
+  author = {Vorderer, P., Wirth, W., Gouveia, F. R., Biocca, F., Saari, T., et al},
+  title = {MEC Spatial Presence Questionnaire (MEC-SPQ): Short documentation and instructions for application},
+  year = {2004},
+  note = {Vorderer, P., Wirth, W., Gouveia, F. R., Biocca, F., Saari, T., et al. (2004). MEC Spatial Presence Questionnaire (MEC-SPQ): Short documentation and instructions for application. Report to the European Community, Project Presence (IST-2001-37661).}
+}</div></div>
+		</method>
+		<method id="tpi" category="empirical,quantitative,subjective,presence" title="Quantitative Subjective Presence: Temple Presence Inventory (TPI)">
+			<p><strong>Description: </strong>Multidimensional cross-media telepresence inventory covering spatial presence, social presence/parasocial interaction, engagement and realism.</p>
+			<div class="method-citation"><div class="citation-copy">Lombard, M., Ditton, T. B., &amp; Weinstein, L. (2009). Measuring Presence: The Temple Presence Inventory. Proc. 12th International Workshop on Presence (ISPR).</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Lombard, M., Ditton, T. B., &amp; Weinstein, L. (2009). Measuring Presence: The Temple Presence Inventory. Proc. 12th International Workshop on Presence (ISPR).</div><div class="cite-data-bibtex" style="display:none">@misc{Lombard2009,
+  author = {Lombard, M., Ditton, T. B. and Weinstein, L},
+  title = {Measuring Presence: The Temple Presence Inventory},
+  year = {2009},
+  note = {Lombard, M., Ditton, T. B., &amp; Weinstein, L. (2009). Measuring Presence: The Temple Presence Inventory. Proc. 12th International Workshop on Presence (ISPR).}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://matthewlombard.com/research/p2_ab.html" target='_blank'>Author page</a></p>
+		</method>
+		<method id="spes" category="empirical,quantitative,subjective,presence" title="Quantitative Subjective Presence: Spatial Presence Experience Scale (SPES)">
+			<p><strong>Description: </strong>Short 8-item self-report of spatial presence as self-location plus perceived possible actions, validated across diverse media.</p>
+			<div class="method-citation"><div class="citation-copy">Hartmann, T., Wirth, W., Schramm, H., Klimmt, C., Vorderer, P., et al. (2016). The Spatial Presence Experience Scale (SPES): A short self-report measure for diverse media settings. Journal of Media Psychology, 28(1), 1-15. DOI: <a href='https://doi.org/10.1027/1864-1105/a000137' target='_blank'>10.1027/1864-1105/a000137</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Hartmann, T., Wirth, W., Schramm, H., Klimmt, C., Vorderer, P., et al. (2016). The Spatial Presence Experience Scale (SPES): A short self-report measure for diverse media settings. Journal of Media Psychology, 28(1), 1-15. DOI: 10.1027/1864-1105/a000137</div><div class="cite-data-bibtex" style="display:none">@article{Hartmann_2016,
+  title={The Spatial Presence Experience Scale (SPES): A Short Self-Report Measure for Diverse Media Settings},
+  volume={28},
+  ISSN={2151-2388},
+  url={http://dx.doi.org/10.1027/1864-1105/a000137},
+  DOI={10.1027/1864-1105/a000137},
+  number={1},
+  journal={Journal of Media Psychology},
+  publisher={Hogrefe Publishing Group},
+  author={Hartmann, Tilo and Wirth, Werner and Schramm, Holger and Klimmt, Christoph and Vorderer, Peter and Gysbers, André and Böcking, Saskia and Ravaja, Niklas and Laarni, Jari and Saari, Timo and Gouveia, Feliz and Maria Sacau, Ana},
+  year={2016},
+  month=Jan,
+  pages={1–15}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.zora.uzh.ch/id/eprint/133475/" target='_blank'>Repository (UZH)</a></p>
+		</method>
+		<method id="jennettieq" category="empirical,quantitative,subjective,immersion" title="Quantitative Subjective Immersion: Immersion in Games (Jennett IEQ)">
+			<p><strong>Description: </strong>31-item single-session game immersion measure spanning cognitive/emotional involvement, real-world dissociation, challenge and control.</p>
+			<div class="method-citation"><div class="citation-copy">Jennett, C., Cox, A. L., Cairns, P., et al. (2008). Measuring and defining the experience of immersion in games. International Journal of Human-Computer Studies, 66(9), 641-661. DOI: <a href='https://doi.org/10.1016/j.ijhcs.2008.04.004' target='_blank'>10.1016/j.ijhcs.2008.04.004</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Jennett, C., Cox, A. L., Cairns, P., et al. (2008). Measuring and defining the experience of immersion in games. International Journal of Human-Computer Studies, 66(9), 641-661. DOI: 10.1016/j.ijhcs.2008.04.004</div><div class="cite-data-bibtex" style="display:none">@article{Jennett_2008,
+  title={Measuring and defining the experience of immersion in games},
+  volume={66},
+  ISSN={1071-5819},
+  url={http://dx.doi.org/10.1016/j.ijhcs.2008.04.004},
+  DOI={10.1016/j.ijhcs.2008.04.004},
+  number={9},
+  journal={International Journal of Human-Computer Studies},
+  publisher={Elsevier BV},
+  author={Jennett, Charlene and Cox, Anna L. and Cairns, Paul and Dhoparee, Samira and Epps, Andrew and Tijs, Tim and Walton, Alison},
+  year={2008},
+  month=Sept,
+  pages={641–661}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://pure.york.ac.uk/portal/en/publications/measuring-and-defining-the-experience-of-immersion-in-games/" target='_blank'>York Pure</a></p>
+		</method>
+		<method id="placeillusion" category="empirical,quantitative,subjective,presence" title="Quantitative Subjective Presence: Place &amp; Plausibility Illusion (PI/Psi)">
+			<p><strong>Description: </strong>Slater's two-component VR-presence framework distinguishing the illusion of being in the place (PI) from the illusion that depicted events are really happening (Psi).</p>
+			<div class="method-citation"><div class="citation-copy">Slater, M. (2009). Place illusion and plausibility can lead to realistic behaviour in immersive virtual environments. Philosophical Transactions of the Royal Society B, 364(1535), 3549-3557. DOI: <a href='https://doi.org/10.1098/rstb.2009.0138' target='_blank'>10.1098/rstb.2009.0138</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Slater, M. (2009). Place illusion and plausibility can lead to realistic behaviour in immersive virtual environments. Philosophical Transactions of the Royal Society B, 364(1535), 3549-3557. DOI: 10.1098/rstb.2009.0138</div><div class="cite-data-bibtex" style="display:none">@article{Slater_2009,
+  title={Place illusion and plausibility can lead to realistic behaviour in immersive virtual environments},
+  volume={364},
+  ISSN={1471-2970},
+  url={http://dx.doi.org/10.1098/rstb.2009.0138},
+  DOI={10.1098/rstb.2009.0138},
+  number={1535},
+  journal={Philosophical Transactions of the Royal Society B: Biological Sciences},
+  publisher={The Royal Society},
+  author={Slater, Mel},
+  year={2009},
+  month=Dec,
+  pages={3549–3557}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2781884/" target='_blank'>Open access</a></p>
+		</method>
+		<method id="hct" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Human-Computer Trust (HCT)">
+			<p><strong>Description: </strong>25-item scale capturing five trust facets (perceived understandability, technical competence, reliability, personal attachment, faith) in intelligent decision aids.</p>
+			<div class="method-citation"><div class="citation-copy">Madsen, M., &amp; Gregor, S. (2000). Measuring Human-Computer Trust. Proc. 11th Australasian Conference on Information Systems (ACIS).</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Madsen, M., &amp; Gregor, S. (2000). Measuring Human-Computer Trust. Proc. 11th Australasian Conference on Information Systems (ACIS).</div><div class="cite-data-bibtex" style="display:none">@misc{Madsen2000,
+  author = {Madsen, M. and Gregor, S},
+  title = {Measuring Human-Computer Trust},
+  year = {2000},
+  note = {Madsen, M., &amp; Gregor, S. (2000). Measuring Human-Computer Trust. Proc. 11th Australasian Conference on Information Systems (ACIS).}
+}</div></div>
+		</method>
+		<method id="mcknighttrust" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Trust in a Specific Technology">
+			<p><strong>Description: </strong>Measures trusting beliefs in a specific technology (functionality, helpfulness, reliability) plus trust in technology in general and propensity.</p>
+			<div class="method-citation"><div class="citation-copy">McKnight, D. H., Carter, M., Thatcher, J. B., &amp; Clay, P. F. (2011). Trust in a specific technology: An investigation of its components and measures. ACM Transactions on Management Information Systems, 2(2), Article 12. DOI: <a href='https://doi.org/10.1145/1985347.1985353' target='_blank'>10.1145/1985347.1985353</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">McKnight, D. H., Carter, M., Thatcher, J. B., &amp; Clay, P. F. (2011). Trust in a specific technology: An investigation of its components and measures. ACM Transactions on Management Information Systems, 2(2), Article 12. DOI: 10.1145/1985347.1985353</div><div class="cite-data-bibtex" style="display:none">@article{Mcknight_2011,
+  title={Trust in a specific technology: An investigation of its components and measures},
+  volume={2},
+  ISSN={2158-6578},
+  url={http://dx.doi.org/10.1145/1985347.1985353},
+  DOI={10.1145/1985347.1985353},
+  number={2},
+  journal={ACM Transactions on Management Information Systems},
+  publisher={Association for Computing Machinery (ACM)},
+  author={Mcknight, D. Harrison and Carter, Michelle and Thatcher, Jason Bennett and Clay, Paul F.},
+  year={2011},
+  month=June,
+  pages={1–25}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://dl.acm.org/doi/10.1145/1985347.1985353" target='_blank'>ACM Digital Library</a></p>
+		</method>
+		<method id="propensitytrust" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Propensity to Trust Machines">
+			<p><strong>Description: </strong>6-item dispositional scale assessing the trait-like, pre-interaction tendency to trust machines/automation.</p>
+			<div class="method-citation"><div class="citation-copy">Merritt, S. M., Heimbaugh, H., LaChapell, J., &amp; Lee, D. (2013). I trust it, but I don't know why: Effects of implicit attitudes toward automation on trust in an automated system. Human Factors, 55(3), 520-534. DOI: <a href='https://doi.org/10.1177/0018720812465081' target='_blank'>10.1177/0018720812465081</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Merritt, S. M., Heimbaugh, H., LaChapell, J., &amp; Lee, D. (2013). I trust it, but I don't know why: Effects of implicit attitudes toward automation on trust in an automated system. Human Factors, 55(3), 520-534. DOI: 10.1177/0018720812465081</div><div class="cite-data-bibtex" style="display:none">@article{Merritt_2012,
+  title={I Trust It, but I Don’t Know Why: Effects of Implicit Attitudes Toward Automation on Trust in an Automated System},
+  volume={55},
+  ISSN={1547-8181},
+  url={http://dx.doi.org/10.1177/0018720812465081},
+  DOI={10.1177/0018720812465081},
+  number={3},
+  journal={Human Factors: The Journal of the Human Factors and Ergonomics Society},
+  publisher={SAGE Publications},
+  author={Merritt, Stephanie M. and Heimbaugh, Heather and LaChapell, Jennifer and Lee, Deborah},
+  year={2012},
+  month=Nov,
+  pages={520–534}
+}</div></div>
+		</method>
+		<method id="tpshri" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Trust Perception Scale-HRI (TPS-HRI)">
+			<p><strong>Description: </strong>40-item (14-item short form) human-robot-interaction trust scale yielding a percentage trust score across robot performance and attribute dimensions.</p>
+			<div class="method-citation"><div class="citation-copy">Schaefer, K. E. (2016). Measuring trust in human-robot interactions: Development of the 'Trust Perception Scale-HRI'. In Robust Intelligence and Trust in Autonomous Systems (pp. 191-218). Springer. DOI: <a href='https://doi.org/10.1007/978-1-4899-7668-0_10' target='_blank'>10.1007/978-1-4899-7668-0_10</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Schaefer, K. E. (2016). Measuring trust in human-robot interactions: Development of the 'Trust Perception Scale-HRI'. In Robust Intelligence and Trust in Autonomous Systems (pp. 191-218). Springer. DOI: 10.1007/978-1-4899-7668-0_10</div><div class="cite-data-bibtex" style="display:none">@inbook{Schaefer_2016,
+  title={Measuring Trust in Human Robot Interactions: Development of the “Trust Perception Scale-HRI”},
+  ISBN={9781489976680},
+  url={http://dx.doi.org/10.1007/978-1-4899-7668-0_10},
+  DOI={10.1007/978-1-4899-7668-0_10},
+  booktitle={Robust Intelligence and Trust in Autonomous Systems},
+  publisher={Springer US},
+  author={Schaefer, Kristin E.},
+  year={2016},
+  pages={191–218}
+}</div></div>
+			<p><strong>Link: </strong><a href="http://hriscaledatabase.psychology.gmu.edu/trust/2024/10/31/trustschaefer.html" target='_blank'>HRI Scale Database</a></p>
+		</method>
+		<method id="mdmt" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Multi-Dimensional Measure of Trust (MDMT)">
+			<p><strong>Description: </strong>Differentiates performance trust (reliable, capable) from moral trust (sincere, ethical) toward robots and agents via short word ratings.</p>
+			<div class="method-citation"><div class="citation-copy">Malle, B. F., &amp; Ullman, D. (2021). A multidimensional conception and measure of human-robot trust. In Trust in Human-Robot Interaction (pp. 3-25). Elsevier. DOI: <a href='https://doi.org/10.1016/B978-0-12-819472-0.00001-0' target='_blank'>10.1016/B978-0-12-819472-0.00001-0</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Malle, B. F., &amp; Ullman, D. (2021). A multidimensional conception and measure of human-robot trust. In Trust in Human-Robot Interaction (pp. 3-25). Elsevier. DOI: 10.1016/B978-0-12-819472-0.00001-0</div><div class="cite-data-bibtex" style="display:none">@inbook{Malle_2021,
+  title={A multidimensional conception and measure of human-robot trust},
+  ISBN={9780128194720},
+  url={http://dx.doi.org/10.1016/B978-0-12-819472-0.00001-0},
+  DOI={10.1016/b978-0-12-819472-0.00001-0},
+  booktitle={Trust in Human-Robot Interaction},
+  publisher={Elsevier},
+  author={Malle, Bertram F. and Ullman, Daniel},
+  year={2021},
+  pages={3–25}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://research.clps.brown.edu/SocCogSci/Measures/MDMT_v1.pdf" target='_blank'>Instrument (Brown)</a></p>
+		</method>
+		<method id="nars" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Negative Attitudes toward Robots Scale (NARS)">
+			<p><strong>Description: </strong>14-item scale (interaction situations, social influence, emotions) measuring negative dispositional attitudes toward robots.</p>
+			<div class="method-citation"><div class="citation-copy">Nomura, T., Suzuki, T., Kanda, T., &amp; Kato, K. (2006). Measurement of negative attitudes toward robots. Interaction Studies, 7(3), 437-454. DOI: <a href='https://doi.org/10.1075/is.7.3.14nom' target='_blank'>10.1075/is.7.3.14nom</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Nomura, T., Suzuki, T., Kanda, T., &amp; Kato, K. (2006). Measurement of negative attitudes toward robots. Interaction Studies, 7(3), 437-454. DOI: 10.1075/is.7.3.14nom</div><div class="cite-data-bibtex" style="display:none">@article{Nomura_2006,
+  title={Measurement of negative attitudes toward robots},
+  volume={7},
+  ISSN={1572-0381},
+  url={http://dx.doi.org/10.1075/is.7.3.14nom},
+  DOI={10.1075/is.7.3.14nom},
+  number={3},
+  journal={Interaction Studies},
+  publisher={John Benjamins Publishing Company},
+  author={Nomura, Tatsuya and Suzuki, Tomohiro and Kanda, Takayuki and Kato, Kensuke},
+  year={2006},
+  month=Nov,
+  pages={437–454}
+}</div></div>
+			<p><strong>Link: </strong><a href="http://hriscaledatabase.psychology.gmu.edu/attitudes/2024/07/02/NARS.html" target='_blank'>HRI Scale Database</a></p>
+		</method>
+		<method id="robotanxiety" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Robot Anxiety Scale (RAS)">
+			<p><strong>Description: </strong>11-item scale measuring anxiety toward robots across communication capability, behavioral characteristics and discourse; companion to NARS.</p>
+			<div class="method-citation"><div class="citation-copy">Nomura, T., Suzuki, T., Kanda, T., &amp; Kato, K. (2006). Measurement of anxiety toward robots. Proc. RO-MAN 2006, 372-377. IEEE. DOI: <a href='https://doi.org/10.1109/ROMAN.2006.314462' target='_blank'>10.1109/ROMAN.2006.314462</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Nomura, T., Suzuki, T., Kanda, T., &amp; Kato, K. (2006). Measurement of anxiety toward robots. Proc. RO-MAN 2006, 372-377. IEEE. DOI: 10.1109/ROMAN.2006.314462</div><div class="cite-data-bibtex" style="display:none">@inproceedings{Nomura_2006,
+  title={Measurement of Anxiety toward Robots},
+  url={http://dx.doi.org/10.1109/ROMAN.2006.314462},
+  DOI={10.1109/roman.2006.314462},
+  booktitle={ROMAN 2006 - The 15th IEEE International Symposium on Robot and Human Interactive Communication},
+  publisher={IEEE},
+  author={Nomura, Tatsuya and Suzuki, Tomohiro and Kanda, Takayuki and Kato, Kensuke},
+  year={2006},
+  month=Sept,
+  pages={372–377}
+}</div></div>
+			<p><strong>Link: </strong><a href="http://hriscaledatabase.psychology.gmu.edu/attitudes/2024/06/12/RAS.html" target='_blank'>HRI Scale Database</a></p>
+		</method>
+		<method id="idaq" category="empirical,quantitative,subjective,humanlikeness" title="Quantitative Subjective Human-Likeness: Anthropomorphism (IDAQ)">
+			<p><strong>Description: </strong>15-item trait measure of the stable tendency to anthropomorphize - to attribute mind, intention and emotion to technology, nature and animals.</p>
+			<div class="method-citation"><div class="citation-copy">Waytz, A., Cacioppo, J., &amp; Epley, N. (2010). Who sees human? The stability and importance of individual differences in anthropomorphism. Perspectives on Psychological Science, 5(3), 219-232. DOI: <a href='https://doi.org/10.1177/1745691610369336' target='_blank'>10.1177/1745691610369336</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Waytz, A., Cacioppo, J., &amp; Epley, N. (2010). Who sees human? The stability and importance of individual differences in anthropomorphism. Perspectives on Psychological Science, 5(3), 219-232. DOI: 10.1177/1745691610369336</div><div class="cite-data-bibtex" style="display:none">@article{Waytz_2010,
+  title={Who Sees Human?: The Stability and Importance of Individual Differences in Anthropomorphism},
+  volume={5},
+  ISSN={1745-6924},
+  url={http://dx.doi.org/10.1177/1745691610369336},
+  DOI={10.1177/1745691610369336},
+  number={3},
+  journal={Perspectives on Psychological Science},
+  publisher={SAGE Publications},
+  author={Waytz, Adam and Cacioppo, John and Epley, Nicholas},
+  year={2010},
+  month=May,
+  pages={219–232}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.adamwaytz.com/measures-and-materials/individual-differences-in-anthropomorphism-questionnaire-idaq" target='_blank'>Author page</a></p>
+		</method>
+		<method id="tipi" category="empirical,quantitative,subjective,personality" title="Quantitative Subjective Personality: Ten-Item Personality Inventory (TIPI)">
+			<p><strong>Description: </strong>Ultra-brief 10-item Big Five measure (two items per domain) for severely time-constrained settings.</p>
+			<div class="method-citation"><div class="citation-copy">Gosling, S. D., Rentfrow, P. J., &amp; Swann, W. B. Jr. (2003). A very brief measure of the Big-Five personality domains. Journal of Research in Personality, 37(6), 504-528. DOI: <a href='https://doi.org/10.1016/S0092-6566(03)00046-1' target='_blank'>10.1016/S0092-6566(03)00046-1</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Gosling, S. D., Rentfrow, P. J., &amp; Swann, W. B. Jr. (2003). A very brief measure of the Big-Five personality domains. Journal of Research in Personality, 37(6), 504-528. DOI: 10.1016/S0092-6566(03)00046-1</div><div class="cite-data-bibtex" style="display:none">@article{Gosling_2003,
+  title={A very brief measure of the Big-Five personality domains},
+  volume={37},
+  ISSN={0092-6566},
+  url={http://dx.doi.org/10.1016/S0092-6566(03)00046-1},
+  DOI={10.1016/s0092-6566(03)00046-1},
+  number={6},
+  journal={Journal of Research in Personality},
+  publisher={Elsevier BV},
+  author={Gosling, Samuel D and Rentfrow, Peter J and Swann, William B},
+  year={2003},
+  month=Dec,
+  pages={504–528}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/" target='_blank'>Official (Gosling Lab)</a></p>
+		</method>
+		<method id="miniipip" category="empirical,quantitative,subjective,personality" title="Quantitative Subjective Personality: Mini-IPIP">
+			<p><strong>Description: </strong>20-item public-domain short form of the IPIP Big Five (four items per factor).</p>
+			<div class="method-citation"><div class="citation-copy">Donnellan, M. B., Oswald, F. L., Baird, B. M., &amp; Lucas, R. E. (2006). The Mini-IPIP scales: Tiny-yet-effective measures of the Big Five factors of personality. Psychological Assessment, 18(2), 192-203. DOI: <a href='https://doi.org/10.1037/1040-3590.18.2.192' target='_blank'>10.1037/1040-3590.18.2.192</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Donnellan, M. B., Oswald, F. L., Baird, B. M., &amp; Lucas, R. E. (2006). The Mini-IPIP scales: Tiny-yet-effective measures of the Big Five factors of personality. Psychological Assessment, 18(2), 192-203. DOI: 10.1037/1040-3590.18.2.192</div><div class="cite-data-bibtex" style="display:none">@article{Donnellan_2006,
+  title={The Mini-IPIP Scales: Tiny-yet-effective measures of the Big Five Factors of Personality.},
+  volume={18},
+  ISSN={1040-3590},
+  url={http://dx.doi.org/10.1037/1040-3590.18.2.192},
+  DOI={10.1037/1040-3590.18.2.192},
+  number={2},
+  journal={Psychological Assessment},
+  publisher={American Psychological Association (APA)},
+  author={Donnellan, M. Brent and Oswald, Frederick L. and Baird, Brendan M. and Lucas, Richard E.},
+  year={2006},
+  pages={192–203}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://ipip.ori.org/MiniIPIPKey.htm" target='_blank'>Official (IPIP)</a></p>
+		</method>
+		<method id="hexaco" category="empirical,quantitative,subjective,personality" title="Quantitative Subjective Personality: HEXACO-60">
+			<p><strong>Description: </strong>60-item measure of the six HEXACO personality dimensions, adding Honesty-Humility to the Big Five space.</p>
+			<div class="method-citation"><div class="citation-copy">Ashton, M. C., &amp; Lee, K. (2009). The HEXACO-60: A short measure of the major dimensions of personality. Journal of Personality Assessment, 91(4), 340-345. DOI: <a href='https://doi.org/10.1080/00223890902935878' target='_blank'>10.1080/00223890902935878</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Ashton, M. C., &amp; Lee, K. (2009). The HEXACO-60: A short measure of the major dimensions of personality. Journal of Personality Assessment, 91(4), 340-345. DOI: 10.1080/00223890902935878</div><div class="cite-data-bibtex" style="display:none">@article{Ashton_2009,
+  title={The HEXACO-60: A Short Measure of the Major Dimensions of Personality},
+  volume={91},
+  ISSN={0022-3891},
+  url={http://dx.doi.org/10.1080/00223890902935878},
+  DOI={10.1080/00223890902935878},
+  number={4},
+  journal={Journal of Personality Assessment},
+  publisher={Informa UK Limited},
+  author={Ashton, Michael and Lee, Kibeom},
+  year={2009},
+  month=July,
+  pages={340–345}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://hexaco.org/" target='_blank'>Official site</a></p>
+		</method>
+		<method id="bfi2" category="empirical,quantitative,subjective,personality" title="Quantitative Subjective Personality: Big Five Inventory-2 (BFI-2)">
+			<p><strong>Description: </strong>60-item hierarchical Big Five measure resolving five domains and 15 facets; the modern successor to the BFI.</p>
+			<div class="method-citation"><div class="citation-copy">Soto, C. J., &amp; John, O. P. (2017). The next Big Five Inventory (BFI-2): Developing and assessing a hierarchical model with 15 facets. Journal of Personality and Social Psychology, 113(1), 117-143. DOI: <a href='https://doi.org/10.1037/pspp0000096' target='_blank'>10.1037/pspp0000096</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Soto, C. J., &amp; John, O. P. (2017). The next Big Five Inventory (BFI-2): Developing and assessing a hierarchical model with 15 facets. Journal of Personality and Social Psychology, 113(1), 117-143. DOI: 10.1037/pspp0000096</div><div class="cite-data-bibtex" style="display:none">@article{Soto_2017,
+  title={The next Big Five Inventory (BFI-2): Developing and assessing a hierarchical model with 15 facets to enhance bandwidth, fidelity, and predictive power.},
+  volume={113},
+  ISSN={0022-3514},
+  url={http://dx.doi.org/10.1037/pspp0000096},
+  DOI={10.1037/pspp0000096},
+  number={1},
+  journal={Journal of Personality and Social Psychology},
+  publisher={American Psychological Association (APA)},
+  author={Soto, Christopher J. and John, Oliver P.},
+  year={2017},
+  month=July,
+  pages={117–143}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.colby.edu/academics/departments-and-programs/psychology/research-opportunities/personality-lab/the-bfi-2/" target='_blank'>Official (Soto Lab)</a></p>
+		</method>
+		<method id="sd3" category="empirical,quantitative,subjective,personality" title="Quantitative Subjective Personality: Short Dark Triad (SD3)">
+			<p><strong>Description: </strong>27-item measure of Machiavellianism, narcissism and psychopathy (nine items each).</p>
+			<div class="method-citation"><div class="citation-copy">Jones, D. N., &amp; Paulhus, D. L. (2014). Introducing the Short Dark Triad (SD3): A brief measure of dark personality traits. Assessment, 21(1), 28-41. DOI: <a href='https://doi.org/10.1177/1073191113514105' target='_blank'>10.1177/1073191113514105</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Jones, D. N., &amp; Paulhus, D. L. (2014). Introducing the Short Dark Triad (SD3): A brief measure of dark personality traits. Assessment, 21(1), 28-41. DOI: 10.1177/1073191113514105</div><div class="cite-data-bibtex" style="display:none">@article{Jones_2013,
+  title={Introducing the Short Dark Triad (SD3): A Brief Measure of Dark Personality Traits},
+  volume={21},
+  ISSN={1552-3489},
+  url={http://dx.doi.org/10.1177/1073191113514105},
+  DOI={10.1177/1073191113514105},
+  number={1},
+  journal={Assessment},
+  publisher={SAGE Publications},
+  author={Jones, Daniel N. and Paulhus, Delroy L.},
+  year={2013},
+  month=Dec,
+  pages={28–41}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www2.psych.ubc.ca/~dpaulhus/research/DARK_TRAITS/MEASURES/SD3.1.1.doc" target='_blank'>Instrument (Paulhus)</a></p>
+		</method>
+		<method id="des" category="empirical,quantitative,subjective,emotions" title="Quantitative Subjective Emotions: Differential Emotions Scale (DES)">
+			<p><strong>Description: </strong>Measures the intensity of discrete fundamental emotions (e.g. joy, anger, fear, shame) per Izard's differential-emotions theory.</p>
+			<div class="method-citation"><div class="citation-copy">Izard, C. E., Libero, D. Z., Putnam, P., &amp; Haynes, O. M. (1993). Stability of emotion experiences and their relations to traits of personality. Journal of Personality and Social Psychology, 64(5), 847-860. DOI: <a href='https://doi.org/10.1037/0022-3514.64.5.847' target='_blank'>10.1037/0022-3514.64.5.847</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Izard, C. E., Libero, D. Z., Putnam, P., &amp; Haynes, O. M. (1993). Stability of emotion experiences and their relations to traits of personality. Journal of Personality and Social Psychology, 64(5), 847-860. DOI: 10.1037/0022-3514.64.5.847</div><div class="cite-data-bibtex" style="display:none">@article{Izard_1993,
+  title={Stability of emotion experiences and their relations to traits of personality.},
+  volume={64},
+  ISSN={0022-3514},
+  url={http://dx.doi.org/10.1037/0022-3514.64.5.847},
+  DOI={10.1037/0022-3514.64.5.847},
+  number={5},
+  journal={Journal of Personality and Social Psychology},
+  publisher={American Psychological Association (APA)},
+  author={Izard, Carroll E. and Libero, Deborah Z. and Putnam, Priscilla and Haynes, O. Maurice},
+  year={1993},
+  pages={847–860}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Differential_Emotions_Scale" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="gew" category="empirical,quantitative,subjective,emotions" title="Quantitative Subjective Emotions: Geneva Emotion Wheel (GEW)">
+			<p><strong>Description: </strong>Self-report of felt emotion via emotion families arranged in a valence x control circumplex, rated by intensity.</p>
+			<div class="method-citation"><div class="citation-copy">Scherer, K. R. (2005). What are emotions? And how can they be measured? Social Science Information, 44(4), 695-729. DOI: <a href='https://doi.org/10.1177/0539018405058216' target='_blank'>10.1177/0539018405058216</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Scherer, K. R. (2005). What are emotions? And how can they be measured? Social Science Information, 44(4), 695-729. DOI: 10.1177/0539018405058216</div><div class="cite-data-bibtex" style="display:none">@article{Scherer_2005,
+  title={What are emotions? And how can they be measured?},
+  volume={44},
+  ISSN={1461-7412},
+  url={http://dx.doi.org/10.1177/0539018405058216},
+  DOI={10.1177/0539018405058216},
+  number={4},
+  journal={Social Science Information},
+  publisher={SAGE Publications},
+  author={Scherer, Klaus R.},
+  year={2005},
+  month=Dec,
+  pages={695–729}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.unige.ch/cisa/gew" target='_blank'>Official (UNIGE)</a></p>
+		</method>
+		<method id="affectgrid" category="empirical,quantitative,subjective,emotions" title="Quantitative Subjective Emotions: Affect Grid">
+			<p><strong>Description: </strong>Single-item grid scoring affect on pleasure-displeasure and arousal-sleepiness dimensions (Russell's circumplex).</p>
+			<div class="method-citation"><div class="citation-copy">Russell, J. A., Weiss, A., &amp; Mendelsohn, G. A. (1989). Affect Grid: A single-item scale of pleasure and arousal. Journal of Personality and Social Psychology, 57(3), 493-502. DOI: <a href='https://doi.org/10.1037/0022-3514.57.3.493' target='_blank'>10.1037/0022-3514.57.3.493</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Russell, J. A., Weiss, A., &amp; Mendelsohn, G. A. (1989). Affect Grid: A single-item scale of pleasure and arousal. Journal of Personality and Social Psychology, 57(3), 493-502. DOI: 10.1037/0022-3514.57.3.493</div><div class="cite-data-bibtex" style="display:none">@article{Russell_1989,
+  title={Affect Grid: A single-item scale of pleasure and arousal.},
+  volume={57},
+  ISSN={0022-3514},
+  url={http://dx.doi.org/10.1037/0022-3514.57.3.493},
+  DOI={10.1037/0022-3514.57.3.493},
+  number={3},
+  journal={Journal of Personality and Social Psychology},
+  publisher={American Psychological Association (APA)},
+  author={Russell, James A. and Weiss, Anna and Mendelsohn, Gerald A.},
+  year={1989},
+  month=Sept,
+  pages={493–502}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://arc.psych.wisc.edu/self-report/affect-grid-agrid/" target='_blank'>Instrument page</a></p>
+		</method>
+		<method id="sims" category="empirical,quantitative,subjective,motivation" title="Quantitative Subjective Motivation: Situational Motivation Scale (SIMS)">
+			<p><strong>Description: </strong>16-item state measure of intrinsic motivation, identified regulation, external regulation and amotivation for a current activity.</p>
+			<div class="method-citation"><div class="citation-copy">Guay, F., Vallerand, R. J., &amp; Blanchard, C. (2000). On the assessment of situational intrinsic and extrinsic motivation: The Situational Motivation Scale (SIMS). Motivation and Emotion, 24(3), 175-213. DOI: <a href='https://doi.org/10.1023/A:1005614228250' target='_blank'>10.1023/A:1005614228250</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Guay, F., Vallerand, R. J., &amp; Blanchard, C. (2000). On the assessment of situational intrinsic and extrinsic motivation: The Situational Motivation Scale (SIMS). Motivation and Emotion, 24(3), 175-213. DOI: 10.1023/A:1005614228250</div><div class="cite-data-bibtex" style="display:none">@article{Guay_2000,
+  title={On the Assessment of Situational Intrinsic and Extrinsic Motivation: The Situational Motivation Scale (SIMS)},
+  volume={24},
+  ISSN={1573-6644},
+  url={http://dx.doi.org/10.1023/A:1005614228250},
+  DOI={10.1023/a:1005614228250},
+  number={3},
+  journal={Motivation and Emotion},
+  publisher={Springer Science and Business Media LLC},
+  author={Guay, Frédéric and Vallerand, Robert J. and Blanchard, Céline},
+  year={2000},
+  month=Sept,
+  pages={175–213}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://selfdeterminationtheory.org/SDT/documents/2000_GuayVallerandBlanchard_MO.pdf" target='_blank'>Instrument (SDT)</a></p>
+		</method>
+		<method id="uwes" category="empirical,quantitative,subjective,motivation" title="Quantitative Subjective Motivation: Utrecht Work/Study Engagement (UWES-9)">
+			<p><strong>Description: </strong>9-item self-report of engagement across vigor, dedication and absorption (a student form is available).</p>
+			<div class="method-citation"><div class="citation-copy">Schaufeli, W. B., Bakker, A. B., &amp; Salanova, M. (2006). The measurement of work engagement with a short questionnaire: A cross-national study. Educational and Psychological Measurement, 66(4), 701-716. DOI: <a href='https://doi.org/10.1177/0013164405282471' target='_blank'>10.1177/0013164405282471</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Schaufeli, W. B., Bakker, A. B., &amp; Salanova, M. (2006). The measurement of work engagement with a short questionnaire: A cross-national study. Educational and Psychological Measurement, 66(4), 701-716. DOI: 10.1177/0013164405282471</div><div class="cite-data-bibtex" style="display:none">@article{Schaufeli_2006,
+  title={The Measurement of Work Engagement With a Short Questionnaire: A Cross-National Study},
+  volume={66},
+  ISSN={1552-3888},
+  url={http://dx.doi.org/10.1177/0013164405282471},
+  DOI={10.1177/0013164405282471},
+  number={4},
+  journal={Educational and Psychological Measurement},
+  publisher={SAGE Publications},
+  author={Schaufeli, Wilmar B. and Bakker, Arnold B. and Salanova, Marisa},
+  year={2006},
+  month=Aug,
+  pages={701–716}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.wilmarschaufeli.nl/publications/Schaufeli/Test%20Manuals/Test_manual_UWES_English.pdf" target='_blank'>Manual (author)</a></p>
+		</method>
+		<method id="gse" category="empirical,quantitative,subjective,selfefficacy" title="Quantitative Subjective Self-Efficacy: General Self-Efficacy Scale (GSE)">
+			<p><strong>Description: </strong>10-item measure of generalized perceived self-efficacy (optimistic competence belief) across domains.</p>
+			<div class="method-citation"><div class="citation-copy">Schwarzer, R., &amp; Jerusalem, M. (1995). Generalized Self-Efficacy Scale. In J. Weinman, S. Wright, &amp; M. Johnston (Eds.), Measures in health psychology: A user's portfolio (pp. 35-37). NFER-NELSON.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Schwarzer, R., &amp; Jerusalem, M. (1995). Generalized Self-Efficacy Scale. In J. Weinman, S. Wright, &amp; M. Johnston (Eds.), Measures in health psychology: A user's portfolio (pp. 35-37). NFER-NELSON.</div><div class="cite-data-bibtex" style="display:none">@misc{Schwarzer1995,
+  author = {Schwarzer, R. and Jerusalem, M},
+  title = {Generalized Self-Efficacy Scale},
+  year = {1995},
+  note = {Schwarzer, R., &amp; Jerusalem, M. (1995). Generalized Self-Efficacy Scale. In J. Weinman, S. Wright, &amp; M. Johnston (Eds.), Measures in health psychology: A user's portfolio (pp. 35-37). NFER-NELSON.}
+}</div></div>
+			<p><strong>Link: </strong><a href="http://userpage.fu-berlin.de/~health/engscal.htm" target='_blank'>Official (author)</a></p>
+		</method>
+		<method id="teq" category="empirical,quantitative,subjective,empathy" title="Quantitative Subjective Empathy: Toronto Empathy Questionnaire (TEQ)">
+			<p><strong>Description: </strong>16-item unidimensional measure of empathy as a primarily emotional/affective-resonance process.</p>
+			<div class="method-citation"><div class="citation-copy">Spreng, R. N., McKinnon, M. C., Mar, R. A., &amp; Levine, B. (2009). The Toronto Empathy Questionnaire: Scale development and initial validation. Journal of Personality Assessment, 91(1), 62-71. DOI: <a href='https://doi.org/10.1080/00223890802484381' target='_blank'>10.1080/00223890802484381</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Spreng, R. N., McKinnon, M. C., Mar, R. A., &amp; Levine, B. (2009). The Toronto Empathy Questionnaire: Scale development and initial validation. Journal of Personality Assessment, 91(1), 62-71. DOI: 10.1080/00223890802484381</div><div class="cite-data-bibtex" style="display:none">@article{Spreng__2009,
+  title={The Toronto Empathy Questionnaire: Scale Development and Initial Validation of a Factor-Analytic Solution to Multiple Empathy Measures},
+  volume={91},
+  ISSN={1532-7752},
+  url={http://dx.doi.org/10.1080/00223890802484381},
+  DOI={10.1080/00223890802484381},
+  number={1},
+  journal={Journal of Personality Assessment},
+  publisher={Informa UK Limited},
+  author={Spreng*, R. Nathan and McKinnon*, Margaret C. and Mar, Raymond A. and Levine, Brian},
+  year={2009},
+  month=Jan,
+  pages={62–71}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.yorku.ca/mar/spreng%20et%20al%202009_JPA_TEQ.pdf" target='_blank'>Instrument (author)</a></p>
+		</method>
+		<method id="qcae" category="empirical,quantitative,subjective,empathy" title="Quantitative Subjective Empathy: Cognitive &amp; Affective Empathy (QCAE)">
+			<p><strong>Description: </strong>31-item measure separating cognitive empathy from affective empathy across five subscales.</p>
+			<div class="method-citation"><div class="citation-copy">Reniers, R. L. E. P., Corcoran, R., Drake, R., Shryane, N. M., &amp; Voellm, B. A. (2011). The QCAE: A Questionnaire of Cognitive and Affective Empathy. Journal of Personality Assessment, 93(1), 84-95. DOI: <a href='https://doi.org/10.1080/00223891.2010.528484' target='_blank'>10.1080/00223891.2010.528484</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Reniers, R. L. E. P., Corcoran, R., Drake, R., Shryane, N. M., &amp; Voellm, B. A. (2011). The QCAE: A Questionnaire of Cognitive and Affective Empathy. Journal of Personality Assessment, 93(1), 84-95. DOI: 10.1080/00223891.2010.528484</div><div class="cite-data-bibtex" style="display:none">@article{Reniers_2011,
+  title={The QCAE: A Questionnaire of Cognitive and Affective Empathy},
+  volume={93},
+  ISSN={1532-7752},
+  url={http://dx.doi.org/10.1080/00223891.2010.528484},
+  DOI={10.1080/00223891.2010.528484},
+  number={1},
+  journal={Journal of Personality Assessment},
+  publisher={Informa UK Limited},
+  author={Reniers, Renate L. E. P. and Corcoran, Rhiannon and Drake, Richard and Shryane, Nick M. and Völlm, Birgit A.},
+  year={2011},
+  month=Jan,
+  pages={84–95}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://emerge.ucsd.edu/r_3punmrvubfwa4xc/" target='_blank'>Instrument (UCSD)</a></p>
+		</method>
+		<method id="maas" category="empirical,quantitative,subjective,mindfulness" title="Quantitative Subjective Mindfulness: Mindful Attention Awareness Scale (MAAS)">
+			<p><strong>Description: </strong>15-item measure of dispositional mindfulness as receptive present-moment attention and awareness in daily life.</p>
+			<div class="method-citation"><div class="citation-copy">Brown, K. W., &amp; Ryan, R. M. (2003). The benefits of being present: Mindfulness and its role in psychological well-being. Journal of Personality and Social Psychology, 84(4), 822-848. DOI: <a href='https://doi.org/10.1037/0022-3514.84.4.822' target='_blank'>10.1037/0022-3514.84.4.822</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Brown, K. W., &amp; Ryan, R. M. (2003). The benefits of being present: Mindfulness and its role in psychological well-being. Journal of Personality and Social Psychology, 84(4), 822-848. DOI: 10.1037/0022-3514.84.4.822</div><div class="cite-data-bibtex" style="display:none">@article{Brown_2003,
+  title={The benefits of being present: Mindfulness and its role in psychological well-being.},
+  volume={84},
+  ISSN={0022-3514},
+  url={http://dx.doi.org/10.1037/0022-3514.84.4.822},
+  DOI={10.1037/0022-3514.84.4.822},
+  number={4},
+  journal={Journal of Personality and Social Psychology},
+  publisher={American Psychological Association (APA)},
+  author={Brown, Kirk Warren and Ryan, Richard M.},
+  year={2003},
+  pages={822–848}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://selfdeterminationtheory.org/mindfulness-attention-awareness/" target='_blank'>Official (SDT)</a></p>
+		</method>
+		<method id="fks" category="empirical,quantitative,subjective,flow" title="Quantitative Subjective Flow: Flow Short Scale (FKS)">
+			<p><strong>Description: </strong>Brief 10+3 item measure of flow experience (fluency, absorption) plus a worry/concern component, usable across tasks.</p>
+			<div class="method-citation"><div class="citation-copy">Rheinberg, F., Vollmeyer, R., &amp; Engeser, S. (2003). Die Erfassung des Flow-Erlebens. In J. Stiensmeier-Pelster &amp; F. Rheinberg (Eds.), Diagnostik von Motivation und Selbstkonzept (pp. 261-279). Hogrefe.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Rheinberg, F., Vollmeyer, R., &amp; Engeser, S. (2003). Die Erfassung des Flow-Erlebens. In J. Stiensmeier-Pelster &amp; F. Rheinberg (Eds.), Diagnostik von Motivation und Selbstkonzept (pp. 261-279). Hogrefe.</div><div class="cite-data-bibtex" style="display:none">@misc{Rheinberg2003,
+  author = {Rheinberg, F., Vollmeyer, R. and Engeser, S},
+  title = {Die Erfassung des Flow-Erlebens},
+  year = {2003},
+  note = {Rheinberg, F., Vollmeyer, R., &amp; Engeser, S. (2003). Die Erfassung des Flow-Erlebens. In J. Stiensmeier-Pelster &amp; F. Rheinberg (Eds.), Diagnostik von Motivation und Selbstkonzept (pp. 261-279). Hogrefe.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.psycharchives.org/en/item/1a64a80c-9914-42be-b276-907de99101ee" target='_blank'>PsychArchives</a></p>
+		</method>
+		<method id="axecore" category="empirical,quantitative,objective,accessibility" title="Quantitative Objective Accessibility: axe-core (Automated WCAG Testing)">
+			<p><strong>Description: </strong>Open-source rules engine that scans a rendered DOM against WCAG success criteria and reports violations, designed for zero false positives.</p>
+			<div class="method-citation"><div class="citation-copy">Deque Systems (2015-present). axe-core: Accessibility engine for automated Web UI testing. Open-source library.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Deque Systems (2015-present). axe-core: Accessibility engine for automated Web UI testing. Open-source library.</div><div class="cite-data-bibtex" style="display:none">@misc{ref,
+  title = {Deque Systems (2015-present)},
+  note = {Deque Systems (2015-present). axe-core: Accessibility engine for automated Web UI testing. Open-source library.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://github.com/dequelabs/axe-core" target='_blank'>Repository</a></p>
+		</method>
+		<method id="lighthouse" category="empirical,quantitative,objective,accessibility" title="Quantitative Objective Accessibility: Google Lighthouse Accessibility Audit">
+			<p><strong>Description: </strong>Chrome DevTools audit that runs axe-based checks and returns a weighted 0-100 accessibility score for a page.</p>
+			<div class="method-citation"><div class="citation-copy">Google (2018-present). Lighthouse: Automated tool for improving web page quality (Accessibility category). Chrome DevTools.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Google (2018-present). Lighthouse: Automated tool for improving web page quality (Accessibility category). Chrome DevTools.</div><div class="cite-data-bibtex" style="display:none">@misc{ref,
+  title = {Google (2018-present)},
+  note = {Google (2018-present). Lighthouse: Automated tool for improving web page quality (Accessibility category). Chrome DevTools.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://developer.chrome.com/docs/lighthouse/overview" target='_blank'>Official (Google)</a></p>
+		</method>
+		<method id="waveeval" category="empirical,quantitative,objective,accessibility" title="Quantitative Objective Accessibility: WAVE Web Accessibility Evaluation">
+			<p><strong>Description: </strong>WebAIM browser/online tool that overlays accessibility errors, alerts and contrast/ARIA issues directly on the evaluated page.</p>
+			<div class="method-citation"><div class="citation-copy">WebAIM, Utah State University (2001-present). WAVE Web Accessibility Evaluation Tool.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">WebAIM, Utah State University (2001-present). WAVE Web Accessibility Evaluation Tool.</div><div class="cite-data-bibtex" style="display:none">@misc{ref,
+  title = {WebAIM, Utah State University (2001-present)},
+  note = {WebAIM, Utah State University (2001-present). WAVE Web Accessibility Evaluation Tool.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://wave.webaim.org/" target='_blank'>Official (WebAIM)</a></p>
+		</method>
+		<method id="pa11y" category="empirical,quantitative,objective,accessibility" title="Quantitative Objective Accessibility: Pa11y Automated Accessibility">
+			<p><strong>Description: </strong>Command-line/CI tool wrapping HTML_CodeSniffer and axe to enforce WCAG compliance in automated build pipelines.</p>
+			<div class="method-citation"><div class="citation-copy">Pa11y Team (2013-present). Pa11y: Automated accessibility testing tools.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Pa11y Team (2013-present). Pa11y: Automated accessibility testing tools.</div><div class="cite-data-bibtex" style="display:none">@misc{ref,
+  title = {Pa11y Team (2013-present)},
+  note = {Pa11y Team (2013-present). Pa11y: Automated accessibility testing tools.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://pa11y.org/" target='_blank'>Official</a></p>
+		</method>
+		<method id="keyboardsrtest" category="empirical,quantitative,objective,accessibility" title="Quantitative Objective Accessibility: Keyboard &amp; Screen-Reader Testing">
+			<p><strong>Description: </strong>Empirical testing of task success, time and errors when operating an interface solely via keyboard or screen reader (assistive-technology compatibility).</p>
+			<div class="method-citation"><div class="citation-copy">W3C Web Accessibility Initiative (2022). Involving Users in Evaluating Web Accessibility / Usability Testing with assistive technology.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">W3C Web Accessibility Initiative (2022). Involving Users in Evaluating Web Accessibility / Usability Testing with assistive technology.</div><div class="cite-data-bibtex" style="display:none">@misc{WCWebAccessibilityInitiative2022,
+  author = {W3C Web Accessibility Initiative},
+  title = {Involving Users in Evaluating Web Accessibility / Usability Testing with assistive technology},
+  year = {2022},
+  note = {W3C Web Accessibility Initiative (2022). Involving Users in Evaluating Web Accessibility / Usability Testing with assistive technology.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.w3.org/WAI/test-evaluate/" target='_blank'>W3C WAI</a></p>
+		</method>
+		<method id="barrierwalkthrough" category="empirical,quantitative,objective,accessibility" title="Quantitative Objective Accessibility: Barrier Walkthrough">
+			<p><strong>Description: </strong>Expert heuristic-walkthrough method estimating the severity of accessibility barriers for specific disabled-user categories across representative tasks.</p>
+			<div class="method-citation"><div class="citation-copy">Brajnik, G. (2006). Web accessibility testing: When the method is the culprit. Proc. ICCHP 2006, LNCS 4061, 156-163. DOI: <a href='https://doi.org/10.1007/11788713_24' target='_blank'>10.1007/11788713_24</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Brajnik, G. (2006). Web accessibility testing: When the method is the culprit. Proc. ICCHP 2006, LNCS 4061, 156-163. DOI: 10.1007/11788713_24</div><div class="cite-data-bibtex" style="display:none">@inbook{Brajnik_2006,
+  title={Web Accessibility Testing: When the Method Is the Culprit},
+  ISBN={9783540360216},
+  ISSN={1611-3349},
+  url={http://dx.doi.org/10.1007/11788713_24},
+  DOI={10.1007/11788713_24},
+  booktitle={Computers Helping People with Special Needs},
+  publisher={Springer Berlin Heidelberg},
+  author={Brajnik, Giorgio},
+  year={2006},
+  pages={156–163}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://people.uniud.it/node/3465" target='_blank'>Author page</a></p>
+		</method>
+		<method id="exclusioncalc" category="empirical,quantitative,objective,accessibility" title="Quantitative Objective Accessibility: Cambridge Exclusion Calculator">
+			<p><strong>Description: </strong>Demographics-based tool estimating the proportion of the population excluded from a product by its vision, hearing, thinking, reach/dexterity and mobility demands.</p>
+			<div class="method-citation"><div class="citation-copy">Waller, S., Goodman-Deane, J., Bradley, M., &amp; Clarkson, P. J. Inclusive Design Toolkit Exclusion Calculator. Engineering Design Centre, University of Cambridge.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Waller, S., Goodman-Deane, J., Bradley, M., &amp; Clarkson, P. J. Inclusive Design Toolkit Exclusion Calculator. Engineering Design Centre, University of Cambridge.</div><div class="cite-data-bibtex" style="display:none">@misc{ref,
+  title = {Waller, S},
+  note = {Waller, S., Goodman-Deane, J., Bradley, M., &amp; Clarkson, P. J. Inclusive Design Toolkit Exclusion Calculator. Engineering Design Centre, University of Cambridge.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://calc.inclusivedesigntoolkit.com/" target='_blank'>Tool (Cambridge)</a></p>
+		</method>
+		<method id="pac" category="empirical,quantitative,subjective,accessibility" title="Quantitative Subjective Accessibility: Perceived Accessibility Scale (PAC)">
+			<p><strong>Description: </strong>Four-item validated self-report scale capturing how easy people feel it is to live a satisfactory life using a system (subjective accessibility).</p>
+			<div class="method-citation"><div class="citation-copy">Laettman, K., Olsson, L. E., &amp; Friman, M. (2016). Development and test of the Perceived Accessibility Scale (PAC) in public transport. Journal of Transport Geography, 54, 257-263. DOI: <a href='https://doi.org/10.1016/j.jtrangeo.2016.06.015' target='_blank'>10.1016/j.jtrangeo.2016.06.015</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Laettman, K., Olsson, L. E., &amp; Friman, M. (2016). Development and test of the Perceived Accessibility Scale (PAC) in public transport. Journal of Transport Geography, 54, 257-263. DOI: 10.1016/j.jtrangeo.2016.06.015</div><div class="cite-data-bibtex" style="display:none">@article{L_ttman_2016,
+  title={Development and test of the Perceived Accessibility Scale (PAC) in public transport},
+  volume={54},
+  ISSN={0966-6923},
+  url={http://dx.doi.org/10.1016/j.jtrangeo.2016.06.015},
+  DOI={10.1016/j.jtrangeo.2016.06.015},
+  journal={Journal of Transport Geography},
+  publisher={Elsevier BV},
+  author={Lättman, Katrin and Olsson, Lars E. and Friman, Margareta},
+  year={2016},
+  month=June,
+  pages={257–263}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://www.worldtransitresearch.info/research/6064/" target='_blank'>Record</a></p>
+		</method>
+		<method id="sna" category="empirical,quantitative,objective,collaboration" title="Quantitative Objective Collaboration: Social Network Analysis (SNA)">
+			<p><strong>Description: </strong>Graph-theoretic analysis of interaction/communication ties to quantify group structure, centrality and cohesion.</p>
+			<div class="method-citation"><div class="citation-copy">Wasserman, S., &amp; Faust, K. (1994). Social Network Analysis: Methods and Applications. Cambridge University Press. DOI: <a href='https://doi.org/10.1017/CBO9780511815478' target='_blank'>10.1017/CBO9780511815478</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Wasserman, S., &amp; Faust, K. (1994). Social Network Analysis: Methods and Applications. Cambridge University Press. DOI: 10.1017/CBO9780511815478</div><div class="cite-data-bibtex" style="display:none">@book{Wasserman_1994,
+  title={Social Network Analysis: Methods and Applications},
+  ISBN={9780511815478},
+  url={http://dx.doi.org/10.1017/CBO9780511815478},
+  DOI={10.1017/cbo9780511815478},
+  publisher={Cambridge University Press},
+  author={Wasserman, Stanley and Faust, Katherine},
+  year={1994},
+  month=Nov
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Social_network_analysis" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="smm" category="empirical,quantitative,subjective,collaboration" title="Quantitative Subjective Collaboration: Shared Mental Models (SMM)">
+			<p><strong>Description: </strong>Convergence of team members' task- and team-focused knowledge structures, related to team process and performance.</p>
+			<div class="method-citation"><div class="citation-copy">Mathieu, J. E., Heffner, T. S., Goodwin, G. F., Salas, E., &amp; Cannon-Bowers, J. A. (2000). The influence of shared mental models on team process and performance. Journal of Applied Psychology, 85(2), 273-283. DOI: <a href='https://doi.org/10.1037/0021-9010.85.2.273' target='_blank'>10.1037/0021-9010.85.2.273</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Mathieu, J. E., Heffner, T. S., Goodwin, G. F., Salas, E., &amp; Cannon-Bowers, J. A. (2000). The influence of shared mental models on team process and performance. Journal of Applied Psychology, 85(2), 273-283. DOI: 10.1037/0021-9010.85.2.273</div><div class="cite-data-bibtex" style="display:none">@article{Mathieu_2000,
+  title={The influence of shared mental models on team process and performance.},
+  volume={85},
+  ISSN={0021-9010},
+  url={http://dx.doi.org/10.1037/0021-9010.85.2.273},
+  DOI={10.1037/0021-9010.85.2.273},
+  number={2},
+  journal={Journal of Applied Psychology},
+  publisher={American Psychological Association (APA)},
+  author={Mathieu, John E. and Heffner, Tonia S. and Goodwin, Gerald F. and Salas, Eduardo and Cannon-Bowers, Janis A.},
+  year={2000},
+  month=Apr,
+  pages={273–283}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Team#Team_cognition" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="ipa" category="empirical,quantitative,objective,collaboration" title="Quantitative Objective Collaboration: Interaction Process Analysis">
+			<p><strong>Description: </strong>Structured coding of utterances/actions into communication and coordination categories from recorded collaborative sessions.</p>
+			<div class="method-citation"><div class="citation-copy">Bales, R. F. (1950). Interaction Process Analysis: A Method for the Study of Small Groups. Addison-Wesley.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Bales, R. F. (1950). Interaction Process Analysis: A Method for the Study of Small Groups. Addison-Wesley.</div><div class="cite-data-bibtex" style="display:none">@misc{Bales1950,
+  author = {Bales, R. F},
+  title = {Interaction Process Analysis: A Method for the Study of Small Groups},
+  year = {1950},
+  note = {Bales, R. F. (1950). Interaction Process Analysis: A Method for the Study of Small Groups. Addison-Wesley.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Robert_F._Bales" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="aut" category="empirical,quantitative,objective,creativity" title="Quantitative Objective Creativity: Alternative Uses Task (AUT)">
+			<p><strong>Description: </strong>Divergent-thinking task scoring fluency, flexibility and originality of uses generated for a common object.</p>
+			<div class="method-citation"><div class="citation-copy">Guilford, J. P. (1967). The Nature of Human Intelligence. McGraw-Hill.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Guilford, J. P. (1967). The Nature of Human Intelligence. McGraw-Hill.</div><div class="cite-data-bibtex" style="display:none">@misc{Guilford1967,
+  author = {Guilford, J. P},
+  title = {The Nature of Human Intelligence},
+  year = {1967},
+  note = {Guilford, J. P. (1967). The Nature of Human Intelligence. McGraw-Hill.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Guilford%27s_Alternate_Uses" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="ttct" category="empirical,quantitative,objective,creativity" title="Quantitative Objective Creativity: Torrance Tests of Creative Thinking (TTCT)">
+			<p><strong>Description: </strong>Verbal and figural divergent-thinking battery scored on fluency, flexibility, originality and elaboration.</p>
+			<div class="method-citation"><div class="citation-copy">Torrance, E. P. (1974). Torrance Tests of Creative Thinking: Norms-Technical Manual. Scholastic Testing Service.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Torrance, E. P. (1974). Torrance Tests of Creative Thinking: Norms-Technical Manual. Scholastic Testing Service.</div><div class="cite-data-bibtex" style="display:none">@misc{Torrance1974,
+  author = {Torrance, E. P},
+  title = {Torrance Tests of Creative Thinking: Norms-Technical Manual},
+  year = {1974},
+  note = {Torrance, E. P. (1974). Torrance Tests of Creative Thinking: Norms-Technical Manual. Scholastic Testing Service.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Torrance_Tests_of_Creative_Thinking" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="rat" category="empirical,quantitative,objective,creativity" title="Quantitative Objective Creativity: Remote Associates Test (RAT)">
+			<p><strong>Description: </strong>Convergent-creativity task: find a single word that links three remotely associated cue words.</p>
+			<div class="method-citation"><div class="citation-copy">Mednick, S. A. (1962). The associative basis of the creative process. Psychological Review, 69(3), 220-232. DOI: <a href='https://doi.org/10.1037/h0048850' target='_blank'>10.1037/h0048850</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Mednick, S. A. (1962). The associative basis of the creative process. Psychological Review, 69(3), 220-232. DOI: 10.1037/h0048850</div><div class="cite-data-bibtex" style="display:none">@article{Mednick_1962,
+  title={The associative basis of the creative process.},
+  volume={69},
+  ISSN={0033-295X},
+  url={http://dx.doi.org/10.1037/h0048850},
+  DOI={10.1037/h0048850},
+  number={3},
+  journal={Psychological Review},
+  publisher={American Psychological Association (APA)},
+  author={Mednick, Sarnoff},
+  year={1962},
+  pages={220–232}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Remote_Associates_Test" target='_blank'>Wikipedia</a></p>
+		</method>
+		<method id="sart" category="empirical,quantitative,subjective,awareness" title="Quantitative Subjective Awareness: Situation Awareness Rating Technique (SART)">
+			<p><strong>Description: </strong>Post-trial self-rating of situation awareness across demand, supply and understanding dimensions.</p>
+			<div class="method-citation"><div class="citation-copy">Taylor, R. M. (1990). Situational Awareness Rating Technique (SART): The development of a tool for aircrew systems design. AGARD-CP-478. NATO-AGARD.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Taylor, R. M. (1990). Situational Awareness Rating Technique (SART): The development of a tool for aircrew systems design. AGARD-CP-478. NATO-AGARD.</div><div class="cite-data-bibtex" style="display:none">@misc{Taylor1990,
+  author = {Taylor, R. M},
+  title = {Situational Awareness Rating Technique (SART): The development of a tool for aircrew systems design},
+  year = {1990},
+  note = {Taylor, R. M. (1990). Situational Awareness Rating Technique (SART): The development of a tool for aircrew systems design. AGARD-CP-478. NATO-AGARD.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://skybrary.aero/articles/situation-awareness-rating-technique-sart" target='_blank'>SKYbrary</a></p>
+		</method>
+		<method id="spam" category="empirical,quantitative,objective,awareness" title="Quantitative Objective Awareness: Situation Present Assessment Method (SPAM)">
+			<p><strong>Description: </strong>Online real-time SA probe using response latency to queries, separating workload from situation awareness without freezing the task.</p>
+			<div class="method-citation"><div class="citation-copy">Durso, F. T., &amp; Dattel, A. R. (2004). SPAM: The real-time assessment of SA. In S. Banbury &amp; S. Tremblay (Eds.), A Cognitive Approach to Situation Awareness. Ashgate.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Durso, F. T., &amp; Dattel, A. R. (2004). SPAM: The real-time assessment of SA. In S. Banbury &amp; S. Tremblay (Eds.), A Cognitive Approach to Situation Awareness. Ashgate.</div><div class="cite-data-bibtex" style="display:none">@misc{Durso2004,
+  author = {Durso, F. T. and Dattel, A. R},
+  title = {SPAM: The real-time assessment of SA},
+  year = {2004},
+  note = {Durso, F. T., &amp; Dattel, A. R. (2004). SPAM: The real-time assessment of SA. In S. Banbury &amp; S. Tremblay (Eds.), A Cognitive Approach to Situation Awareness. Ashgate.}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://skybrary.aero/articles/situation-presence-assessment-method-spam" target='_blank'>SKYbrary</a></p>
+		</method>
+		<method id="cfip" category="empirical,quantitative,subjective,privacy" title="Quantitative Subjective Privacy: Concern for Information Privacy (CFIP)">
+			<p><strong>Description: </strong>Multi-dimensional scale of information-privacy concern (collection, errors, unauthorized access, secondary use).</p>
+			<div class="method-citation"><div class="citation-copy">Smith, H. J., Milberg, S. J., &amp; Burke, S. J. (1996). Information privacy: Measuring individuals' concerns about organizational practices. MIS Quarterly, 20(2), 167-196. DOI: <a href='https://doi.org/10.2307/249477' target='_blank'>10.2307/249477</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Smith, H. J., Milberg, S. J., &amp; Burke, S. J. (1996). Information privacy: Measuring individuals' concerns about organizational practices. MIS Quarterly, 20(2), 167-196. DOI: 10.2307/249477</div><div class="cite-data-bibtex" style="display:none">@article{Smith_1996,
+  title={Information Privacy: Measuring Individuals’ Concerns About Organizational Practices1},
+  volume={20},
+  ISSN={2162-9730},
+  url={http://dx.doi.org/10.2307/249477},
+  DOI={10.2307/249477},
+  number={2},
+  journal={MIS Quarterly},
+  publisher={MIS Quarterly},
+  author={Smith, H. Jeff and Milberg, Sandra J. and Burke, Sandra J.},
+  year={1996},
+  month=June,
+  pages={167–196}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://ideas.repec.org/a/inm/orisre/v13y2002i1p36-49.html" target='_blank'>Record</a></p>
+		</method>
+		<method id="visawifull" category="empirical,quantitative,subjective,aesthetics" title="Quantitative Subjective Aesthetics: Visual Aesthetics of Websites Inventory (VisAWI)">
+			<p><strong>Description: </strong>18-item scale of perceived visual aesthetics across simplicity, diversity, colorfulness and craftsmanship.</p>
+			<div class="method-citation"><div class="citation-copy">Moshagen, M., &amp; Thielsch, M. T. (2010). Facets of visual aesthetics. International Journal of Human-Computer Studies, 68(10), 689-709. DOI: <a href='https://doi.org/10.1016/j.ijhcs.2010.05.006' target='_blank'>10.1016/j.ijhcs.2010.05.006</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Moshagen, M., &amp; Thielsch, M. T. (2010). Facets of visual aesthetics. International Journal of Human-Computer Studies, 68(10), 689-709. DOI: 10.1016/j.ijhcs.2010.05.006</div><div class="cite-data-bibtex" style="display:none">@article{Moshagen_2010,
+  title={Facets of visual aesthetics},
+  volume={68},
+  ISSN={1071-5819},
+  url={http://dx.doi.org/10.1016/j.ijhcs.2010.05.006},
+  DOI={10.1016/j.ijhcs.2010.05.006},
+  number={10},
+  journal={International Journal of Human-Computer Studies},
+  publisher={Elsevier BV},
+  author={Moshagen, Morten and Thielsch, Meinald T.},
+  year={2010},
+  month=Oct,
+  pages={689–709}
+}</div></div>
+			<p><strong>Link: </strong><a href="http://www.thielsch.org/download/VisAWI/VisAWI_Manual_EN.pdf" target='_blank'>Manual (author)</a></p>
+		</method>
+		<method id="networkedminds" category="empirical,quantitative,subjective,socialpresence" title="Quantitative Subjective Social Presence: Networked Minds Social Presence">
+			<p><strong>Description: </strong>Self-report of co-presence, psycho-behavioral interaction and subjective/intersubjective symmetry in mediated interaction.</p>
+			<div class="method-citation"><div class="citation-copy">Harms, C., &amp; Biocca, F. (2004). Internal consistency and reliability of the Networked Minds Social Presence measure. Proc. 7th International Workshop on Presence.</div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Harms, C., &amp; Biocca, F. (2004). Internal consistency and reliability of the Networked Minds Social Presence measure. Proc. 7th International Workshop on Presence.</div><div class="cite-data-bibtex" style="display:none">@misc{Harms2004,
+  author = {Harms, C. and Biocca, F},
+  title = {Internal consistency and reliability of the Networked Minds Social Presence measure},
+  year = {2004},
+  note = {Harms, C., &amp; Biocca, F. (2004). Internal consistency and reliability of the Networked Minds Social Presence measure. Proc. 7th International Workshop on Presence.}
+}</div></div>
+			<p><strong>Link: </strong><a href="http://matthewlombard.com/ISPR/Proceedings/2001/Biocca2.pdf" target='_blank'>ISPR Proceedings</a></p>
+		</method>
+		<method id="srhi" category="empirical,quantitative,subjective,habit" title="Quantitative Subjective Habit: Self-Report Habit Index (SRHI)">
+			<p><strong>Description: </strong>12-item index of habit strength capturing repetition, automaticity and identity for a target behavior.</p>
+			<div class="method-citation"><div class="citation-copy">Verplanken, B., &amp; Orbell, S. (2003). Reflections on past behavior: A self-report index of habit strength. Journal of Applied Social Psychology, 33(6), 1313-1330. DOI: <a href='https://doi.org/10.1111/j.1559-1816.2003.tb01951.x' target='_blank'>10.1111/j.1559-1816.2003.tb01951.x</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Verplanken, B., &amp; Orbell, S. (2003). Reflections on past behavior: A self-report index of habit strength. Journal of Applied Social Psychology, 33(6), 1313-1330. DOI: 10.1111/j.1559-1816.2003.tb01951.x</div><div class="cite-data-bibtex" style="display:none">@article{Verplanken_2003,
+  title={Reflections on Past Behavior: A Self‐Report Index of Habit Strength&lt;sup&gt;1&lt;/sup&gt;},
+  volume={33},
+  ISSN={1559-1816},
+  url={http://dx.doi.org/10.1111/j.1559-1816.2003.tb01951.x},
+  DOI={10.1111/j.1559-1816.2003.tb01951.x},
+  number={6},
+  journal={Journal of Applied Social Psychology},
+  publisher={Wiley},
+  author={Verplanken, Bas and Orbell, Sheina},
+  year={2003},
+  month=June,
+  pages={1313–1330}
+}</div></div>
+		</method>
+		<method id="ceiii" category="empirical,quantitative,subjective,curiosity" title="Quantitative Subjective Curiosity: Curiosity &amp; Exploration Inventory-II (CEI-II)">
+			<p><strong>Description: </strong>10-item trait curiosity scale with stretching (knowledge-seeking) and embracing (novelty tolerance) factors.</p>
+			<div class="method-citation"><div class="citation-copy">Kashdan, T. B., Gallagher, M. W., Silvia, P. J., et al. (2009). The Curiosity and Exploration Inventory-II. Journal of Research in Personality, 43(6), 987-998. DOI: <a href='https://doi.org/10.1016/j.jrp.2009.04.011' target='_blank'>10.1016/j.jrp.2009.04.011</a></div><div class="citation-actions"><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="plain">Copy Citation</button><button type="button" class="btn btn-sm citation-copy-btn" data-cite-copy="bibtex">Copy as BibTeX</button></div><div class="cite-data-plain" style="display:none">Kashdan, T. B., Gallagher, M. W., Silvia, P. J., et al. (2009). The Curiosity and Exploration Inventory-II. Journal of Research in Personality, 43(6), 987-998. DOI: 10.1016/j.jrp.2009.04.011</div><div class="cite-data-bibtex" style="display:none">@article{Kashdan_2009,
+  title={The curiosity and exploration inventory-II: Development, factor structure, and psychometrics},
+  volume={43},
+  ISSN={0092-6566},
+  url={http://dx.doi.org/10.1016/j.jrp.2009.04.011},
+  DOI={10.1016/j.jrp.2009.04.011},
+  number={6},
+  journal={Journal of Research in Personality},
+  publisher={Elsevier BV},
+  author={Kashdan, Todd B. and Gallagher, Matthew W. and Silvia, Paul J. and Winterstein, Beate P. and Breen, William E. and Terhar, Daniel and Steger, Michael F.},
+  year={2009},
+  month=Dec,
+  pages={987–998}
+}</div></div>
+			<p><strong>Link: </strong><a href="https://toddkashdan.com/measures/" target='_blank'>Author page</a></p>
 		</method>
 	</measures>
 </research>
