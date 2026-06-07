@@ -871,6 +871,7 @@
   pages={91–99}
 }</div></div>
 			<p><strong>Download: </strong><a target="_blank" href="https://hci-studies.org/methods-and-measures/downloads/RULA-Guide-v-5.0.pdf">A Step-by-Step Guide to the RULA Assessment Tool</a></p>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Manual_handling_of_loads#Rapid_Upper_Limb_Assessment" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="reba" category="empirical,quantitative,objective,ergonomics" title="Quantitative Objective Ergonomics: Rapid Entire Body Assessment (REBA)">
@@ -889,7 +890,8 @@
   month=Apr,
   pages={201–205}
 }</div></div>
-			<p><strong>Download: </strong><a target="_blank" href="https://hci-studies.org/methods-and-measures/downloads/REBA-Guide-v-5.0.pdf">A Step-by-Step Guide to the REBA Assessment Tool</a></p> 
+			<p><strong>Download: </strong><a target="_blank" href="https://hci-studies.org/methods-and-measures/downloads/REBA-Guide-v-5.0.pdf">A Step-by-Step Guide to the REBA Assessment Tool</a></p>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Manual_handling_of_loads#Rapid_Entire_Body_Assessment" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="niosh" category="empirical,quantitative,objective,ergonomics" title="Quantitative Objective Ergonomics: The NIOSH Lifting Equation">
@@ -900,7 +902,8 @@
   year = {1994},
   note = {Waters, T. R., Putz-Anderson, V., and Garg, A. (1994). Applications manual for the revised NIOSH lifting equation, https://stacks.cdc.gov/view/cdc/5434}
 }</div></div>
-			<p><strong>Download: </strong><a target="_blank" href="https://hci-studies.org/methods-and-measures/downloads/NIOSH-guide-v-5.5.pdf">A Step-by-Step Guide to the NIOSH Lifting Equation</a></p> 
+			<p><strong>Download: </strong><a target="_blank" href="https://hci-studies.org/methods-and-measures/downloads/NIOSH-guide-v-5.5.pdf">A Step-by-Step Guide to the NIOSH Lifting Equation</a></p>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Manual_handling_of_loads#NIOSH_lifting_equation" target='_blank'>Wikipedia</a></p>
 		</method> 
 
 		<method id="rsq" category="empirical,quantitative,subjective,stress" title="Quantitative Subjective Stress: Relaxation State Questionnaire (RSQ)">
@@ -983,6 +986,7 @@
   pages={878–902}
 }</div></div>
 			<p><strong>Download: </strong><a target="_blank" href="https://cos.gatech.edu/facultyres/Diversity_Studies/Fiske_StereotypeContent.pdf">A model of (often mixed) stereotype content: competence and warmth respectively follow from perceived status and competition</a> (Table 2, Table 7)</p>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Stereotype_content_model" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="tam" category="empirical,quantitative,subjective,socialacceptance" title="Quantitative Subjective Social Acceptance: Technology Acceptance Model (TAM)">
@@ -990,6 +994,7 @@
 			<p><strong>Source (TAM): </strong>Davis, F., Bagozzi, P. and Warshaw, P. (1989), ‘User acceptance of computer technology - a comparison of two theoretical models’, Management Science 35(8), 982–1003.</p>
 			<p><strong>Source (TAM3): </strong>Venkatesh, V., and Bala, H. (2008). Technology acceptance model 3 and a research agenda on interventions. Decision sciences, 39(2), 273-315.</p>
 			<p><strong>Download (TAM3): </strong><a target="_blank" href="https://core.ac.uk/download/pdf/144826641.pdf">Technology Acceptance Model</a> (p. 313 - 314)</p>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Technology_acceptance_model" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="utaut" category="empirical,quantitative,subjective,socialacceptance" title="Quantitative Subjective Social Acceptance: Unified Theory of Acceptance and Use of Technology (UTAUT)">
@@ -1027,6 +1032,7 @@
   month=Mar,
   pages={157–178}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Unified_theory_of_acceptance_and_use_of_technology" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="imi" category="empirical,quantitative,subjective,motivation" title="Quantitative Subjective Motivation: Intrinsic Motivation Inventory (IMI)">
@@ -1038,6 +1044,7 @@
   note = {Deci, E. L., and Ryan, R. M. (2013). Intrinsic motivation and self-determination in human behavior. Springer Science and Business Media.}
 }</div></div>
 			<p><strong>Download: </strong><a target="_blank" href="https://hci-studies.org/methods-and-measures/downloads/IMI_Complete.pdf">Using the Intrinsic Motivation Inventory (IMI)</a></p>
+			<p><strong>Link: </strong><a href="https://selfdeterminationtheory.org/intrinsic-motivation-inventory/" target='_blank'>Instrument page</a></p>
 		</method> 
 
 		<method id="umi" category="empirical,quantitative,subjective,motivation" title="Quantitative Subjective Motivation: User Motivation Inventory (UMI)">
@@ -1065,7 +1072,8 @@
   title = {PDF},
   year = {2006},
   note = {Baer, R. A., Smith, G. T., Hopkins, J., Krietemeyer, J. and Toney, L. Using self-report assessment methods to explore facets of mindfulness. Assessment 13, 27-45 (2006). PDF}
-}</div></div> 
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Five_Facet_Mindfulness_Questionnaire" target='_blank'>Wikipedia</a></p>
 		</method> 
 
 		<method id="erq" category="empirical,quantitative,subjective,emotions" title="Quantitative Subjective Emotions: Emotional Regulation Questionnaire (ERQ)">
@@ -1083,7 +1091,8 @@
   year={2018},
   month=July,
   pages={461–471}
-}</div></div>  
+}</div></div>
+			<p><strong>Link: </strong><a href="https://edinstruments.org/instruments/emotion-regulation-questionnaire-erq" target='_blank'>Instrument page</a></p>
 		</method> 
 
 		<method id="bigfive" category="empirical,quantitative,subjective,personality" title="Quantitative Subjective Personality: Big Five Inventory (BFI)">
@@ -1229,7 +1238,8 @@
   year={2020},
   month=Dec,
   pages={3546–3556}
-}</div></div> 
+}</div></div>
+			<p><strong>Link: </strong><a href="https://sites.google.com/view/virtualembodimentquestionnaire/" target='_blank'>Instrument page</a></p>
 		</method> 
 
 		<method id="5sp" category="empirical,quantitative,subjective,bodyownership" title="Quantitative Subjective Body-Ownership: Five Statements Post-Questionnaire by Banakou">
@@ -1336,7 +1346,8 @@
   month=Aug,
   pages={425–434}
 }</div></div>  
-			<p><strong>Download: </strong><a target="_blank" href="http://www.igroup.org/pq/ipq/download.php">iGroup Presence Questionnaire (IPQ) Item Download</a></p>  
+			<p><strong>Download: </strong><a target="_blank" href="http://www.igroup.org/pq/ipq/download.php">iGroup Presence Questionnaire (IPQ) Item Download</a></p>
+			<p><strong>Link: </strong><a href="https://www.igroup.org/pq/ipq/" target='_blank'>Instrument page</a></p>
 		</method>
 
 		<method id="quis" category="empirical,quantitative,subjective,usability,satisfaction" title="Quantitative Subjective Usability: Questionnaire for User Interface Satisfaction (QUIS)">
@@ -1352,7 +1363,8 @@
   year={1988},
   pages={213–218},
   collection={CHI ’88}
-}</div></div>   
+}</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Questionnaire_for_User_Interaction_Satisfaction" target='_blank'>Wikipedia</a></p>
 		</method> 
 
 		<method id="attrakdiff" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: Pragmatic and Hedonic Qualities (AttrakDiff/AttrakDiff Mini)">
@@ -1364,6 +1376,7 @@
   note = {Hassenzahl, M., Burmester, M., and Koller, F. (2003). AttrakDiff: Ein Fragebogen zur Messung wahrgenommener hedonischer und pragmatischer Qualität. Mensch und Computer 2003: Interaktion in Bewegung, 187-196.}
 }</div></div>
 			<p><strong>Download: </strong><a target="_blank" href="https://hci-studies.org/methods-and-measures/downloads/AttrakDiff_German.pdf">AttrakDiff/AttrakDiff Mini (German)</a></p>
+			<p><strong>Link: </strong><a href="https://www.attrakdiff.de/index-en.html" target='_blank'>Instrument page</a></p>
 		</method>
 
 		<method id="ueq" category="empirical,quantitative,subjective,usability" title="Quantitative Subjective Usability: User Experience Questionnaire (UEQ)">
@@ -1443,6 +1456,7 @@
   pages={257–270},
   collection={CHI PLAY ’18}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://research.tue.nl/en/publications/the-game-experience-questionnaire" target='_blank'>Instrument page</a></p>
 		</method>   
 
 		<method id="guess" category="empirical,quantitative,subjective,games,randomsample" title="Quantitative Subjective Gaming Experience: Game User Experience Satisfaction Scale (GUESS)">
@@ -1486,6 +1500,7 @@
   title = {Aqeel Haider, Casper Harteveld, Daniel Johnson, Max V},
   note = {Aqeel Haider, Casper Harteveld, Daniel Johnson, Max V. Birk, Regan L. Mandryk, Magy Seif El-Nasr, Lennart E. Nacke, Kathrin Gerling, and Vero Vanden Abeele. 2022. MiniPXI: Development and Validation of an Eleven-Item Measure of the Player Experience Inventory. Proc. ACM Hum.-Comput. Interact. 6, CHI PLAY, Article 244 (October 2022), doi: 10.1145/3549507}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://playerexperienceinventory.org/" target='_blank'>Instrument page</a></p>
 		</method>  
 
 		<method id="hexad" category="empirical,quantitative,subjective,games,randomsample" title="Quantitative Subjective Gaming Experience: Gamification User Types Hexad Scale">
@@ -1516,6 +1531,7 @@
   pages={1–18},
   collection={CHI ’23}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://hcigames.com/user-types-hexad/" target='_blank'>Instrument page</a></p>
 		</method> 
 
 		<method id="PENS" category="empirical,quantitative,subjective,games,randomsample" title="Quantitative Subjective Gaming Experience: Player Experience of Need Satisfaction (PENS)">
@@ -1746,7 +1762,7 @@
   year = {1958},
   note = {Kirchner, W. K. (1958). Age differences in short-term retention of rapidly changing information. Journal of Experimental Psychology, 55(4), 352-358. 10.1207/s15327051hci0701_3}
 }</div></div>
-			<p><strong>Link</strong> <a href='https://psynet.ruhr-uni-bochum.de/cognition/stroop/intro/index.htm' target='_blank'>Stroop-Test Online</a>, <a href='https://en.wikipedia.org/wiki/Time_to_completion' target='_blank'>Wikipedia</a></p>
+			<p><strong>Link</strong> <a href='https://psynet.ruhr-uni-bochum.de/cognition/stroop/intro/index.htm' target='_blank'>Stroop-Test Online</a>, <a href='https://en.wikipedia.org/wiki/Stroop_effect' target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="nback" category="empirical,quantitative,objective,memory,randomsample" title="Quantitative Objective Memory: N-back Task">
@@ -1828,11 +1844,13 @@
   year={2018},
   pages={451–469}
 }</div></div>
+			<p><strong>Link: </strong><a href="http://mecue.de/english/home.html" target='_blank'>Instrument page</a></p>
 		</method>
 
 		<method id="ues" category="empirical,quantitative,subjective,userexperience" title="Quantitative Subjective User Experience: User Engagement Scale (UES)">
 			<p><strong>Description: </strong>The User Engagement Scale measures the degree to which users are focused, involved, and absorbed during interaction. It is useful when engagement should be distinguished from general usability or overall satisfaction.</p>
 			<p><strong>Source (Original Concept): </strong>O'Brien, H. L., and Toms, E. G. (2010). The development and evaluation of a survey to measure user engagement. Journal of the American Society for Information Science and Technology, 61(1), 50-69. DOI: <a target="_blank" href="https://doi.org/10.1002/asi.21229">10.1002/asi.21229</a></p>
+			<p><strong>Link: </strong><a href="https://dissemination-implementation.org/assessment-instrument/user-engagement-scale/" target='_blank'>Instrument page</a></p>
 		</method>
 
 		<method id="csi" category="empirical,quantitative,subjective,creativity" title="Quantitative Subjective Creativity: Creativity Support Index (CSI)">
@@ -1905,6 +1923,7 @@
   month=Feb,
   pages={37–50}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikiversity.org/wiki/OToPS/Measures/Creative_Achievement_Questionnaire" target='_blank'>Wikiversity</a></p>
 		</method>
 
 		<method id="creativeselfefficacy" category="empirical,quantitative,subjective,selfefficacy" title="Quantitative Subjective Self-Efficacy: Creative Self-Efficacy Scale">
@@ -1941,6 +1960,7 @@
   month=Mar,
   pages={49–59}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Self-Assessment_Manikin" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="fss" category="empirical,quantitative,subjective,flow" title="Quantitative Subjective Flow: Flow State Scale (FSS)">
@@ -1959,6 +1979,7 @@
   month=Mar,
   pages={17–35}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Flow_(psychology)" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="ssq" category="empirical,quantitative,subjective,health" title="Quantitative Subjective Health: Simulator Sickness Questionnaire (SSQ)">
@@ -1977,6 +1998,7 @@
   month=July,
   pages={203–220}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Simulator_sickness" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="vrsq" category="empirical,quantitative,subjective,health" title="Quantitative Subjective Health: Virtual Reality Sickness Questionnaire (VRSQ)">
@@ -2012,6 +2034,7 @@
   month=Nov,
   pages={71–81}
 }</div></div>
+			<p><strong>Link: </strong><a href="http://www.bartneck.de/2008/03/11/the-godspeed-questionnaire-series/" target='_blank'>Instrument page</a></p>
 		</method>
 
 		<method id="rosas" category="empirical,quantitative,subjective,socialacceptance" title="Quantitative Subjective Social Acceptance: Robotic Social Attributes Scale (RoSAS)">
@@ -2029,6 +2052,7 @@
   pages={254–262},
   collection={HRI ’17}
 }</div></div>
+			<p><strong>Link: </strong><a href="http://hriscaledatabase.psychology.gmu.edu/social%20attributes/2024/06/12/RoSAS.html" target='_blank'>HRI Scale Database</a></p>
 		</method>
 
 		<method id="tia" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Trust in Automation Questionnaire (TiA)">
@@ -2046,6 +2070,7 @@
   month=Aug,
   pages={13–30}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://github.com/moritzkoerber/TiA_Trust_in_Automation_Questionnaire" target='_blank'>Repository</a></p>
 		</method>
 
 		<method id="almere" category="empirical,quantitative,subjective,socialacceptance" title="Quantitative Subjective Social Acceptance: Almere Model Questionnaire">
@@ -2100,6 +2125,7 @@
   month=Dec,
   pages={1305–1311}
 }</div></div>
+			<p><strong>Link: </strong><a href="http://www.thielsch.org/download/VisAWI/VisAWI-S_English.pdf" target='_blank'>Instrument page</a></p>
 		</method>
 
 		<method id="experienceprototyping" category="formative,solutions,prototype" title="Prototyping Method: Experience Prototyping">
@@ -2117,6 +2143,7 @@
   pages={424–433},
   collection={DIS00}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://servicedesigntools.org/tools/experience-prototypes" target='_blank'>Service Design Tools</a></p>
 		</method>
 
 		<method id="wizardofoz" category="formative,solutions,prototype" title="Prototyping Method: Wizard of Oz (WoZ)">
@@ -2133,6 +2160,7 @@
   month=Aug,
   pages={119–136}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="constructiveinteraction" category="empirical,qualitative,subjective,randomsample" title="Qualitative Feedback: Constructive Interaction / Co-Discovery Learning">
@@ -2151,6 +2179,7 @@
   month=Dec,
   pages={1153–1170}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://www.usabilityfirst.com/glossary/co-discovery-method/index.html" target='_blank'>Glossary</a></p>
 		</method>
 
 		<method id="suspresence" category="empirical,quantitative,subjective,presence" title="Quantitative Subjective Presence: Slater-Usoh-Steed Presence Questionnaire (SUS Presence)">
@@ -2186,6 +2215,7 @@
   month=Apr,
   pages={28–39}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://dissemination-implementation.org/assessment-instrument/user-engagement-scale-ues-short/" target='_blank'>Instrument page</a></p>
 		</method>
 
 		<method id="trustinautomation" category="empirical,quantitative,subjective,trust" title="Quantitative Subjective Trust: Trust in Automation Scale">
@@ -2257,6 +2287,7 @@
   month=Mar,
   pages={1–28}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/" target='_blank'>W3C WCAG-EM</a></p>
 		</method>
 
 		<method id="teamusabilitytesting" category="empirical,qualitative,subjective,collaboration,randomsample" title="Qualitative Feedback: Team Usability Testing">
@@ -2306,6 +2337,7 @@
   author={Endsley, M.R.},
   pages={789–795}
 }</div></div>
+			<p><strong>Link: </strong><a href="https://en.wikipedia.org/wiki/Situation_awareness" target='_blank'>Wikipedia</a></p>
 		</method>
 
 		<method id="workspaceawareness" category="analytical,datadriven,awareness" title="Data-driven Analysis: Workspace Awareness Framework">
